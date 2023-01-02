@@ -1,4 +1,4 @@
-/* Cookie to keep track of window.hisotyr for back button in sub apges of Book.html */ 
+/* Cookie to keep track of window.history for back button in sub apges of Book.html */ 
 
 function bake_cookie(name, value) {
 /*  var cookie = [name, '=', JSON.stringify(value), '; domain=.', window.location.host.toString(), '; path=/;'].join(''); */
@@ -22,7 +22,7 @@ function delete_cookie(name) {
 var HomeMenu_A = 
   '<a href=javascript:void(0); class="active">HOME</a>' + 
   '<a href="pages/consulting.html">CONSULTING</a>' +
-  '<a href="pages/books.html" class="relScr">PUBLISHING</a>' +
+  '<a href="pages/books.html">PUBLISHING</a>' +
   '<a href="pages/about.html">ABOUT</a>' +
   '<a href="pages/contact.html">CONTACT</a>' +        
   '<a href="javascript:void(0);" class="icon" onclick="DropDownMenu()"><i class="fa fa-bars"></i></a>';
@@ -126,12 +126,52 @@ let headerheight = 0;
 let modalVisible = false;
 
 $(document).ready(function(){
+	
+function doctitle_Home() {
+var docmatch	
+  if (document.title = 'Home') {docmatch = true} else {docmatch=false}    
+}	
+function doctitle_Consulting() {
+var docmatch	
+  if (document.title = 'Consulting') {docmatch = true} else {docmatch=false}    
+}	
 
-if (document.URL.includes("index.html")) {
+switch (document.title) {
+  case "Home":
+    NavMenu_A =  HomeMenu_A;
+    NavMenu_B =  HomeMenu_A; 
+  break;
+  case "Consulting":
+    NavMenu_A =  ConsultingMenu_A;
+    NavMenu_B =  ConsultingMenu_B;   
+  break; 
+  case "Publishing":
+    NavMenu_A =  BookstoreMenu_A;
+    NavMenu_B =  BookstoreMenu_B;   
+  break;    
+  case "About":
+    NavMenu_A =  AboutMenu_A;
+    NavMenu_B =  AboutMenu_B;    
+  break;  
+  case "Contact":
+    NavMenu_A =  ContactMenu_A;
+    NavMenu_B =  ContactMenu_B;     
+  break; 
+  case "Semidata":
+    NavMenu_A =  SemiDataMenu_A;
+    NavMenu_B =  SemiDataMenu_B;      
+  break;   
+  default: 
+    NavMenu_A =  ForsaleMenu_A;
+    NavMenu_B =  ForsaleMenu_B;          
+}    
+
+/*
+if (document.URL.includes("index.html") || doctitle_Home) {
   NavMenu_A =  HomeMenu_A;
   NavMenu_B =  HomeMenu_A;   
 }
-if (document.URL.includes("consulting.html")) {
+if (document.URL.includes("consulting.html") || doctitle_Consulting) {
   NavMenu_A =  ConsultingMenu_A;
   NavMenu_B =  ConsultingMenu_B;  
 }
@@ -155,6 +195,7 @@ if (document.URL.includes("semidata")) {
   NavMenu_A =  SemiDataMenu_A;
   NavMenu_B =  SemiDataMenu_B;  
 }
+*/
 
 if (window.innerWidth >768) {
   document.getElementById("NavMenuItems").innerHTML = NavMenu_A;	
