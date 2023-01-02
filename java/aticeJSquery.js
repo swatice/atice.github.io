@@ -127,15 +127,6 @@ let modalVisible = false;
 
 $(document).ready(function(){
 	
-function doctitle_Home() {
-var docmatch	
-  if (document.title = 'Home') {docmatch = true} else {docmatch=false}    
-}	
-function doctitle_Consulting() {
-var docmatch	
-  if (document.title = 'Consulting') {docmatch = true} else {docmatch=false}    
-}	
-
 switch (document.title) {
   case "Home":
     NavMenu_A =  HomeMenu_A;
