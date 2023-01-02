@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png">  
+  <title>WS-HM3L-EN-P2</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","input/MathML","output/SVG"],
+    extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
+    TeX: {
+  extensions: ["noErrors.js","noUndefined.js","autoload-all.js"]
+    },
+    MathMenu: {
+  showRenderer: false
+    },
+    menuSettings: {
+  zoom: "Click"
+    },
+    messageStyle: "none"
+  }); 
+  </script>    
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1780px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0; width: 100%;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>       
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                      
+
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">Higher Mathematics</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">Lectures Part Three</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href="WS-HM3L-EN-P1.html">1</a>
+            <a href=javascript:void(0); class="active">2</a>
+          </div>
+        </div>  
+      </div>
+                                                                   
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+                        
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Table of Contents:</span>
+        </div>
+      </div>
+                    
+      <div class="tocBookPages">
+      
+        <div class="float">                                                                                                                                                                            
+          <div class="tabular">
+            <table id="HM3L-EN-TOC" class="toctable">
+              <colgroup id="HM3L-EN-TOC-1g" class="atice17">
+                <col id="HM3L-EN-TOC-1" class="atice18_A1"/>
+                <col id="HM3L-EN-TOC-2" class="atice18_A2"/>                
+                <col id="HM3L-EN-TOC-3" class="atice18_A3"/>
+                <col id="HM3L-EN-TOC-4" class="atice18_A4"/>
+                <col id="HM3L-EN-TOC-5" class="atice18_A5"/>                
+              </colgroup>
+              <tbody class="atice19">
+                <tr id="HM3L-EN-TOC-0-" class="atice20">
+                  <td colspan="4" id="HM3L-EN-TOC-0-1" class="toc_lb">Preface</td>
+                  <td id="HM3L-EN-TOC-0-5" class="toc_rb">i&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-1-" class="atice20">
+                  <td id="HM3L-EN-TOC-1-1" class="toc_lb">1&#160;</td>
+                  <td colspan="3" id="HM3L-EN-TOC-1-2" class="toc_lb">Integrals with Parameters</td>
+                  <td id="HM3L-EN-TOC-1-5" class="toc_rb">1&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-2-" class="atice20">
+                  <td id="HM3L-EN-TOC-2-1"></td>
+                  <td id="HM3L-EN-TOC-2-2" class="toc_l">1.1&#160;</td>
+                  <td colspan="2" id="HM3L-EN-TOC-2-3" class="toc_l">Differentiation under the Integra</td>
+                  <td id="HM3L-EN-TOC-2-5" class="toc_r">2&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-3-" class="atice20">
+                  <td id="HM3L-EN-TOC-3-1"></td>
+                  <td id="HM3L-EN-TOC-3-2" class="toc_l">1.2&#160;</td>
+                  <td colspan="2" id="HM3L-EN-TOC-3-3" class="toc_l">Swapping the Order of Integration in Double Integrals</td>                  
+                  <td id="HM3L-EN-TOC-3-5" class="toc_r">3&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-4-" class="atice20">
+                  <td id="HM3L-EN-TOC-4-1"></td>
+                  <td id="HM3L-EN-TOC-4-2" class="toc_l">1.3&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-4-3" class="toc_l">Integrals with variable Limits</td>
+                  <td id="HM3L-EN-TOC-4-5" class="toc_r">4&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-5-" class="atice20">
+                  <td id="HM3L-EN-TOC-5-1"></td>
+                  <td id="HM3L-EN-TOC-5-2" class="toc_l">1.4&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-5-3" class="toc_l">Improper Integrals with Parameters</td>
+                  <td id="HM3L-EN-TOC-5-5" class="toc_r">5&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-6-" class="atice20">
+                  <td id="HM3L-EN-TOC-6-1"></td>
+                  <td id="HM3L-EN-TOC-6-2" class="toc_l">1.5&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-6-3" class="toc_l">The Laplace Transform</td>
+                  <td id="HM3L-EN-TOC-6-5" class="toc_r">7&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-7-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-7-1"></td>
+                  <td id="HM3L-EN-TOC-7-3" class="toc_l">1.5.1&#160;</td>                  
+                  <td id="HM3L-EN-TOC-7-4" class="toc_l">The Laplace Transform of the Derivative</td>
+                  <td id="HM3L-EN-TOC-7-5" class="toc_r">9&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-8-" class="atice20">
+                  <td id="HM3L-EN-TOC-8-1" class="toc_lb">2&#160;</td>                
+                  <td colspan="3" id="HM3L-EN-TOC-8-2" class="toc_lb">Multiple Integrals</td>
+                  <td id="HM3L-EN-TOC-8-5" class="toc_rb">11&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-9-" class="atice20">
+                  <td id="HM3L-EN-TOC-9-1"></td>
+                  <td id="HM3L-EN-TOC-9-2" class="toc_l">2.1&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-9-3" class="toc_l">Integral for a restricted Function Class</td>
+                  <td id="HM3L-EN-TOC-9-5" class="toc_r">11&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-10-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-10-1"></td>
+                  <td id="HM3L-EN-TOC-10-3" class="toc_l">2.1.1&#160;</td>                   
+                  <td id="HM3L-EN-TOC-10-4" class="toc_l">A Characterization of the Integral</td>
+                  <td id="HM3L-EN-TOC-10-5" class="toc_r">14&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-11-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-11-1"></td>
+                  <td id="HM3L-EN-TOC-11-3" class="toc_l">2.1.2&#160;</td>                  
+                  <td id="HM3L-EN-TOC-11-4" class="toc_l">Transformation Formula of the Multiple Integral under Linear Mappings</td>
+                  <td id="HM3L-EN-TOC-11-5" class="toc_r">15&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-12-" class="atice20">
+                  <td id="HM3L-EN-TOC-12-1"></td>
+                  <td id="HM3L-EN-TOC-12-2" class="toc_l">2.2&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-12-3" class="toc_l">Extension of the Class of Integrable Functions</td>
+                  <td id="HM3L-EN-TOC-12-5" class="toc_r">17&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-13-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-13-1"></td>
+                  <td id="HM3L-EN-TOC-13-3" class="toc_l">2.2.1&#160;</td>                  
+                  <td id="HM3L-EN-TOC-13-4" class="toc_l">Reversal of the Order of Integration</td>
+                  <td id="HM3L-EN-TOC-13-5" class="toc_r">19&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-14-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-14-1"></td>
+                  <td id="HM3L-EN-TOC-14-3" class="toc_l">2.2.2&#160;</td>                  
+                  <td id="HM3L-EN-TOC-14-4" class="toc_l">Application: Cavalieri's Principle</td>
+                  <td id="HM3L-EN-TOC-14-5" class="toc_r">20&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-15-" class="atice20">
+                  <td id="HM3L-EN-TOC-15-1"></td>
+                  <td id="HM3L-EN-TOC-15-2" class="toc_l">2.3&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-15-3" class="toc_l">Formulation of the General Transformation Formula for Area Integrals</td>
+                  <td id="HM3L-EN-TOC-15-5" class="toc_r">21&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-16-" class="atice20">
+                  <td id="HM3L-EN-TOC-16-1" class="toc_lb">3&#160;</td>                
+                  <td colspan="3" id="HM3L-EN-TOC-16-2" class="toc_lb">Integral Theorems in the Plane</td>
+                  <td id="HM3L-EN-TOC-16-5" class="toc_rb">25&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-17-" class="atice20">
+                  <td id="HM3L-EN-TOC-17-1"></td>
+                  <td id="HM3L-EN-TOC-17-2" class="toc_l">3.1&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-17-3" class="toc_l">Integrability Criterion</td>
+                  <td id="HM3L-EN-TOC-17-5" class="toc_r">26&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-18-" class="atice20">
+                  <td id="HM3L-EN-TOC-18-1"></td>
+                  <td id="HM3L-EN-TOC-18-2" class="toc_l">3.2&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-18-3" class="toc_l">The Cauchy-Riemann Differential Equations and the Cauchy Integral Theorem</td>
+                  <td id="HM3L-EN-TOC-18-5" class="toc_r">29&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-19-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-19-1"></td>
+                  <td id="HM3L-EN-TOC-19-3" class="toc_l">3.2.1&#160;</td>                  
+                  <td id="HM3L-EN-TOC-19-4" class="toc_l">Cauchy's Integral Theorem</td>
+                  <td id="HM3L-EN-TOC-19-5" class="toc_r">31&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-20-" class="atice20">
+                  <td id="HM3L-EN-TOC-20-1" class="toc_lb">4&#160;</td>                
+                  <td colspan="3" id="HM3L-EN-TOC-20-2" class="toc_lb">Surfaces in Space and Surface Integrals</td>
+                  <td id="HM3L-EN-TOC-20-5" class="toc_rb">35&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-21-" class="atice20">
+                  <td id="HM3L-EN-TOC-21-1"></td>
+                  <td id="HM3L-EN-TOC-21-2" class="toc_l">4.1&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-21-3" class="toc_l">Surface Representations</td>
+                  <td id="HM3L-EN-TOC-21-5" class="toc_r">35&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-22-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-22-1"></td>
+                  <td id="HM3L-EN-TOC-22-3" class="toc_l">4.1.1&#160;</td>                  
+                  <td id="HM3L-EN-TOC-22-4" class="toc_l">Regularity Condition</td>
+                  <td id="HM3L-EN-TOC-22-5" class="toc_r">37&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-23-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-23-1"></td>
+                  <td id="HM3L-EN-TOC-23-3" class="toc_l">4.1.2&#160;</td>                  
+                  <td id="HM3L-EN-TOC-23-4" class="toc_l">Geometric Significance</td>
+                  <td id="HM3L-EN-TOC-23-5" class="toc_r">37&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-24-" class="atice20">
+                  <td id="HM3L-EN-TOC-24-1"></td>
+                  <td id="HM3L-EN-TOC-24-2" class="toc_l">4.2&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-24-3" class="toc_l">Area Measurement of Curved Surfaces</td>
+                  <td id="HM3L-EN-TOC-24-5" class="toc_r">39&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-25-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-25-1"></td>
+                  <td id="HM3L-EN-TOC-25-3" class="toc_l">4.2.1&#160;</td>                  
+                  <td id="HM3L-EN-TOC-25-4" class="toc_l">Invariance of the Area Content with respect to Orthogonal Transformations <span>\(A\)</span> of <span>\(\mathbb{R}^3\)</span></td>
+                  <td id="HM3L-EN-TOC-25-5" class="toc_r">41&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-26-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-26-1"></td>
+                  <td id="HM3L-EN-TOC-26-3" class="toc_l">4.2.2&#160;</td>                  
+                  <td id="HM3L-EN-TOC-26-4" class="toc_l">Invariance of the Area Measure under Parameter Transformations</td>
+                  <td id="HM3L-EN-TOC-26-5" class="toc_r">41&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-27-" class="atice20">
+                  <td id="HM3L-EN-TOC-27-1"></td>
+                  <td id="HM3L-EN-TOC-27-2" class="toc_l">4.3&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-27-3" class="toc_l">Gauß' Theorem</td>
+                  <td id="HM3L-EN-TOC-27-5" class="toc_r">42&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-28-" class="atice20">
+                  <td id="HM3L-EN-TOC-28-1"></td>
+                  <td id="HM3L-EN-TOC-28-2" class="toc_l">4.4&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-28-3" class="toc_l">Differential Geometric Interpretation of Gauß' Theorem</td>
+                  <td id="HM3L-EN-TOC-28-5" class="toc_r">45&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-29-" class="atice20">
+                  <td id="HM3L-EN-TOC-29-1"></td>
+                  <td id="HM3L-EN-TOC-29-2" class="toc_l">4.5&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-29-3" class="toc_l">Stokes' Integral Theorem</td>
+                  <td id="HM3L-EN-TOC-29-5" class="toc_r">47&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-30-" class="atice20">
+                  <td id="HM3L-EN-TOC-30-1" class="toc_lb">5&#160;</td>                
+                  <td colspan="3" id="HM3L-EN-TOC-30-2" class="toc_lb">Quadratic Matrices and Determinants</td>
+                  <td id="HM3L-EN-TOC-30-5" class="toc_rb">49&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-31-" class="atice20">
+                  <td id="HM3L-EN-TOC-31-1"></td>
+                  <td id="HM3L-EN-TOC-31-2" class="toc_l">5.1&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-31-3" class="toc_l">Characteristic Properties of the Determinant</td>
+                  <td id="HM3L-EN-TOC-31-5" class="toc_r">51&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-32-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-32-1"></td>
+                  <td id="HM3L-EN-TOC-32-3" class="toc_l">5.1.1&#160;</td>
+                  <td id="HM3L-EN-TOC-32-4" class="toc_l">Calculation Rules</td>
+                  <td id="HM3L-EN-TOC-32-5" class="toc_r">53&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-33-" class="atice20">
+                  <td id="HM3L-EN-TOC-33-1"></td>
+                  <td id="HM3L-EN-TOC-33-2" class="toc_l">5.2&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-33-3" class="toc_l">Product Theorem for Determinants</td>
+                  <td id="HM3L-EN-TOC-33-5" class="toc_r">54&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-34-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-34-1"></td>
+                  <td id="HM3L-EN-TOC-34-3" class="toc_l">5.2.1&#160;</td>                  
+                  <td id="HM3L-EN-TOC-34-4" class="toc_l">Behavior of the Determinant under Elementary Row Transformations</td>
+                  <td id="HM3L-EN-TOC-34-5" class="toc_r">55&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-35-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-35-1"></td>
+                  <td id="HM3L-EN-TOC-35-3" class="toc_l">5.2.2&#160;</td>                  
+                  <td id="HM3L-EN-TOC-35-4" class="toc_l">Rules for Row Transformations</td>
+                  <td id="HM3L-EN-TOC-35-5" class="toc_r">56&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-36-" class="atice20">
+                  <td colspan="2"id="HM3L-EN-TOC-36-1"></td>
+                  <td id="HM3L-EN-TOC-36-3" class="toc_l">5.2.3&#160;</td>
+                  <td id="HM3L-EN-TOC-36-4" class="toc_l">The Adjugate of a Matrix <span>\(A \in M_{n}(K)\)</span></td>
+                  <td id="HM3L-EN-TOC-36-5" class="toc_r">56&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-37-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-37-1"></td>
+                  <td id="HM3L-EN-TOC-37-3" class="toc_l">5.2.4&#160;</td>
+                  <td id="HM3L-EN-TOC-37-4" class="toc_l">The Inverse Matrix</td>
+                  <td id="HM3L-EN-TOC-37-5" class="toc_r">57&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-38-" class="atice20">
+                  <td id="HM3L-EN-TOC-38-1" class="toc_lb">6&#160;</td>                
+                  <td colspan="3" id="HM3L-EN-TOC-38-2" class="toc_lb">Vector Spaces, Linear Self-mappings, Eigenvalues</td>
+                  <td id="HM3L-EN-TOC-38-5" class="toc_rb">61&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-39-" class="atice20">
+                  <td id="HM3L-EN-TOC-39-1"></td>
+                  <td id="HM3L-EN-TOC-39-2" class="toc_l">6.1&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-39-3" class="toc_l">Vector Space Axioms</td>
+                  <td id="HM3L-EN-TOC-39-5" class="toc_r">61&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-40-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-40-1"></td>
+                  <td id="HM3L-EN-TOC-40-3" class="toc_l">6.1.1&#160;</td>
+                  <td id="HM3L-EN-TOC-40-4" class="toc_l">Linear Combinations</td>
+                  <td id="HM3L-EN-TOC-40-5" class="toc_r">62&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-41-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-41-1"></td>
+                  <td id="HM3L-EN-TOC-41-3" class="toc_l">6.1.2&#160;</td>
+                  <td id="HM3L-EN-TOC-41-4" class="toc_l">Steinitz Exchange Lemma</td>
+                  <td id="HM3L-EN-TOC-41-5" class="toc_r">63&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-42-" class="atice20">
+                  <td id="HM3L-EN-TOC-42-1"></td>
+                  <td id="HM3L-EN-TOC-42-2" class="toc_l">6.2&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-42-3" class="toc_l">Subspaces and Dimension Formula</td>
+                  <td id="HM3L-EN-TOC-42-5" class="toc_r">64&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-43-" class="atice20">
+                  <td id="HM3L-EN-TOC-43-1"></td>
+                  <td id="HM3L-EN-TOC-43-2" class="toc_l">6.3&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-43-3" class="toc_l">Eigenvalues and Eigenvectors</td>
+                  <td id="HM3L-EN-TOC-43-5" class="toc_r">66&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-44-" class="atice20">
+                  <td id="HM3L-EN-TOC-44-1"></td>
+                  <td id="HM3L-EN-TOC-44-2" class="toc_l">6.4&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-44-3" class="toc_l">Euclidean and Unitary Scalar Products</td>
+                  <td id="HM3L-EN-TOC-44-5" class="toc_r">70&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-45-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-45-1"></td>
+                  <td id="HM3L-EN-TOC-45-3" class="toc_l">6.4.1&#160;</td>
+                  <td id="HM3L-EN-TOC-45-4" class="toc_l">Orthonormalization Theorem</td>
+                  <td id="HM3L-EN-TOC-45-5" class="toc_r">71&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-46-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-46-1"></td>
+                  <td id="HM3L-EN-TOC-46-3" class="toc_l">6.4.2&#160;</td>
+                  <td id="HM3L-EN-TOC-46-4" class="toc_l">The Principal Axis Transformation</td>
+                  <td id="HM3L-EN-TOC-46-5" class="toc_r">73&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-47-" class="atice20">
+                  <td id="HM3L-EN-TOC-47-1" class="toc_lb">7&#160;</td>                
+                  <td colspan="3" id="HM3L-EN-TOC-47-2" class="toc_lb">Linear Differential Equation with Constant Coefficients</td>
+                  <td id="HM3L-EN-TOC-47-5" class="toc_rb">79&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-48-" class="atice20">
+                  <td id="HM3L-EN-TOC-48-1"></td>
+                  <td id="HM3L-EN-TOC-48-2" class="toc_l">7.1&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-48-3" class="toc_l">Differential Equation of Growth and Decay</td>
+                  <td id="HM3L-EN-TOC-48-5" class="toc_r">79&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-49-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-49-1"></td>
+                  <td id="HM3L-EN-TOC-49-3" class="toc_l">7.1.1&#160;</td>
+                  <td id="HM3L-EN-TOC-49-4" class="toc_l">Matching Inhomogeneous Differential Equation</td>
+                  <td id="HM3L-EN-TOC-49-5" class="toc_r">80&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-50-" class="atice20">
+                  <td id="HM3L-EN-TOC-50-1"></td>
+                  <td id="HM3L-EN-TOC-50-2" class="toc_l">7.2&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-50-3" class="toc_l">Differential Equation of Damped Oscillation</td>
+                  <td id="HM3L-EN-TOC-50-5" class="toc_r">80&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-51-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-51-1"></td>
+                  <td id="HM3L-EN-TOC-51-3" class="toc_l">7.2.1&#160;</td>
+                  <td id="HM3L-EN-TOC-51-4" class="toc_l">Matching Inhomogeneous Linear Differential Equation</td>
+                  <td id="HM3L-EN-TOC-51-5" class="toc_r">84&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-52-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-52-1"></td>
+                  <td id="HM3L-EN-TOC-52-3" class="toc_l">7.2.2&#160;</td>
+                  <td id="HM3L-EN-TOC-52-4" class="toc_l">Rewriting the 2nd Order Differential Equation into a System of 1st Order Differential Equations</td>
+                  <td id="HM3L-EN-TOC-52-5" class="toc_r">85&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-53-" class="atice20">
+                  <td id="HM3L-EN-TOC-53-1"></td>
+                  <td id="HM3L-EN-TOC-53-2" class="toc_l">7.3&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-53-3" class="toc_l">Systems of 1st Order Linear Differential Equations with Constant Coefficients</td>
+                  <td id="HM3L-EN-TOC-53-5" class="toc_r">87&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-54-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-54-1"></td>
+                  <td id="HM3L-EN-TOC-54-3" class="toc_l">7.3.1&#160;</td>
+                  <td id="HM3L-EN-TOC-54-4" class="toc_l">Picard-Iteration Ansatz</td>
+                  <td id="HM3L-EN-TOC-54-5" class="toc_r">87&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-55-" class="atice20">
+                  <td id="HM3L-EN-TOC-55-1"></td>
+                  <td id="HM3L-EN-TOC-55-2" class="toc_l">7.4&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-55-3" class="toc_l">Matrix Norms</td>
+                  <td id="HM3L-EN-TOC-55-5" class="toc_r">88&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-56-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-56-1"></td>
+                  <td id="HM3L-EN-TOC-56-3" class="toc_l">7.4.1&#160;</td>
+                  <td id="HM3L-EN-TOC-56-4" class="toc_l">Exponential Function on <span>\(M_{n}(\mathbb{K})\)</span></td>
+                  <td id="HM3L-EN-TOC-56-5" class="toc_r">90&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-57-" class="atice20">
+                  <td id="HM3L-EN-TOC-57-1"></td>
+                  <td id="HM3L-EN-TOC-57-2" class="toc_l">7.5&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-57-3" class="toc_l">General 1st Order Linear Differential Equation in <span>\(\mathbb{K}^n\)</span></td>
+                  <td id="HM3L-EN-TOC-57-5" class="toc_r">92&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-58-" class="atice20">
+                  <td id="HM3L-EN-TOC-58-1"></td>
+                  <td id="HM3L-EN-TOC-58-2" class="toc_l">7.6&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-58-3" class="toc_l">The Jordan Normal Form for Matrices in <span>\(M_{n}(\mathbb{C})\)</span></td>
+                  <td id="HM3L-EN-TOC-58-5" class="toc_r">94&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-59-" class="atice20">
+                  <td id="HM3L-EN-TOC-59-1"></td>
+                  <td id="HM3L-EN-TOC-59-2" class="toc_l">7.7&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-59-3" class="toc_l">Higher-order Scalar-valued Linear Differential Equations</td>
+                  <td id="HM3L-EN-TOC-59-5" class="toc_r">96&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-60-" class="atice20">
+                  <td id="HM3L-EN-TOC-60-1"></td>
+                  <td id="HM3L-EN-TOC-60-2" class="toc_l">7.8&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-60-3" class="toc_l">Stability Questions</td>
+                  <td id="HM3L-EN-TOC-60-5" class="toc_r">98&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-61-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-61-1"></td>
+                  <td id="HM3L-EN-TOC-61-3" class="toc_l">7.8.1&#160;</td>
+                  <td id="HM3L-EN-TOC-61-4" class="toc_l">Stability Criterion for Real Polynomials</td>
+                  <td id="HM3L-EN-TOC-61-5" class="toc_r">100&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-62-" class="atice20">
+                  <td id="HM3L-EN-TOC-62-1"></td>
+                  <td id="HM3L-EN-TOC-62-2" class="toc_l">7.9&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-62-3" class="toc_l">Applications of the Laplace Transform</td>
+                  <td id="HM3L-EN-TOC-62-5" class="toc_r">101&#160;&#160;</td>
+                </tr>
+                <tr id="" class="atice20">
+                  <td id="HM3L-EN-TOC-63-1" class="toc_lb">8&#160;</td>                
+                  <td colspan="3" id="HM3L-EN-TOC-63-2" class="toc_lb">Existence and Uniqueness Theorem for Explicit Ordinary Differential Equations</td>
+                  <td id="HM3L-EN-TOC-63-5" class="toc_rb">107&#160;&#160;</td>
+                </tr>                
+                <tr id="HM3L-EN-TOC-64-" class="atice20">
+                  <td id="HM3L-EN-TOC-64-1"></td>
+                  <td id="HM3L-EN-TOC-64-2" class="toc_l">8.1&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-64-3" class="toc_l">The Lipschitz Condition</td>
+                  <td id="HM3L-EN-TOC-64-5" class="toc_r">108&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-65-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-65-1"></td>
+                  <td id="HM3L-EN-TOC-65-3" class="toc_l">8.1.1&#160;</td>
+                  <td id="HM3L-EN-TOC-65-4" class="toc_l">Definition of the Lipschitz Condition</td>
+                  <td id="HM3L-EN-TOC-65-5" class="toc_r">109&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-66-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-66-1"></td>
+                  <td id="HM3L-EN-TOC-66-3" class="toc_l">8.1.2&#160;</td>
+                  <td id="HM3L-EN-TOC-66-4" class="toc_l">Dependence of Solutions on Initial Values</td>
+                  <td id="HM3L-EN-TOC-66-5" class="toc_r">110&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-67-" class="atice20">
+                  <td id="HM3L-EN-TOC-67-1"></td>
+                  <td id="HM3L-EN-TOC-67-2" class="toc_l">8.2&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-67-3" class="toc_l">Picard-Lindelöf Existence Theorem</td>
+                  <td id="HM3L-EN-TOC-67-5" class="toc_r">111&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-68-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-68-1"></td>
+                  <td id="HM3L-EN-TOC-68-3" class="toc_l">8.2.1&#160;</td>
+                  <td id="HM3L-EN-TOC-68-4" class="toc_l">The Runge-Kutta Method</td>
+                  <td id="HM3L-EN-TOC-68-5" class="toc_r">114&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-69-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-69-1"></td>
+                  <td id="HM3L-EN-TOC-69-3" class="toc_l">8.2.2&#160;</td>
+                  <td id="HM3L-EN-TOC-69-4" class="toc_l">Simpson's Rule</td>
+                  <td id="HM3L-EN-TOC-69-5" class="toc_r">114&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-70-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-70-1"></td>
+                  <td id="HM3L-EN-TOC-70-3" class="toc_l">8.2.3&#160;</td>
+                  <td id="HM3L-EN-TOC-70-4" class="toc_l">The Power Series Ansatz</td>
+                  <td id="HM3L-EN-TOC-70-5" class="toc_r">115&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-71-" class="atice20">
+                  <td id="HM3L-EN-TOC-71-1"></td>
+                  <td id="HM3L-EN-TOC-71-2" class="toc_l">8.3&#160;</td>                  
+                  <td colspan="2" id="HM3L-EN-TOC-71-3" class="toc_l">Ordinary Differential Equations of <span>\(n\)</span>-th Order</td>
+                  <td id="HM3L-EN-TOC-71-5" class="toc_r">116&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-72-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-72-1"></td>
+                  <td id="HM3L-EN-TOC-72-3" class="toc_l">8.3.1&#160;</td>
+                  <td id="HM3L-EN-TOC-72-4" class="toc_l">Systems of 1-st Order Linear Differential Equations with Non-constant Coefficients</td>
+                  <td id="HM3L-EN-TOC-72-5" class="toc_r">117&#160;&#160;</td>
+                </tr>
+                <tr id="HM3L-EN-TOC-73-" class="atice20">
+                  <td colspan="2" id="HM3L-EN-TOC-73-1"></td>
+                  <td id="HM3L-EN-TOC-73-3" class="toc_l">8.3.2&#160;</td>
+                  <td id="HM3L-EN-TOC-73-4" class="toc_l">The Case of Minimum Dimension <span>\(n = 1\)</span></td>
+                  <td id="HM3L-EN-TOC-73-5" class="toc_r">119&#160;&#160;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+                       
+      </div>
+    
+    </div> <!-- end pagContent div -->
+        
+    <!-- PopImg modal begin -->
+    
+    <div id="popImgModal" class="modal bizline" style="font-size: 28px">
+      <span class="close"><button class="btn active" style="font-size: 18px;">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+      <div class="center" id="modal-Caption" style="margin-top: 20px;"></div>
+    </div>    
+
+    <!-- PopImg modal end -->
+           
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>

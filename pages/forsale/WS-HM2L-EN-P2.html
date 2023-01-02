@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png">  
+  <title>WS-HM2L-EN-P2</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","input/MathML","output/SVG"],
+    extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
+    TeX: {
+  extensions: ["noErrors.js","noUndefined.js","autoload-all.js"]
+    },
+    MathMenu: {
+  showRenderer: false
+    },
+    menuSettings: {
+  zoom: "Click"
+    },
+    messageStyle: "none"
+  }); 
+  </script>    
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1780px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0; width: 100%;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>    
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                      
+
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">Higher Mathematics</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">Lectures Part Two</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href="WS-HM2L-EN-P1.html">1</a>
+            <a href=javascript:void(0); class="active">2</a>
+          </div>
+        </div>  
+      </div>
+                                                                   
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+                        
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Table of Contents:</span>
+        </div>
+      </div>
+                    
+      <div class="tocBookPages">
+      
+        <div class="float">                                                                                                                                                                            
+          <div class="tabular">
+            <table id="HM2L-EN-TOC" class="toctable">
+              <colgroup id="HM1L-DE-TOC-1g" class="atice17">
+                <col id="HM2L-EN-TOC-1" class="atice18_A1"/>
+                <col id="HM2L-EN-TOC-2" class="atice18_A2"/>                
+                <col id="HM2L-EN-TOC-3" class="atice18_A3"/>
+                <col id="HM2L-EN-TOC-4" class="atice18_A4"/>
+                <col id="HM2L-EN-TOC-5" class="atice18_A5"/>                
+              </colgroup>
+              <tbody class="atice19">
+                <tr id="HM2L-EN-TOC-0-" class="atice20">
+                  <td colspan="4" id="HM2L-EN-TOC-0-1" class="toc_lb">Preface</td>
+                  <td id="HM2L-EN-TOC-0-5" class="toc_rb">i&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-1-" class="atice20">
+                  <td id="HM2L-EN-TOC-1-1" class="toc_lb">1&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-1-2" class="toc_lb">Fundamentals of Integral Calculus</td>
+                  <td id="HM2L-EN-TOC-1-5" class="toc_rb">1&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-2-" class="atice20">
+                  <td id="HM2L-EN-TOC-2-1"></td>
+                  <td id="HM2L-EN-TOC-2-2" class="toc_l">1.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-2-3" class="toc_l">The Fundamental Theorem of Calculus</td>
+                  <td id="HM2L-EN-TOC-2-5" class="toc_r">7&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-3-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-3-1"></td>
+                  <td id="HM2L-EN-TOC-3-3" class="toc_l">1.1.1&#160;</td>
+                  <td id="HM2L-EN-TOC-3-4" class="toc_l">The Substitution Method</td>
+                  <td id="HM2L-EN-TOC-3-5" class="toc_r">8&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-4-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-4-1"></td>
+                  <td id="HM2L-EN-TOC-4-3" class="toc_l">1.1.2&#160;</td>
+                  <td id="HM2L-EN-TOC-4-4" class="toc_l">The Method of Partial Integration</td>
+                  <td id="HM2L-EN-TOC-4-5" class="toc_r">9&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-5-" class="atice20">
+                  <td id="HM2L-EN-TOC-5-1"></td>
+                  <td id="HM2L-EN-TOC-5-2" class="toc_l">1.2&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-5-3" class="toc_l">The Improper Integral</td>
+                  <td id="HM2L-EN-TOC-5-5" class="toc_r">10&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-6-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-6-1"></td>
+                  <td id="HM2L-EN-TOC-6-3" class="toc_l">1.1.2&#160;</td>
+                  <td id="HM2L-EN-TOC-6-4" class="toc_l">Euler's Gamma Function</td>
+                  <td id="HM2L-EN-TOC-6-5" class="toc_r">12&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-7-" class="atice20">
+                  <td id="HM2L-EN-TOC-7-1"></td>
+                  <td id="HM2L-EN-TOC-7-2" class="toc_l">1.3&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-7-3" class="toc_l">Riemann Sums and Arc Length</td>
+                  <td id="HM2L-EN-TOC-7-5" class="toc_r">13&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-8-" class="atice20">
+                  <td id="HM2L-EN-TOC-8-1" class="toc_lb">2&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-8-2" class="toc_lb">Fourier Series</td>
+                  <td id="HM2L-EN-TOC-8-5" class="toc_rb">17&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-9-" class="atice20">
+                  <td id="HM2L-EN-TOC-9-1"></td>
+                  <td id="HM2L-EN-TOC-9-2" class="toc_l">2.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-9-3" class="toc_l">Uniform Convergence of Function Sequences</td>
+                  <td id="HM2L-EN-TOC-9-5" class="toc_r">20&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-10-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-10-1"></td>
+                  <td id="HM2L-EN-TOC-10-3" class="toc_l">2.1.1&#160;</td>
+                  <td id="HM2L-EN-TOC-10-4" class="toc_l">Gibbs' Phenomenon</td>
+                  <td id="HM2L-EN-TOC-10-5" class="toc_r">25&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-11-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-11-1"></td>
+                  <td id="HM2L-EN-TOC-11-3" class="toc_l">2.1.2&#160;</td>
+                  <td id="HM2L-EN-TOC-11-4" class="toc_l">Differentiation of the Limiting Function</td>
+                  <td id="HM2L-EN-TOC-11-5" class="toc_r">26&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-12-" class="atice20">
+                  <td id="HM2L-EN-TOC-12-1"></td>
+                  <td id="HM2L-EN-TOC-12-2" class="toc_l">2.2&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-12-3" class="toc_l">Absolutely Convergent Series</td>
+                  <td id="HM2L-EN-TOC-12-5" class="toc_r">28&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-13-" class="atice20">
+                  <td id="HM2L-EN-TOC-13-1"></td>
+                  <td id="HM2L-EN-TOC-13-2" class="toc_l">2.3&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-13-3" class="toc_l">Fourier Series Theory</td>
+                  <td id="HM2L-EN-TOC-13-5" class="toc_r">30&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-14-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-14-1"></td>
+                  <td id="HM2L-EN-TOC-14-3" class="toc_l">2.3.1&#160;</td>
+                  <td id="HM2L-EN-TOC-14-4" class="toc_l">The Completeness Theorem</td>
+                  <td id="HM2L-EN-TOC-14-5" class="toc_r">35&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-15-" class="atice20">
+                  <td id="HM2L-EN-TOC-15-1" class="toc_lb">3&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-15-2" class="toc_lb">Three-Dimensional Euclidean Space</td>
+                  <td id="HM2L-EN-TOC-15-5" class="toc_rb">39&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-16-" class="atice20">
+                  <td id="HM2L-EN-TOC-16-1"></td>
+                  <td id="HM2L-EN-TOC-16-2" class="toc_l">3.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-16-3" class="toc_l">The Scalar Product</td>
+                  <td id="HM2L-EN-TOC-16-5" class="toc_r">40&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-17-" class="atice20">
+                  <td id="HM2L-EN-TOC-17-1"></td>
+                  <td id="HM2L-EN-TOC-17-2" class="toc_l">3.2&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-17-3" class="toc_l">The Vector Product</td>
+                  <td id="HM2L-EN-TOC-17-5" class="toc_r">42&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-18-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-18-1"></td>
+                  <td id="HM2L-EN-TOC-18-3" class="toc_l">3.2.1&#160;</td>
+                  <td id="HM2L-EN-TOC-18-4" class="toc_l">Geometric Interpretation</td>
+                  <td id="HM2L-EN-TOC-18-5" class="toc_r">43&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-19-" class="atice20">
+                  <td id="HM2L-EN-TOC-19-1"></td>
+                  <td id="HM2L-EN-TOC-19-2" class="toc_l">3.3&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-19-3" class="toc_l">The Isometry of Euclidean \(\mathbb{R}^3\)</td>
+                  <td id="HM2L-EN-TOC-19-5" class="toc_r">46&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-20-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-20-1"></td>
+                  <td id="HM2L-EN-TOC-20-3" class="toc_l">3.3.1&#160;</td>
+                  <td id="HM2L-EN-TOC-20-4" class="toc_l">Description of Linear Self-Mappings through Matrices</td>
+                  <td id="HM2L-EN-TOC-20-5" class="toc_r">47&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-21-" class="atice20">
+                  <td id="HM2L-EN-TOC-21-1"></td>
+                  <td id="HM2L-EN-TOC-21-2" class="toc_l">3.4&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-21-3" class="toc_l">The Scalar Triple Product</td>
+                  <td id="HM2L-EN-TOC-21-5" class="toc_r">48&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-22-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-22-1"></td>
+                  <td id="HM2L-EN-TOC-22-3" class="toc_l">3.4.1&#160;</td>
+                  <td id="HM2L-EN-TOC-22-4" class="toc_l">Geometric Significance of the Scalar Triple Product</td>
+                  <td id="HM2L-EN-TOC-22-5" class="toc_r">49&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-23-" class="atice20">
+                  <td id="HM2L-EN-TOC-23-1"></td>
+                  <td id="HM2L-EN-TOC-23-2" class="toc_l">3.5&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-23-3" class="toc_l">The Inverse Matrix</td>
+                  <td id="HM2L-EN-TOC-23-5" class="toc_r">51&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-24-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-24-1"></td>
+                  <td id="HM2L-EN-TOC-24-3" class="toc_l">3.5.1&#160;</td>
+                  <td id="HM2L-EN-TOC-24-4" class="toc_l">The Orthogonal Group <span>\(O_3\)</span> of Euclidean <span>\(\mathbb{R}^3\)</span></td>
+                  <td id="HM2L-EN-TOC-24-5" class="toc_r">52&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-25-" class="atice20">
+                  <td id="HM2L-EN-TOC-25-1" class="toc_lb">4&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-25-2" class="toc_lb">Systems of Linear Equations</td>
+                  <td id="HM2L-EN-TOC-25-5" class="toc_rb">55&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-26-" class="atice20">
+                  <td id="HM2L-EN-TOC-26-1"></td>
+                  <td id="HM2L-EN-TOC-26-2" class="toc_l">4.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-26-3" class="toc_l">Solutions for Systems of Linear Equations</td>
+                  <td id="HM2L-EN-TOC-26-5" class="toc_r">57&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-27-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-27-1"></td>
+                  <td id="HM2L-EN-TOC-27-3" class="toc_l">4.1.1&#160;</td>
+                  <td id="HM2L-EN-TOC-27-4" class="toc_l">The Gaussian Algorithm</td>
+                  <td id="HM2L-EN-TOC-27-5" class="toc_r">57&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-28-" class="atice20">
+                  <td id="HM2L-EN-TOC-28-1" class="toc_lb">5&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-28-2" class="toc_lb">Plane and Spatial Curves</td>
+                  <td id="HM2L-EN-TOC-28-5" class="toc_rb">63&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-29-" class="atice20">
+                  <td id="HM2L-EN-TOC-29-1"></td>
+                  <td id="HM2L-EN-TOC-29-2" class="toc_l">5.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-29-3" class="toc_l">Definition of the Curve Length</td>
+                  <td id="HM2L-EN-TOC-29-5" class="toc_r">65&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-30-" class="atice20">
+                  <td id="HM2L-EN-TOC-30-1"></td>
+                  <td id="HM2L-EN-TOC-30-2" class="toc_l">5.2&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-30-3" class="toc_l">The Line Integral over a Vector Field</td>
+                  <td id="HM2L-EN-TOC-30-5" class="toc_r">66&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-31-" class="atice20">
+                  <td id="HM2L-EN-TOC-31-1"></td>
+                  <td id="HM2L-EN-TOC-31-2" class="toc_l">5.3&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-31-3" class="toc_l">Polar Coordinates for Plane Curves</td>
+                  <td id="HM2L-EN-TOC-31-5" class="toc_r">68&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-32-" class="atice20">
+                  <td id="HM2L-EN-TOC-32-1"></td>
+                  <td id="HM2L-EN-TOC-32-2" class="toc_l">5.4&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-32-3" class="toc_l">The Curvature of a Plane Curve</td>
+                  <td id="HM2L-EN-TOC-32-5" class="toc_r">70&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-33-" class="atice20">
+                  <td id="HM2L-EN-TOC-33-1" class="toc_lb">6&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-33-2" class="toc_lb">Neighborhoods and Limits</td>
+                  <td id="HM2L-EN-TOC-33-5" class="toc_rb">77&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-34-" class="atice20">
+                  <td id="HM2L-EN-TOC-34-1"></td>
+                  <td id="HM2L-EN-TOC-34-2" class="toc_l">6.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-34-3" class="toc_l">Fixed Point Theorem</td>
+                  <td id="HM2L-EN-TOC-34-5" class="toc_r">81&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-35-" class="atice20">
+                  <td id="HM2L-EN-TOC-35-1" class="toc_lb">7&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-35-2" class="toc_lb">Partial and Total Derivative</td>
+                  <td id="HM2L-EN-TOC-35-5" class="toc_rb">85&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-36-" class="atice20">
+                  <td id="HM2L-EN-TOC-36-1"></td>
+                  <td id="HM2L-EN-TOC-36-2" class="toc_l">7.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-36-3" class="toc_l">Definition of the Partial Derivative</td>
+                  <td id="HM2L-EN-TOC-36-5" class="toc_r">85&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-37-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-37-1"></td>
+                  <td id="HM2L-EN-TOC-37-3" class="toc_l">7.1.1&#160;</td>
+                  <td id="HM2L-EN-TOC-37-4" class="toc_l">Generalized Chain Rule</td>
+                  <td id="HM2L-EN-TOC-37-5" class="toc_r">88&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-38-" class="atice20">
+                  <td id="HM2L-EN-TOC-38-1"></td>
+                  <td id="HM2L-EN-TOC-38-2" class="toc_l">7.2&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-38-3" class="toc_l">Definition of the Total Derivative</td>
+                  <td id="HM2L-EN-TOC-38-5" class="toc_r">90&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-39-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-39-1"></td>
+                  <td id="HM2L-EN-TOC-39-3" class="toc_l">7.2.1&#160;</td>
+                  <td id="HM2L-EN-TOC-39-4" class="toc_l">Geometric Properties of the Total Derivative</td>
+                  <td id="HM2L-EN-TOC-39-5" class="toc_r">92&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-40-" class="atice20">
+                  <td id="HM2L-EN-TOC-40-1" class="toc_lb">8&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-40-2" class="toc_lb">Higher Derivatives, Taylor Formula and Local Extrema</td>
+                  <td id="HM2L-EN-TOC-40-5" class="toc_rb">95&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-41-" class="atice20">
+                  <td id="HM2L-EN-TOC-41-1"></td>
+                  <td id="HM2L-EN-TOC-41-2" class="toc_l">8.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-41-3" class="toc_l">The Symmetry of the Second Derivative</td>
+                  <td id="HM2L-EN-TOC-41-5" class="toc_r">95&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-42-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-42-1"></td>
+                  <td id="HM2L-EN-TOC-42-3" class="toc_l">8.1.1&#160;</td>
+                  <td id="HM2L-EN-TOC-42-4" class="toc_l">Integrability Criterion for Vector Fields</td>
+                  <td id="HM2L-EN-TOC-42-5" class="toc_r">96&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-43-" class="atice20">
+                  <td id="HM2L-EN-TOC-43-1"></td>
+                  <td id="HM2L-EN-TOC-43-2" class="toc_l">8.2&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-43-3" class="toc_l">A Simple Version of the Taylor Formula in \(\mathbb{R}^n\)</td>
+                  <td id="HM2L-EN-TOC-43-5" class="toc_r">98&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-44-" class="atice20">
+                  <td colspan="2" id="HM2L-EN-TOC-44-1"></td>
+                  <td id="HM2L-EN-TOC-44-3" class="toc_l">8.2.1&#160;</td>
+                  <td id="HM2L-EN-TOC-44-4" class="toc_l">Application of the Simple Version of the Taylor Formula to Stationary Points</td>
+                  <td id="HM2L-EN-TOC-44-5" class="toc_r">99&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-45-" class="atice20">
+                  <td id="HM2L-EN-TOC-45-1" class="toc_lb">9&#160;</td>                
+                  <td colspan="3" id="HM2L-EN-TOC-45-2" class="toc_lb">Implicit Functions and Applications</td>
+                  <td id="HM2L-EN-TOC-45-5" class="toc_rb">103&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-46-" class="atice20">
+                  <td id="HM2L-EN-TOC-46-1"></td>
+                  <td id="HM2L-EN-TOC-46-2" class="toc_l">9.1&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-46-3" class="toc_l">Existence Theorem for Implicit Functions</td>
+                  <td id="HM2L-EN-TOC-46-5" class="toc_r">105&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-47-" class="atice20">
+                  <td id="HM2L-EN-TOC-47-1"></td>
+                  <td id="HM2L-EN-TOC-47-2" class="toc_l">9.2&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-47-3" class="toc_l">Local Extrema with Constraints</td>
+                  <td id="HM2L-EN-TOC-47-5" class="toc_r">107&#160;&#160;</td>
+                </tr>
+                <tr id="HM2L-EN-TOC-48-" class="atice20">
+                  <td id="HM2L-EN-TOC-48-1"></td>
+                  <td id="HM2L-EN-TOC-48-2" class="toc_l">9.3&#160;</td>                  
+                  <td colspan="2" id="HM2L-EN-TOC-48-3" class="toc_l">The Problem of Reverse Mapping (Coordinate Transformation)</td>
+                  <td id="HM2L-EN-TOC-48-5" class="toc_r">113&#160;&#160;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+                       
+      </div>
+    
+    </div> <!-- end pagContent div -->
+        
+    <!-- PopImg modal begin -->
+    
+    <div id="popImgModal" class="modal bizline" style="font-size: 28px">
+      <span class="close"><button class="btn active" style="font-size: 18px;">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+      <div class="center" id="modal-Caption" style="margin-top: 20px;"></div>
+    </div>    
+
+    <!-- PopImg modal end -->
+           
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>

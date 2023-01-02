@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png">  
+  <title>BMW-WKS1-P2</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>     
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1780px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0; width: 100%;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>       
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                      
+
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">Flowering Art</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">The Paintings of Brigitte M. Wurm - Part One</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href="BMW-WKS1-P1.html">1</a>
+            <a href=javascript:void(0); class="active">2</a>
+          </div>
+        </div>  
+      </div>
+                                                                   
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+                        
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Table of Contents:</span>
+        </div>
+      </div>
+                    
+      <div class="tocBookPages">
+      
+        <div class="float">                                                                                                                                                                            
+          <div class="tabular">
+            <table id="WKS1-TOC" class="toctable">
+              <colgroup id="WKS1-TOC-1g" class="atice17">
+                <col id="WKS1-TOC-1" class="atice18" width="5%"/>
+                <col id="WKS1-TOC-2" class="atice18" width="5%"/>
+                <col id="WKS1-TOC-3" class="atice18" width="80%"/>
+                <col id="WKS1-TOC-4" class="atice18" width="10%"/>
+              </colgroup>
+              <tbody class="atice19">
+                <tr id="WKS1-TOC-1-" class="atice20">
+                 <td colspan="3" id="WKS1-TOC-1-1" class="toc_lb">Large to Medium Size Paintings in Landscape Format</td>
+                 <td id="WKS1-TOC-1-4" class="toc_rb">1&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-2-" class="atice20">
+                  <td id="WKS1-TOC-2-1"></td>
+                  <td colspan="2" id="WKS1-TOC-2-2" class="toc_l">Horizon I</td>
+                  <td id="WKS1-TOC-2-4" class="toc_r">2&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-3-" class="atice20">
+                  <td id="WKS1-TOC-3-1"></td>
+                  <td colspan="2" id="WKS1-TOC-3-2" class="toc_l">Black &amp; White Spurs</td>
+                  <td id="WKS1-TOC-3-4" class="toc_r">3&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-4-" class="atice20">
+                  <td id="WKS1-TOC-4-1"></td>
+                  <td colspan="2" id="WKS1-TOC-4-2" class="toc_l">Blue Lagune</td>
+                  <td id="WKS1-TOC-4-4" class="toc_r">4&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-5-" class="atice20">
+                  <td id="WKS1-TOC-5-1"></td>
+                  <td colspan="2" id="WKS1-TOC-5-2" class="toc_l">Emerging Bodies</td>
+                  <td id="WKS1-TOC-5-4" class="toc_r">5&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-6-" class="atice20">
+                  <td id="WKS1-TOC-6-1"></td>
+                  <td colspan="2" id="WKS1-TOC-6-2" class="toc_l">Eye of the Storm</td>
+                  <td id="WKS1-TOC-6-4" class="toc_r">6&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-7-" class="atice20">
+                  <td id="WKS1-TOC-7-1"></td>
+                  <td colspan="2" id="WKS1-TOC-7-2" class="toc_l">Fields from High</td>
+                  <td id="WKS1-TOC-7-4" class="toc_r">7&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-8-" class="atice20">
+                  <td id="WKS1-TOC-8-1"></td>
+                  <td colspan="2" id="WKS1-TOC-8-2" class="toc_l">Funnels</td>
+                  <td id="WKS1-TOC-8-4" class="toc_r">8&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-9-" class="atice20">
+                  <td id="WKS1-TOC-9-1"></td>
+                  <td colspan="2" id="WKS1-TOC-9-2" class="toc_l">Horizon II</td>
+                  <td id="WKS1-TOC-9-4" class="toc_r">9&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-10-" class="atice20">
+                  <td id="WKS1-TOC-10-1"></td>
+                  <td colspan="2" id="WKS1-TOC-10-2" class="toc_l">Night at Waters Edge</td>
+                  <td id="WKS1-TOC-10-4" class="toc_r">10&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-11-" class="atice20">
+                  <td id="WKS1-TOC-11-1"></td>
+                  <td colspan="2" id="WKS1-TOC-11-2" class="toc_l">Pillars</td>
+                  <td id="WKS1-TOC-11-4" class="toc_r">11&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-12-" class="atice20">
+                  <td id="WKS1-TOC-12-1"></td>
+                  <td colspan="2" id="WKS1-TOC-12-2" class="toc_l">Spring Waters</td>
+                  <td id="WKS1-TOC-12-4" class="toc_r">12&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-13-" class="atice20">
+                  <td id="WKS1-TOC-13-1"></td>
+                  <td colspan="2" id="WKS1-TOC-13-2" class="toc_l">Velour</td>
+                  <td id="WKS1-TOC-13-4" class="toc_r">13&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-14-" class="atice20">
+                  <td id="WKS1-TOC-14-1"></td>
+                  <td colspan="2" id="WKS1-TOC-14-2" class="toc_l">Border</td>
+                  <td id="WKS1-TOC-14-4" class="toc_r">14&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-15-" class="atice20">
+                  <td id="WKS1-TOC-15-1"></td>
+                  <td colspan="2" id="WKS1-TOC-15-2" class="toc_l">Sand Pattern</td>
+                  <td id="WKS1-TOC-15-4" class="toc_r">15&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-16-" class="atice20">
+                  <td id="WKS1-TOC-16-1"></td>
+                  <td colspan="2" id="WKS1-TOC-16-2" class="toc_l">Volcano World</td>
+                  <td id="WKS1-TOC-16-4" class="toc_r">16&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-17-" class="atice20">
+                  <td colspan="3" id="WKS1-TOC-17-1" class="toc_lb">Large to Medium Size Paintings in Portrait Format</td>
+                  <td id="WKS1-TOC-17-4" class="toc_rb">17&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-18-" class="atice20">
+                  <td id="WKS1-TOC-18-1"></td>
+                  <td colspan="2" id="WKS1-TOC-18-2" class="toc_l">Falling Blue I</td>
+                  <td id="WKS1-TOC-18-4" class="toc_r">18&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-19-" class="atice20">
+                  <td id="WKS1-TOC-19-1"></td>
+                  <td colspan="2" id="WKS1-TOC-19-2" class="toc_l">After the Flood</td>
+                  <td id="WKS1-TOC-19-4" class="toc_r">19&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-20-" class="atice20">
+                  <td id="WKS1-TOC-20-1"></td>
+                  <td colspan="2" id="WKS1-TOC-20-2" class="toc_l">Black Dots Alive</td>
+                  <td id="WKS1-TOC-20-4" class="toc_r">20&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-21-" class="atice20">
+                  <td id="WKS1-TOC-21-1"></td>
+                  <td colspan="2" id="WKS1-TOC-21-2" class="toc_l">Blue Yellow</td>
+                  <td id="WKS1-TOC-21-4" class="toc_r">21&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-22-" class="atice20">
+                  <td id="WKS1-TOC-22-1"></td>
+                  <td colspan="2" id="WKS1-TOC-22-2" class="toc_l">Color Invasion</td>
+                  <td id="WKS1-TOC-22-4" class="toc_r">22&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-23-" class="atice20">
+                  <td id="WKS1-TOC-23-1"></td>
+                  <td colspan="2" id="WKS1-TOC-23-2" class="toc_l">Dense</td>
+                  <td id="WKS1-TOC-23-4" class="toc_r">23&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-24-" class="atice20">
+                  <td id="WKS1-TOC-24-1"></td>
+                  <td colspan="2" id="WKS1-TOC-24-2" class="toc_l">Earth &amp; Snow</td>
+                  <td id="WKS1-TOC-24-4" class="toc_r">24&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-25-" class="atice20">
+                  <td id="WKS1-TOC-25-1"></td>
+                  <td colspan="2" id="WKS1-TOC-25-2" class="toc_l">Flower Fields</td>
+                  <td id="WKS1-TOC-25-4" class="toc_r">25&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-26-" class="atice20">
+                  <td id="WKS1-TOC-26-1"></td>
+                  <td colspan="2" id="WKS1-TOC-26-2" class="toc_l">Janus Blue &amp; Red</td>
+                  <td id="WKS1-TOC-26-4" class="toc_r">26&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-27-" class="atice20">
+                  <td id="WKS1-TOC-27-1"></td>
+                  <td colspan="2" id="WKS1-TOC-27-2" class="toc_l">Last Rays</td>
+                  <td id="WKS1-TOC-27-4" class="toc_r">27&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-28-" class="atice20">
+                  <td id="WKS1-TOC-28-1"></td>
+                  <td colspan="2" id="WKS1-TOC-28-2" class="toc_l">Northern Lights</td>
+                  <td id="WKS1-TOC-28-4" class="toc_r">28&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-29-" class="atice20">
+                  <td id="WKS1-TOC-29-1"></td>
+                  <td colspan="2" id="WKS1-TOC-29-2" class="toc_l">Papalau</td>
+                  <td id="WKS1-TOC-29-4" class="toc_r">29&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-30-" class="atice20">
+                  <td id="WKS1-TOC-30-1"></td>
+                  <td colspan="2" id="WKS1-TOC-30-2" class="toc_l">Red Dots Leaving</td>
+                  <td id="WKS1-TOC-30-4" class="toc_r">30&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-31-" class="atice20">
+                  <td id="WKS1-TOC-31-1"></td>
+                  <td colspan="2" id="WKS1-TOC-31-2" class="toc_l">Spring Life</td>
+                  <td id="WKS1-TOC-31-4" class="toc_r">31&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-32-" class="atice20">
+                  <td id="WKS1-TOC-32-1"></td>
+                  <td colspan="2" id="WKS1-TOC-32-2" class="toc_l">Trapped Blue</td>
+                  <td id="WKS1-TOC-32-4" class="toc_r">32&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-33-" class="atice20">
+                  <td id="WKS1-TOC-33-1"></td>
+                  <td colspan="2" id="WKS1-TOC-33-2" class="toc_l">Yellow &amp; White</td>
+                  <td id="WKS1-TOC-33-4" class="toc_r">33&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-34-" class="atice20">
+                  <td id="WKS1-TOC-34-1"></td>
+                  <td colspan="2" id="WKS1-TOC-34-2" class="toc_l">Yellow Erosion</td>
+                  <td id="WKS1-TOC-34-4" class="toc_r">34&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-35-" class="atice20">
+                  <td id="WKS1-TOC-35-1"></td>
+                  <td colspan="2" id="WKS1-TOC-35-2" class="toc_l">Bridge</td>
+                  <td id="WKS1-TOC-35-4" class="toc_r">35&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-36-" class="atice20">
+                  <td id="WKS1-TOC-36-1"></td>
+                  <td colspan="2" id="WKS1-TOC-36-2" class="toc_l">Only Sand</td>
+                  <td id="WKS1-TOC-36-4" class="toc_r">36&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-37-" class="atice20">
+                  <td id="WKS1-TOC-37-1"></td>
+                  <td colspan="2" id="WKS1-TOC-37-2" class="toc_l">Winter</td>
+                  <td id="WKS1-TOC-37-4" class="toc_r">37&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-38-" class="atice20">
+                  <td id="WKS1-TOC-38-1"></td>
+                  <td colspan="2" id="WKS1-TOC-38-2" class="toc_l">Winter Flow</td>
+                  <td id="WKS1-TOC-38-4" class="toc_r">38&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-39-" class="atice20">
+                  <td id="WKS1-TOC-39-1"></td>
+                  <td colspan="2" id="WKS1-TOC-39-2" class="toc_l">Enter</td>
+                  <td id="WKS1-TOC-39-4" class="toc_r">39&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-40-" class="atice20">
+                  <td id="WKS1-TOC-40-1"></td>
+                  <td colspan="2" id="WKS1-TOC-40-2" class="toc_l">Silver Bloom</td>
+                  <td id="WKS1-TOC-40-4" class="toc_r">40&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-41-" class="atice20">
+                  <td id="WKS1-TOC-41-1"></td>
+                  <td colspan="2" id="WKS1-TOC-41-2" class="toc_l">Sand Colors</td>
+                  <td id="WKS1-TOC-41-4" class="toc_r">41&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-42-" class="atice20">
+                  <td id="WKS1-TOC-42-1"></td>
+                  <td colspan="2" id="WKS1-TOC-42-2" class="toc_l">Tiles I</td>
+                  <td id="WKS1-TOC-42-4" class="toc_r">42&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-43-" class="atice20">
+                  <td id="WKS1-TOC-43-1"></td>
+                  <td colspan="2" id="WKS1-TOC-43-2" class="toc_l">Blue &amp; Black</td>
+                  <td id="WKS1-TOC-43-4" class="toc_r">43&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-44-" class="atice20">
+                  <td id="WKS1-TOC-44-1"></td>
+                  <td colspan="2" id="WKS1-TOC-44-2" class="toc_l">Glass Shadow</td>
+                  <td id="WKS1-TOC-44-4" class="toc_r">44&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-45-" class="atice20">
+                  <td id="WKS1-TOC-45-1"></td>
+                  <td colspan="2" id="WKS1-TOC-45-2" class="toc_l">Color Fall</td>
+                  <td id="WKS1-TOC-45-4" class="toc_r">45&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-46-" class="atice20">
+                  <td id="WKS1-TOC-46-1"></td>
+                  <td colspan="2" id="WKS1-TOC-46-2" class="toc_l">Destins</td>
+                  <td id="WKS1-TOC-46-4" class="toc_r">46&#160;&#160;</td>
+                </tr>
+                <tr id="WKS1-TOC-47-" class="atice20">
+                  <td id="WKS1-TOC-47-1"></td>
+                  <td colspan="2" id="WKS1-TOC-47-2" class="toc_l">Tourbillon V</td>
+                  <td id="WKS1-TOC-47-4" class="toc_r">47&#160;&#160;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+                       
+      </div>
+    
+    </div> <!-- end pagContent div -->
+        
+    <!-- PopImg modal begin -->
+    
+    <div id="popImgModal" class="modal bizline" style="font-size: 28px">
+      <span class="close"><button class="btn active" style="font-size: 18px;">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+      <div class="center" id="modal-Caption" style="margin-top: 20px;"></div>
+    </div>    
+
+    <!-- PopImg modal end -->
+           
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>

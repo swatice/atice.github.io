@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png">  
+  <title>WS-HM1L-EN-P2</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","input/MathML","output/SVG"],
+    extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
+    TeX: {
+  extensions: ["noErrors.js","noUndefined.js","autoload-all.js"]
+    },
+    MathMenu: {
+  showRenderer: false
+    },
+    menuSettings: {
+  zoom: "Click"
+    },
+    messageStyle: "none"
+  }); 
+  </script>    
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1780px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0; width: 100%;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>       
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                      
+
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">Higher Mathematics</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">Lectures Part One</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href="WS-HM1L-EN-P1.html">1</a>
+            <a href=javascript:void(0); class="active">2</a>
+          </div>
+        </div>  
+      </div>
+                                                                   
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+                        
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Table of Contents:</span>
+        </div>
+      </div>
+                    
+      <div class="tocBookPages">
+      
+        <div class="float">                                                                                                                                                                            
+          <div class="tabular">
+            <table id="HM1L-EN-TOC" class="toctable">
+              <colgroup id="HM1L-EN-TOC-1g" class="atice17">
+                <col id="HM1L-EN-TOC-1" class="atice18_A1"/>
+                <col id="HM1L-EN-TOC-2" class="atice18_A2"/>                
+                <col id="HM1L-EN-TOC-3" class="atice18_A3"/>
+                <col id="HM1L-EN-TOC-4" class="atice18_A4"/>
+                <col id="HM1L-EN-TOC-5" class="atice18_A5"/>                
+              </colgroup>
+              <tbody class="atice19">
+                <tr id="HM1L-EN-TOC-0-" class="atice20">
+                  <td colspan="4" id="HM1L-EN-TOC-0-1" class="toc_lb">Preface</td>
+                  <td id="HM1L-EN-TOC-0-5" class="toc_rb">i&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-1-" class="atice20">
+                  <td id="HM1L-EN-TOC-1-1" class="toc_lb">1&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-1-2" class="toc_lb">Complete Mathematical Induction</td>
+                  <td id="HM1L-EN-TOC-1-5" class="toc_rb">1&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-2-" class="atice20">
+                  <td id="HM1L-EN-TOC-2-1"></td>
+                  <td id="HM1L-EN-TOC-2-2" class="toc_l">1.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-2-3" class="toc_l">The Principle of Complete Induction</td>
+                  <td id="HM1L-EN-TOC-2-5" class="toc_r">1&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-3-" class="atice20">
+                  <td id="HM1L-EN-TOC-3-1"></td>
+                  <td id="HM1L-EN-TOC-3-2" class="toc_l">1.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-3-3" class="toc_l">Bernoulli's Inequality</td>
+                  <td id="HM1L-EN-TOC-3-5" class="toc_r">3&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-4-" class="atice20">
+                  <td id="HM1L-EN-TOC-4-1"></td>
+                  <td id="HM1L-EN-TOC-4-2" class="toc_l">1.3&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-4-3" class="toc_l">Binomial Coefficients</td>
+                  <td id="HM1L-EN-TOC-4-4" class="toc_r">4&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-5-" class="atice20">
+                  <td id="HM1L-EN-TOC-5-1"></td>
+                  <td id="HM1L-EN-TOC-5-2" class="toc_l">1.4&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-5-3" class="toc_l">Combinatorial Significance of Binomial Coefficients</td>
+                  <td id="HM1L-EN-TOC-5-5" class="toc_r">6&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-6-" class="atice20">
+                  <td id="HM1L-EN-TOC-6-1"></td>
+                  <td id="HM1L-EN-TOC-6-2" class="toc_l">1.5&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-6-3" class="toc_l">The Sum Sign</td>
+                  <td id="HM1L-EN-TOC-6-5" class="toc_r">7&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-7-" class="atice20">
+                  <td id="HM1L-EN-TOC-7-1"></td>
+                  <td id="HM1L-EN-TOC-7-2" class="toc_l">1.6&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-7-3" class="toc_l">Binomial Theorem</td>
+                  <td id="HM1L-EN-TOC-7-5" class="toc_r">8&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-8-" class="atice20">
+                  <td id="HM1L-EN-TOC-8-1" class="toc_lb">2&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-8-2" class="toc_lb">Inequalities and Absolute Value</td>
+                  <td id="HM1L-EN-TOC-8-5" class="toc_rb">11&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-9-" class="atice20">
+                  <td id="HM1L-EN-TOC-9-1"></td>
+                  <td id="HM1L-EN-TOC-9-2" class="toc_l">2.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-9-3" class="toc_l">The Absolute Value</td>
+                  <td id="HM1L-EN-TOC-9-5" class="toc_r">12&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-10-" class="atice20">
+                  <td id="HM1L-EN-TOC-10-1"></td>
+                  <td id="HM1L-EN-TOC-10-2" class="toc_l">2.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-10-3" class="toc_l">The Concept of Monotony</td>
+                  <td id="HM1L-EN-TOC-10-5" class="toc_r">16&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-11-" class="atice20">
+                  <td id="HM1L-EN-TOC-11-1"></td>
+                  <td id="HM1L-EN-TOC-11-2" class="toc_l">2.3&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-11-3" class="toc_l">The Completeness of \(\mathbb{R}\)</td>
+                  <td id="HM1L-EN-TOC-11-5" class="toc_r">18&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-12-" class="atice20">
+                  <td id="HM1L-EN-TOC-12-1"></td>
+                  <td id="HM1L-EN-TOC-12-2" class="toc_l">2.4&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-12-3" class="toc_l">The Monotone Convergence Criterion for Sequences</td>
+                  <td id="HM1L-EN-TOC-12-5" class="toc_r">18&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-13-" class="atice20">
+                  <td id="HM1L-EN-TOC-13-1" class="toc_lb">3&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-13-2" class="toc_lb">Limit Values</td>
+                  <td id="HM1L-EN-TOC-13-5" class="toc_rb">21&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-14-" class="atice20">
+                  <td id="HM1L-EN-TOC-14-1"></td>
+                  <td id="HM1L-EN-TOC-14-2" class="toc_l">3.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-14-3" class="toc_l">Definition of a Limit</td>
+                  <td id="HM1L-EN-TOC-14-5" class="toc_r">21&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-15-" class="atice20">
+                  <td id="HM1L-EN-TOC-15-1"></td>
+                  <td id="HM1L-EN-TOC-15-2" class="toc_l">3.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-15-3" class="toc_l">Differentiation</td>
+                  <td id="HM1L-EN-TOC-15-5" class="toc_r">27&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-16-" class="atice20">
+                  <td id="HM1L-EN-TOC-16-1"></td>
+                  <td id="HM1L-EN-TOC-16-2" class="toc_l">3.3&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-16-3" class="toc_l">Basic Rules of Differentiation</td>
+                  <td id="HM1L-EN-TOC-16-5" class="toc_r">29&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-17-" class="atice20">
+                  <td id="HM1L-EN-TOC-17-1" class="toc_lb">4&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-17-2" class="toc_lb">Important Functions</td>
+                  <td id="HM1L-EN-TOC-17-5" class="toc_rb">33&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-18-" class="atice20">
+                  <td id="HM1L-EN-TOC-18-1"></td>
+                  <td id="HM1L-EN-TOC-18-2" class="toc_l">4.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-18-3" class="toc_l">The Exponential Function in the Real</td>
+                  <td id="HM1L-EN-TOC-18-5" class="toc_r">33&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-19-" class="atice20">
+                  <td id="HM1L-EN-TOC-19-1"></td>
+                  <td id="HM1L-EN-TOC-19-2" class="toc_l">4.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-19-3" class="toc_l">The Natural Logarithm</td>
+                  <td id="HM1L-EN-TOC-19-5" class="toc_r">36&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-20-" class="atice20">
+                  <td id="HM1L-EN-TOC-20-1"></td>
+                  <td id="HM1L-EN-TOC-20-2" class="toc_l">4.3&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-20-3" class="toc_l">The General Power Function in the Real</td>
+                  <td id="HM1L-EN-TOC-20-5" class="toc_r">40&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-21-" class="atice20">
+                  <td id="HM1L-EN-TOC-21-1"></td>
+                  <td id="HM1L-EN-TOC-21-2" class="toc_l">4.4&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-21-3" class="toc_l">Polynomials</td>
+                <td id="HM1L-EN-TOC-21-5" class="toc_r">42&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-22-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-22-1"></td>
+                  <td id="HM1L-EN-TOC-22-3" class="toc_l">4.4.1&#160;</td>
+                  <td id="HM1L-EN-TOC-22-4" class="toc_l">Identity Theorem for Polynomials</td>
+                  <td id="HM1L-EN-TOC-22-5" class="toc_r">45&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-23-" class="atice20">
+                  <td id="HM1L-EN-TOC-23-1" class="toc_lb">5&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-23-2" class="toc_lb">Existence Theorems</td>
+                  <td id="HM1L-EN-TOC-23-5" class="toc_rb">47&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-24-" class="atice20">
+                  <td id="HM1L-EN-TOC-24-1"></td>
+                  <td id="HM1L-EN-TOC-24-2" class="toc_l">5.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-24-3" class="toc_l">The Nested Interval Theorem</td>
+                  <td id="HM1L-EN-TOC-24-5" class="toc_r">47&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-25-" class="atice20">
+                  <td id="HM1L-EN-TOC-25-1"></td>
+                  <td id="HM1L-EN-TOC-25-2" class="toc_l">5.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-25-3" class="toc_l">The Bolzano-Weierstraß Theorem</td>
+                  <td id="HM1L-EN-TOC-25-5" class="toc_r">47&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-26-" class="atice20">
+                  <td id="HM1L-EN-TOC-26-1"></td>
+                  <td id="HM1L-EN-TOC-26-2" class="toc_l">5.3&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-26-3" class="toc_l">The Extreme Value Theorem</td>
+                  <td id="HM1L-EN-TOC-26-5" class="toc_r">49&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-27-" class="atice20">
+                  <td id="HM1L-EN-TOC-27-1"></td>
+                  <td id="HM1L-EN-TOC-27-2" class="toc_l">5.4&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-27-3" class="toc_l">The Intermediate Value Theorem</td>
+                  <td id="HM1L-EN-TOC-27-5" class="toc_r">50&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-28-" class="atice20">
+                  <td id="HM1L-EN-TOC-28-1"></td>
+                  <td id="HM1L-EN-TOC-28-2" class="toc_l">5.5&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-28-3" class="toc_l">The Inverse Function</td>
+                  <td id="HM1L-EN-TOC-28-5" class="toc_r">51&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-29-" class="atice20">
+                  <td id="HM1L-EN-TOC-29-1"></td>
+                  <td id="HM1L-EN-TOC-29-2" class="toc_l">5.6&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-29-3" class="toc_l">Local Extrema</td>
+                  <td id="HM1L-EN-TOC-29-5" class="toc_r">54&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-30-" class="atice20">
+                  <td id="HM1L-EN-TOC-30-1"></td>
+                  <td id="HM1L-EN-TOC-30-2" class="toc_l">5.7&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-30-3" class="toc_l">Rolle's Theorem</td>
+                  <td id="HM1L-EN-TOC-30-5" class="toc_r">55&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-31-" class="atice20">
+                  <td id="HM1L-EN-TOC-31-1"></td>
+                  <td id="HM1L-EN-TOC-31-2" class="toc_l">5.8&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-31-3" class="toc_l">The Mean Value Theorem</td>
+                  <td id="HM1L-EN-TOC-31-5" class="toc_r">55&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-32-" class="atice20">
+                  <td id="HM1L-EN-TOC-32-1" class="toc_lb">6&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-32-2" class="toc_lb">Applications of the Mean Value Theorem</td>
+                  <td id="HM1L-EN-TOC-32-5" class="toc_rb">57&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-33-" class="atice20">
+                  <td id="HM1L-EN-TOC-33-1"></td>
+                  <td id="HM1L-EN-TOC-33-2" class="toc_l">6.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-33-3" class="toc_l">Monotony, Local Extrema, Convexity</td>
+                  <td id="HM1L-EN-TOC-33-5" class="toc_r">57&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-34-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-34-1"></td>
+                  <td id="HM1L-EN-TOC-34-3" class="toc_l">6.1.1&#160;</td>
+                  <td id="HM1L-EN-TOC-34-4" class="toc_l">The Monotony Criterion of Differential Calculus</td>
+                  <td id="HM1L-EN-TOC-34-5" class="toc_r">57&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-35-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-35-1"></td>
+                  <td id="HM1L-EN-TOC-35-3" class="toc_l">6.1.2&#160;</td>
+                  <td id="HM1L-EN-TOC-35-4" class="toc_l">Criterion for Strict Local Extrema</td>
+                  <td id="HM1L-EN-TOC-35-5" class="toc_r">58&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-36-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-36-1"></td>
+                  <td id="HM1L-EN-TOC-36-3" class="toc_l">6.1.3&#160;</td>
+                  <td id="HM1L-EN-TOC-36-4" class="toc_l">Convexity Criterion</td>
+                  <td id="HM1L-EN-TOC-36-5" class="toc_r">59&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-37-" class="atice20">
+                  <td id="HM1L-EN-TOC-37-1"></td>
+                  <td id="HM1L-EN-TOC-37-2" class="toc_l">6.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-37-3" class="toc_l">Hölder's Inequality</td>
+                  <td id="HM1L-EN-TOC-37-5" class="toc_r">60&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-38-" class="atice20">
+                  <td id="HM1L-EN-TOC-38-1"></td>
+                  <td id="HM1L-EN-TOC-38-2" class="toc_l">6.3&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-38-3" class="toc_l">Newton's Method</td>
+                  <td id="HM1L-EN-TOC-38-5" class="toc_r">62&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-39-" class="atice20">
+                  <td id="HM1L-EN-TOC-39-1"></td>
+                  <td id="HM1L-EN-TOC-39-2" class="toc_l">6.4&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-39-3" class="toc_l">The Extended Mean Value Theorem</td>
+                  <td id="HM1L-EN-TOC-39-5" class="toc_r">64&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-40-" class="atice20">
+                  <td id="HM1L-EN-TOC-40-1"></td>
+                  <td id="HM1L-EN-TOC-40-2" class="toc_l">6.5&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-40-3" class="toc_l">The Rule of de l'Hospital</td>
+                  <td id="HM1L-EN-TOC-40-5" class="toc_r">65&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-41-" class="atice20">
+                  <td id="HM1L-EN-TOC-41-1"></td>
+                  <td id="HM1L-EN-TOC-41-2" class="toc_l">6.6&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-41-3" class="toc_l">Taylor's Formula</td>
+                  <td id="HM1L-EN-TOC-41-5" class="toc_r">66&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-42-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-42-1"></td>
+                  <td id="HM1L-EN-TOC-42-3" class="toc_l">6.6.1&#160;</td>
+                  <td id="HM1L-EN-TOC-42-4" class="toc_l">The Exponential Series</td>
+                  <td id="HM1L-EN-TOC-42-5" class="toc_r">68&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-43-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-43-1"></td>
+                  <td id="HM1L-EN-TOC-43-3" class="toc_l">6.6.2&#160;</td>
+                  <td id="HM1L-EN-TOC-43-4" class="toc_l">The Logarithm Series</td>
+                  <td id="HM1L-EN-TOC-43-5" class="toc_r">69&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-44-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-44-1"></td>
+                  <td id="HM1L-EN-TOC-44-3" class="toc_l">6.6.3&#160;</td>
+                  <td id="HM1L-EN-TOC-44-4" class="toc_l">The Binomial Series</td>
+                  <td id="HM1L-EN-TOC-44-5" class="toc_r">71&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-45-" class="atice20">
+                  <td id="HM1L-EN-TOC-45-1" class="toc_lb">7&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-45-2" class="toc_lb">Oscillation Equation and Trigonometric Functions</td>
+                  <td id="HM1L-EN-TOC-45-5" class="toc_rb">73&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-46-" class="atice20">
+                  <td id="HM1L-EN-TOC-46-1"></td>
+                  <td id="HM1L-EN-TOC-46-2" class="toc_l">7.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-46-3" class="toc_l">Intermediate Section on Power Series</td>
+                  <td id="HM1L-EN-TOC-46-5" class="toc_r">76&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-47-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-47-1"></td>
+                  <td id="HM1L-EN-TOC-47-3" class="toc_l">7.1.1&#160;</td>
+                  <td id="HM1L-EN-TOC-47-4" class="toc_l">Leibniz' Convergence Criterion</td>
+                  <td id="HM1L-EN-TOC-47-5" class="toc_r">77&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-48-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-48-1"></td>
+                  <td id="HM1L-EN-TOC-48-3" class="toc_l">7.1.2&#160;</td>
+                  <td id="HM1L-EN-TOC-48-4" class="toc_l">Theorem on the Radius of Convergence</td>
+                  <td id="HM1L-EN-TOC-48-5" class="toc_r">78&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-49-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-49-1"></td>
+                  <td id="HM1L-EN-TOC-49-3" class="toc_l">7.1.3&#160;</td>
+                  <td id="HM1L-EN-TOC-49-4" class="toc_l">A Criterion for Determining the Radius of Convergence</td>
+                  <td id="HM1L-EN-TOC-49-5" class="toc_r">79&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-50-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-50-1"></td>
+                  <td id="HM1L-EN-TOC-50-3" class="toc_l">7.1.4&#160;</td>
+                  <td id="HM1L-EN-TOC-50-4" class="toc_l">The Derivative of a Power Series</td>
+                  <td id="HM1L-EN-TOC-50-5" class="toc_r">80&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-51-" class="atice20">
+                  <td id="HM1L-EN-TOC-51-1"></td>
+                  <td id="HM1L-EN-TOC-51-2" class="toc_l">7.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-51-3" class="toc_l">Inverse Functions</td>
+                  <td id="HM1L-EN-TOC-51-5" class="toc_r">84&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-52-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-52-1"></td>
+                  <td id="HM1L-EN-TOC-52-3" class="toc_l">7.2.1&#160;</td>
+                  <td id="HM1L-EN-TOC-52-4" class="toc_l">Geometric Significance of the Angular Functions Sine and Cosine</td>
+                  <td id="HM1L-EN-TOC-52-5" class="toc_r">86&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-53-" class="atice20">
+                  <td id="HM1L-EN-TOC-53-1" class="toc_lb">8&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-53-2" class="toc_lb">The Euclidean Plane and its Affine Mappings</td>
+                  <td id="HM1L-EN-TOC-53-5" class="toc_rb">89&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-54-" class="atice20">
+                  <td id="HM1L-EN-TOC-54-1"></td>
+                  <td id="HM1L-EN-TOC-54-2" class="toc_l">8.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-54-3" class="toc_l">Rotations Around the Origin</td>
+                  <td id="HM1L-EN-TOC-54-5" class="toc_r">91&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-55-" class="atice20">
+                  <td id="HM1L-EN-TOC-55-1"></td>
+                  <td id="HM1L-EN-TOC-55-2" class="toc_l">8.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-55-3" class="toc_l">Basic Geometric Sine and Cosine Laws</td>
+                  <td id="HM1L-EN-TOC-55-5" class="toc_r">92&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-56-" class="atice20">
+                  <td id="HM1L-EN-TOC-56-1"></td>
+                  <td id="HM1L-EN-TOC-56-2" class="toc_l">8.3&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-56-3" class="toc_l">The Scalar Product</td>
+                  <td id="HM1L-EN-TOC-56-5" class="toc_r">93&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-57-" class="atice20">
+                  <td id="HM1L-EN-TOC-57-1"></td>
+                  <td id="HM1L-EN-TOC-57-2" class="toc_l">8.4&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-57-3" class="toc_l">Hessian Normal Form of a Straight Line</td>
+                  <td id="HM1L-EN-TOC-57-5" class="toc_r">96&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-58-" class="atice20">
+                  <td id="HM1L-EN-TOC-58-1" class="toc_lb">9&#160;</td>                
+                  <td colspan="3" id="HM1L-EN-TOC-58-2" class="toc_lb">Complex Numbers</td>
+                  <td id="HM1L-EN-TOC-58-5" class="toc_rb">101&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-59-" class="atice20">
+                  <td id="HM1L-EN-TOC-59-1"></td>
+                  <td id="HM1L-EN-TOC-59-2" class="toc_l">9.1&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-59-3" class="toc_l">The Cauchy Criterion Applies in \(\mathbb{C}\)</td>
+                  <td id="HM1L-EN-TOC-59-5" class="toc_r">106&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-60-" class="atice20">
+                  <td colspan="2" id="HM1L-EN-TOC-60-1"></td>
+                  <td id="HM1L-EN-TOC-60-3" class="toc_l">9.1.1&#160;</td>
+                  <td id="HM1L-EN-TOC-60-4" class="toc_l">Moivre's Theorem</td>
+                  <td id="HM1L-EN-TOC-60-5" class="toc_r">107&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-61-" class="atice20">
+                  <td id="HM1L-EN-TOC-61-1"></td>
+                  <td id="HM1L-EN-TOC-61-2" class="toc_l">9.2&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-61-3" class="toc_l">The Fundamental Theorem of Algebra in \(\mathbb{C}\)</td>
+                  <td id="HM1L-EN-TOC-61-5" class="toc_r">108&#160;&#160;</td>
+                </tr>
+                <tr id="HM1L-EN-TOC-62-" class="atice20">
+                  <td id="HM1L-EN-TOC-62-1"></td>
+                  <td id="HM1L-EN-TOC-62-2" class="toc_l">9.3&#160;</td>                  
+                  <td colspan="2" id="HM1L-EN-TOC-62-3" class="toc_l">Partial Fraction Decomposition</td>
+                  <td id="HM1L-EN-TOC-62-5" class="toc_r">111&#160;&#160;</td>
+                </tr>              
+              </tbody>
+            </table>
+          </div>
+        </div>
+                       
+      </div>
+    
+    </div> <!-- end pagContent div -->
+        
+    <!-- PopImg modal begin -->
+    
+    <div id="popImgModal" class="modal bizline" style="font-size: 28px">
+      <span class="close"><button class="btn active" style="font-size: 18px;">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+      <div class="center" id="modal-Caption" style="margin-top: 20px;"></div>
+    </div>    
+
+    <!-- PopImg modal end -->
+           
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>

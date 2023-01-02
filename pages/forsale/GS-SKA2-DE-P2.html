@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png">  
+  <title>GS-SKA2-DE-P2</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>     
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1780px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0; width: 100%;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>       
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                      
+
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">Die schönsten Sagen des klassischen Altertums</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">Zweiter Teil</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href="GS-SKA2-DE-P1.html">1</a>
+            <a href=javascript:void(0); class="active">2</a>
+          </div>
+        </div>  
+      </div>
+                                                                   
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+                        
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Table of Contents:</span>
+        </div>
+      </div>       
+                          
+      <div class="tocBookPages">
+      
+        <div class="float">                                                                                                                                                                            
+          <div class="tabular">
+            <table id="SKA2-DE-TOC" class="toctable">
+              <colgroup id="SKA2-DE-TOC-1g" class="atice17">
+                <col id="SKA2-DE-TOC-1" class="atice18" width="5%"/>
+                <col id="SKA2-DE-TOC-2" class="atice18" width="5%"/>
+                <col id="SKA1-DE-TOC-3" class="atice18" width="80%"/>
+                <col id="SKA2-DE-TOC-4" class="atice18" width="10%"/>
+              </colgroup>
+              <tbody class="atice19">
+                <tr id="SKA2-DE-TOC-1-" class="atice20">
+                  <td colspan="3" id="SKA2-DE-TOC-1-1" class="toc_lb">Einleitung</td>
+                  <td id="SKA2-DE-TOC-1-4" class="toc_rb">i&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-2-" class="atice20">
+                  <td id="SKA2-DE-TOC-2-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-2-2" class="toc_l">Gustav Schwab’s Vorwort zur Erstausgabe</td>
+                  <td id="SKA2-DE-TOC-2-4" class="toc_r">v&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-3-" class="atice20">
+                  <td colspan="3" id="SKA2-DE-TOC-3-1" class="toc_lb">Erstes Buch</td>
+                  <td id="SKA2-DE-TOC-3-4" class="toc_rb">1&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-4-" class="atice20">
+                  <td id="SKA2-DE-TOC-4-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-4-2" class="toc_l">Troia’s Erbauung</td>
+                  <td id="SKA2-DE-TOC-4-4" class="toc_r">2&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-5-" class="atice20">
+                  <td id="SKA2-DE-TOC-5-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-5-2" class="toc_l">Priamos, Hekabe und Paris</td>
+                  <td id="SKA2-DE-TOC-5-4" class="toc_r">4&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-6-" class="atice20">
+                  <td id="SKA2-DE-TOC-6-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-6-2" class="toc_l">Der Raub der Helena</td>
+                  <td id="SKA2-DE-TOC-6-4" class="toc_r">7&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-7-" class="atice20">
+                  <td id="SKA2-DE-TOC-7-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-7-2" class="toc_l">Die Griechen</td>
+                  <td id="SKA2-DE-TOC-7-4" class="toc_r">12&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-8-" class="atice20">
+                  <td id="SKA2-DE-TOC-8-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-8-2" class="toc_l">Botschaft der Griechen an Priamos</td>
+                  <td id="SKA2-DE-TOC-8-4" class="toc_r">16&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-9-" class="atice20">
+                  <td id="SKA2-DE-TOC-9-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-9-2" class="toc_l">Agamemnon und Iphigenie</td>
+                  <td id="SKA2-DE-TOC-9-4" class="toc_r">19&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-10-" class="atice20">
+                  <td id="SKA2-DE-TOC-10-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-10-2" class="toc_l">Abfahrt der Griechen - Aussetzung des Philoktetes</td>
+                  <td id="SKA2-DE-TOC-10-4" class="toc_r">30&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-11-" class="atice20">
+                  <td id="SKA2-DE-TOC-11-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-11-2" class="toc_l">Die Griechen in Mysien - Telephos</td>
+                  <td id="SKA2-DE-TOC-11-4" class="toc_r">31&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-12-" class="atice20">
+                  <td id="SKA2-DE-TOC-12-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-12-2" class="toc_l">Paris zurückgekehrt</td>
+                  <td id="SKA2-DE-TOC-12-4" class="toc_r">35&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-13-" class="atice20">
+                  <td id="SKA2-DE-TOC-13-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-13-2" class="toc_l">Die Griechen vor Troia</td>
+                  <td id="SKA2-DE-TOC-13-4" class="toc_r">36&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-14-" class="atice20">
+                  <td colspan="3" id="SKA2-DE-TOC-14-1" class="toc_lb">Zweites Buch</td>
+                  <td id="SKA2-DE-TOC-14-4" class="toc_rb">41&#160;&#160;</td>
+                </tr>                
+                <tr id="SKA2-DE-TOC-15-" class="atice20">
+                  <td id="SKA2-DE-TOC-15-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-15-2" class="toc_l">Ausbruch des Kampfes - Protesilaos - Kyknos</td>
+                  <td id="SKA2-DE-TOC-15-4" class="toc_r">42&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-16-" class="atice20">
+                  <td id="SKA2-DE-TOC-16-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-16-2" class="toc_l">Palamedes und sein Tod</td>
+                  <td id="SKA2-DE-TOC-16-4" class="toc_r">45&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-17-" class="atice20">
+                  <td id="SKA2-DE-TOC-17-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-17-2" class="toc_l">Taten des Achilleus und Aias</td>
+                  <td id="SKA2-DE-TOC-17-4" class="toc_r">47&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-18-" class="atice20">
+                  <td id="SKA2-DE-TOC-18-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-18-2" class="toc_l">Polydoros</td>
+                  <td id="SKA2-DE-TOC-18-4" class="toc_r">50&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-19-" class="atice20">
+                  <td id="SKA2-DE-TOC-19-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-19-2" class="toc_l">Chryses, Apollon und der Zorn des Achilleus</td>
+                  <td id="SKA2-DE-TOC-19-4" class="toc_r">55&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-20-" class="atice20">
+                  <td id="SKA2-DE-TOC-20-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-20-2" class="toc_l">Versuchung des Volkes durch Agamemnon</td>
+                  <td id="SKA2-DE-TOC-20-4" class="toc_r">60&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-21-" class="atice20">
+                  <td id="SKA2-DE-TOC-21-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-21-2" class="toc_l">Paris und Menelaos</td>
+                  <td id="SKA2-DE-TOC-21-4" class="toc_r">66&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-22-" class="atice20">
+                  <td colspan="3" id="SKA2-DE-TOC-22-1" class="toc_lb">Drittes Buch</td>
+                  <td id="SKA2-DE-TOC-22-4" class="toc_rb">73&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-23-" class="atice20">
+                  <td id="SKA2-DE-TOC-23-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-23-2" class="toc_l">Pandaros</td>
+                  <td id="SKA2-DE-TOC-23-4" class="toc_r">74&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-24-" class="atice20">
+                  <td id="SKA2-DE-TOC-24-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-24-2" class="toc_l">Die Schlacht - Diomedes</td>
+                  <td id="SKA2-DE-TOC-24-4" class="toc_r">77&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-25-" class="atice20">
+                  <td id="SKA2-DE-TOC-25-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-25-2" class="toc_l">Glaukos und Diomedes</td>
+                  <td id="SKA2-DE-TOC-25-4" class="toc_r">88&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-26-" class="atice20">
+                  <td id="SKA2-DE-TOC-26-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-26-2" class="toc_l">Hektor in Troia</td>
+                  <td id="SKA2-DE-TOC-26-4" class="toc_r">89&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-27-" class="atice20">
+                  <td id="SKA2-DE-TOC-27-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-27-2" class="toc_l">Hektor und Aias im Zweikampf</td>
+                  <td id="SKA2-DE-TOC-27-4" class="toc_r">93&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-28-" class="atice20">
+                  <td id="SKA2-DE-TOC-28-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-28-2" class="toc_l">Waffenstillstand</td>
+                  <td id="SKA2-DE-TOC-28-4" class="toc_r">97&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-29-" class="atice20">
+                  <td id="SKA2-DE-TOC-29-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-29-2" class="toc_l">Sieg der Troianer</td>
+                  <td id="SKA2-DE-TOC-29-4" class="toc_r">99&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-30-" class="atice20">
+                  <td id="SKA2-DE-TOC-30-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-30-2" class="toc_l">Botschaft der Griechen an Achilleus</td>
+                  <td id="SKA2-DE-TOC-30-4" class="toc_r">104&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-31-" class="atice20">
+                  <td id="SKA2-DE-TOC-31-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-31-2" class="toc_l">Dolon und Rhesos</td>
+                  <td id="SKA2-DE-TOC-31-4" class="toc_r">107&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-32-" class="atice20">
+                  <td id="SKA2-DE-TOC-32-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-32-2" class="toc_l">Zweite Niederlage der Griechen</td>
+                  <td id="SKA2-DE-TOC-32-4" class="toc_r">112&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-33-" class="atice20">
+                  <td id="SKA2-DE-TOC-33-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-33-2" class="toc_l">Kampf um die Mauer</td>
+                  <td id="SKA2-DE-TOC-33-4" class="toc_r">119&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-34-" class="atice20">
+                  <td id="SKA2-DE-TOC-34-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-34-2" class="toc_l">Kampf um die Schiffe</td>
+                  <td id="SKA2-DE-TOC-34-4" class="toc_r">123&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-35-" class="atice20">
+                  <td id="SKA2-DE-TOC-35-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-35-2" class="toc_l">Die Griechen von Poseidon gestärkt</td>
+                  <td id="SKA2-DE-TOC-35-4" class="toc_r">129&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-36-" class="atice20">
+                  <td id="SKA2-DE-TOC-36-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-36-2" class="toc_l">Hektor von Apollon gekräftigt</td>
+                  <td id="SKA2-DE-TOC-36-4" class="toc_r">134&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-37-" class="atice20">
+                  <td id="SKA2-DE-TOC-37-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-37-2" class="toc_l">Tod des Patroklos</td>
+                  <td id="SKA2-DE-TOC-37-4" class="toc_r">141&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-38-" class="atice20">
+                  <td id="SKA2-DE-TOC-38-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-38-2" class="toc_l">Jammer des Achilleus</td>
+                  <td id="SKA2-DE-TOC-38-4" class="toc_r">155&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-39-" class="atice20">
+                  <td colspan="3" id="SKA2-DE-TOC-39-1" class="toc_lb">Viertes Buch</td>
+                  <td id="SKA2-DE-TOC-39-4" class="toc_rb">159&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-40-" class="atice20">
+                  <td id="SKA2-DE-TOC-40-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-40-2" class="toc_l">Achilleus neu bewaffnet</td>
+                  <td id="SKA2-DE-TOC-40-4" class="toc_r">160&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-41-" class="atice20">
+                  <td id="SKA2-DE-TOC-41-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-41-2" class="toc_l">Achilleus und Agamemnon versöhnt</td>
+                  <td id="SKA2-DE-TOC-41-4" class="toc_r">164&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-42-" class="atice20">
+                  <td id="SKA2-DE-TOC-42-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-42-2" class="toc_l">Schlacht der Götter und Menschen</td>
+                  <td id="SKA2-DE-TOC-42-4" class="toc_r">169&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-43-" class="atice20">
+                  <td id="SKA2-DE-TOC-43-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-43-2" class="toc_l">Kampf des Achilleus mit dem Stromgott Skamandros</td>
+                  <td id="SKA2-DE-TOC-43-4" class="toc_r">174&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-44-" class="atice20">
+                  <td id="SKA2-DE-TOC-44-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-44-2" class="toc_l">Schlacht der Götter</td>
+                  <td id="SKA2-DE-TOC-44-4" class="toc_r">178&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-45-" class="atice20">
+                  <td id="SKA2-DE-TOC-45-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-45-2" class="toc_l">Achilleus und Hektor vor den Toren</td>
+                  <td id="SKA2-DE-TOC-45-4" class="toc_r">181&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-46-" class="atice20">
+                  <td id="SKA2-DE-TOC-46-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-46-2" class="toc_l">Der Tod Hektors</td>
+                  <td id="SKA2-DE-TOC-46-4" class="toc_r">184&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-47-" class="atice20">
+                  <td id="SKA2-DE-TOC-47-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-47-2" class="toc_l">Leichenfeier des Patroklos</td>
+                  <td id="SKA2-DE-TOC-47-4" class="toc_r">189&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-48-" class="atice20">
+                  <td id="SKA2-DE-TOC-48-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-48-2" class="toc_l">Priamos bei Achilleus</td>
+                  <td id="SKA2-DE-TOC-48-4" class="toc_r">196&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-49-" class="atice20">
+                  <td id="SKA2-DE-TOC-49-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-49-2" class="toc_l">Hektors Leichnam in Troia</td>
+                  <td id="SKA2-DE-TOC-49-4" class="toc_r">204&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-50-" class="atice20">
+                  <td id="SKA2-DE-TOC-50-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-50-2" class="toc_l">Penthesilea</td>
+                  <td id="SKA2-DE-TOC-50-4" class="toc_r">206&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-51-" class="atice20">
+                  <td id="SKA2-DE-TOC-51-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-51-2" class="toc_l">Memnon</td>
+                  <td id="SKA2-DE-TOC-52-4" class="toc_r">217&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-53-" class="atice20">
+                  <td id="SKA2-DE-TOC-53-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-53-2" class="toc_l">Der Tod des Achilleus</td>
+                  <td id="SKA2-DE-TOC-53-4" class="toc_r">224&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-54-" class="atice20">
+                  <td id="SKA2-DE-TOC-54-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-54-2" class="toc_l">Leichenspiele des Achilleus</td>
+                  <td id="SKA2-DE-TOC-54-4" class="toc_r">229&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-55-" class="atice20">
+                  <td colspan="3" id="SKA2-DE-TOC-55-1" class="toc_lb">Fünftes Buch</td>
+                  <td id="SKA2-DE-TOC-55-4" class="toc_rb">235&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-56-" class="atice20">
+                  <td id="SKA2-DE-TOC-56-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-56-2" class="toc_l">Der Tod des großen Aias</td>
+                  <td id="SKA2-DE-TOC-56-4" class="toc_r">236&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-57-" class="atice20">
+                  <td id="SKA2-DE-TOC-57-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-57-2" class="toc_l">Machaon und Podaleirios</td>
+                  <td id="SKA2-DE-TOC-57-4" class="toc_r">243&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-58-" class="atice20">
+                  <td id="SKA2-DE-TOC-58-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-58-2" class="toc_l">Neoptolemos</td>
+                  <td id="SKA2-DE-TOC-58-4" class="toc_r">246&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-59-" class="atice20">
+                  <td id="SKA2-DE-TOC-59-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-59-2" class="toc_l">Philoktetes auf Lemnos</td>
+                  <td id="SKA2-DE-TOC-59-4" class="toc_r">253&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-60-" class="atice20">
+                  <td id="SKA2-DE-TOC-60-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-60-2" class="toc_l">Der Tod des Paris</td>
+                  <td id="SKA2-DE-TOC-60-4" class="toc_r">258&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-61-" class="atice20">
+                  <td id="SKA2-DE-TOC-61-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-61-2" class="toc_l">Sturm auf Troia</td>
+                  <td id="SKA2-DE-TOC-61-4" class="toc_r">262&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-62-" class="atice20">
+                  <td id="SKA2-DE-TOC-62-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-62-2" class="toc_l">Das hölzerne Pferd</td>
+                  <td id="SKA2-DE-TOC-62-4" class="toc_r">264&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-63-" class="atice20">
+                  <td id="SKA2-DE-TOC-63-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-63-2" class="toc_l">Die Zerstörung Troias</td>
+                  <td id="SKA2-DE-TOC-63-4" class="toc_r">275&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-64-" class="atice20">
+                  <td id="SKA2-DE-TOC-64-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-64-2" class="toc_l">Menelaos und Helena - Polyxena</td>
+                  <td id="SKA2-DE-TOC-64-4" class="toc_r">279&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-65-" class="atice20">
+                  <td id="SKA2-DE-TOC-65-1"></td>
+                  <td colspan="2" id="SKA2-DE-TOC-65-2" class="toc_l">Abfahrt von Troia - Aias des Lokrers Tod</td>
+                  <td id="SKA2-DE-TOC-65-4" class="toc_r">284&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-66-" class="atice20">
+                  <td colspan="3" id="SKA2-DE-TOC-66-1" class="toc_lb">Anmerkungen</td>
+                  <td id="SKA2-DE-TOC-66-4" class="toc_rb">289&#160;&#160;</td>
+                </tr>
+                <tr id="SKA2-DE-TOC-67-" class="atice20">
+                  <td colspan="3" id="SKA2-DE-TOC-67-1" class="toc_lb">Namenregister</td>
+                  <td id="SKA2-DE-TOC-67-4" class="toc_rb">303&#160;&#160;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+                       
+      </div>
+    
+    </div> <!-- end pagContent div -->
+        
+    <!-- PopImg modal begin -->
+    
+    <div id="popImgModal" class="modal bizline" style="font-size: 28px">
+      <span class="close"><button class="btn active" style="font-size: 18px;">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+      <div class="center" id="modal-Caption" style="margin-top: 20px;"></div>
+    </div>    
+
+    <!-- PopImg modal end -->
+           
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>

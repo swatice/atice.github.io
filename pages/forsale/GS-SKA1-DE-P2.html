@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png">  
+  <title>GS-SKA1-DE-P2</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>     
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1780px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0; width: 100%;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>       
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                      
+
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">Die schönsten Sagen des klassischen Altertums</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">Erster Teil</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href="GS-SKA1-DE-P1.html">1</a>
+            <a href=javascript:void(0); class="active">2</a>
+          </div>
+        </div>  
+      </div>
+                                                                   
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+                        
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Table of Contents:</span>
+        </div>
+      </div>
+                    
+      <div class="tocBookPages">
+      
+        <div class="float">                                                                                                                                                                            
+          <div class="tabular">
+            <table id="SKA1-DE-TOC" class="toctable">
+              <colgroup id="SKA1-DE-TOC-1g" class="atice17">
+                <col id="SKA1-DE-TOC-1" class="atice18" width="5%"/>
+                <col id="SKA1-DE-TOC-2" class="atice18" width="5%"/>
+                <col id="SKA1-DE-TOC-3" class="atice18" width="80%"/>
+                <col id="SKA1-DE-TOC-4" class="atice18" width="10%"/>
+              </colgroup>
+              <tbody class="atice19">
+                <tr id="SKA1-DE-TOC-1-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-1-1" class="toc_lb">Einleitung</td>
+                  <td id="SKA1-DE-TOC-1-4" class="toc_rb">i&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-2-" class="atice20">
+                  <td id="SKA1-DE-TOC-2-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-2-2" class="toc_l">Gustav Schwab’s Vorwort zur Erstausgabe</td>
+                  <td id="SKA1-DE-TOC-2-4" class="toc_r">v&#160;&#160;</td>
+                </tr>
+                 <tr id="SKA1-DE-TOC-3-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-3-1" class="toc_lb">Erstes Buch</td>
+                  <td id="SKA1-DE-TOC-3-4" class="toc_rb">1&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-4-" class="atice20">
+                  <td id="SKA1-DE-TOC-4-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-4-2" class="toc_l"></td>
+                  <td id="SKA1-DE-TOC-4-4" class="toc_r"></td>
+                </tr>
+                <tr id="SKA1-DE-TOC-5-" class="atice20">
+                  <td id="SKA1-DE-TOC-5-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-5-2" class="toc_l">Prometheus</td>
+                  <td id="SKA1-DE-TOC-5-4" class="toc_r">2&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-6-" class="atice20">
+                  <td id="SKA1-DE-TOC-6-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-6-2" class="toc_l">Die Menschenalter</td>
+                  <td id="SKA1-DE-TOC-6-4" class="toc_r">6&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-7-" class="atice20">
+                  <td id="SKA1-DE-TOC-7-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-7-2" class="toc_l">Deukalion und Pyrrha</td>
+                  <td id="SKA1-DE-TOC-7-4" class="toc_r">9&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-8-" class="atice20">
+                  <td id="SKA1-DE-TOC-8-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-8-2" class="toc_l">Io</td>
+                  <td id="SKA1-DE-TOC-8-4" class="toc_r">12&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-9-" class="atice20">
+                  <td id="SKA1-DE-TOC-9-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-9-2" class="toc_l">Phaethon</td>
+                  <td id="SKA1-DE-TOC-9-4" class="toc_r">18&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-10-" class="atice20">
+                  <td id="SKA1-DE-TOC-10-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-10-2" class="toc_l">Europa</td>
+                  <td id="SKA1-DE-TOC-10-4" class="toc_r">22&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-11-" class="atice20">
+                  <td id="SKA1-DE-TOC-11-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-11-2" class="toc_l">Kadmos</td>
+                  <td id="SKA1-DE-TOC-11-4" class="toc_r">27&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-12-" class="atice20">
+                  <td id="SKA1-DE-TOC-12-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-12-2" class="toc_l">Pentheus</td>
+                  <td id="SKA1-DE-TOC-12-4" class="toc_r">30&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-13-" class="atice20">
+                  <td id="SKA1-DE-TOC-13-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-13-2" class="toc_l">Perseus</td>
+                  <td id="SKA1-DE-TOC-13-4" class="toc_r">36&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-14-" class="atice20">
+                  <td id="SKA1-DE-TOC-14-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-14-2" class="toc_l">Ion</td>
+                  <td id="SKA1-DE-TOC-14-4" class="toc_r">42&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-15-" class="atice20">
+                  <td id="SKA1-DE-TOC-15-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-15-2" class="toc_l">Daidalos und Ikaros</td>
+                  <td id="SKA1-DE-TOC-15-4" class="toc_r">52&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-16-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-16-1" class="toc_lb">Zweites Buch</td>
+                  <td id="SKA1-DE-TOC-16-4" class="toc_rb">57&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-17-" class="atice20">
+                  <td id="SKA1-DE-TOC-17-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-17-2" class="toc_l">Die Argonautensage</td>
+                  <td id="SKA1-DE-TOC-17-4" class="toc_r">58&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-18-" class="atice20">
+                  <td id="SKA1-DE-TOC-18-1"></td>
+                  <td id="SKA1-DE-TOC-18-2"></td>
+                  <td id="SKA1-DE-TOC-18-3" class="toc_l">Iason und Pelias</td>
+                  <td id="SKA1-DE-TOC-18-4" class="toc_r">58&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-19-" class="atice20">
+                  <td id="SKA1-DE-TOC-19-1"></td>
+                  <td id="SKA1-DE-TOC-19-2"></td>
+                  <td id="SKA1-DE-TOC-19-3" class="toc_l">Anlass und Beginn des Argonautenzuges</td>
+                  <td id="SKA1-DE-TOC-19-4" class="toc_r">59&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-20-" class="atice20">
+                  <td id="SKA1-DE-TOC-20-1"></td>
+                  <td id="SKA1-DE-TOC-20-2"></td>
+                  <td id="SKA1-DE-TOC-20-3" class="toc_l">Die Argonauten zu Lemnos</td>
+                  <td id="SKA1-DE-TOC-20-4" class="toc_r">61&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-21-" class="atice20">
+                  <td id="SKA1-DE-TOC-21-1"></td>
+                  <td id="SKA1-DE-TOC-21-2"></td>
+                  <td id="SKA1-DE-TOC-21-3" class="toc_l">Die Argonauten im Lande der Dolionen</td>
+                  <td id="SKA1-DE-TOC-21-4" class="toc_r">64&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-22-" class="atice20">
+                  <td id="SKA1-DE-TOC-22-1"></td>
+                  <td id="SKA1-DE-TOC-22-2"></td>
+                  <td id="SKA1-DE-TOC-22-3" class="toc_l">Herakles zurückgelassen</td>
+                  <td id="SKA1-DE-TOC-22-4" class="toc_r">66&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-23-" class="atice20">
+                  <td id="SKA1-DE-TOC-23-1"></td>
+                  <td id="SKA1-DE-TOC-23-2"></td>
+                  <td id="SKA1-DE-TOC-23-3" class="toc_l">Polydeukes und der Bebrykenkönig</td>
+                  <td id="SKA1-DE-TOC-23-4" class="toc_r">68&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-24-" class="atice20">
+                  <td id="SKA1-DE-TOC-24-1"></td>
+                  <td id="SKA1-DE-TOC-24-2"></td>
+                  <td id="SKA1-DE-TOC-24-3" class="toc_l">Phineus und die Harpyien</td>
+                  <td id="SKA1-DE-TOC-24-4" class="toc_r">69&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-25-" class="atice20">
+                  <td id="SKA1-DE-TOC-25-1"></td>
+                  <td id="SKA1-DE-TOC-25-2"></td>
+                  <td id="SKA1-DE-TOC-25-3" class="toc_l">Die Symplegaden</td>
+                  <td id="SKA1-DE-TOC-25-4" class="toc_r">71&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-26-" class="atice20">
+                  <td id="SKA1-DE-TOC-26-1"></td>
+                  <td id="SKA1-DE-TOC-26-2"></td>
+                  <td id="SKA1-DE-TOC-26-3" class="toc_l">Weitere Abenteuer</td>
+                  <td id="SKA1-DE-TOC-26-4" class="toc_r">72&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-27-" class="atice20">
+                  <td id="SKA1-DE-TOC-27-1"></td>
+                  <td id="SKA1-DE-TOC-27-2"></td>
+                  <td id="SKA1-DE-TOC-27-3" class="toc_l">Iason im Palaste des Aietes</td>
+                  <td id="SKA1-DE-TOC-27-4" class="toc_r">76&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-28-" class="atice20">
+                  <td id="SKA1-DE-TOC-28-1"></td>
+                  <td id="SKA1-DE-TOC-28-2"></td>
+                  <td id="SKA1-DE-TOC-28-3" class="toc_l">Medea und Aietes</td>
+                  <td id="SKA1-DE-TOC-28-4" class="toc_r">78&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-29-" class="atice20">
+                  <td id="SKA1-DE-TOC-29-1"></td>
+                  <td id="SKA1-DE-TOC-29-2"></td>
+                  <td id="SKA1-DE-TOC-29-3" class="toc_l">Der Rat des Argos</td>
+                  <td id="SKA1-DE-TOC-29-4" class="toc_r">80&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-30-" class="atice20">
+                  <td id="SKA1-DE-TOC-30-1"></td>
+                  <td id="SKA1-DE-TOC-30-2"></td>
+                  <td id="SKA1-DE-TOC-30-3" class="toc_l">Medea verspricht den Argonauten Hilfe</td>
+                  <td id="SKA1-DE-TOC-30-4" class="toc_r">83&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-31-" class="atice20">
+                  <td id="SKA1-DE-TOC-31-1"></td>
+                  <td id="SKA1-DE-TOC-31-2"></td>
+                  <td id="SKA1-DE-TOC-31-3" class="toc_l">Iason und Medea</td>
+                  <td id="SKA1-DE-TOC-31-4" class="toc_r">84&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-32-" class="atice20">
+                  <td id="SKA1-DE-TOC-32-1"></td>
+                  <td id="SKA1-DE-TOC-32-2"></td>
+                  <td id="SKA1-DE-TOC-32-3" class="toc_l">Iason erfüllt des Aietes Begehr</td>
+                  <td id="SKA1-DE-TOC-32-4" class="toc_r">88&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-33-" class="atice20">
+                  <td id="SKA1-DE-TOC-33-1"></td>
+                  <td id="SKA1-DE-TOC-33-2"></td>
+                  <td id="SKA1-DE-TOC-33-3" class="toc_l">Medea raubt das goldene Vlies</td>
+                  <td id="SKA1-DE-TOC-33-4" class="toc_r">92&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-34-" class="atice20">
+                  <td id="SKA1-DE-TOC-34-1"></td>
+                  <td id="SKA1-DE-TOC-34-2"></td>
+                  <td id="SKA1-DE-TOC-34-3" class="toc_l">Die Argonauten, verfolgt, entkommen mit Medea</td>
+                  <td id="SKA1-DE-TOC-34-4" class="toc_r">95&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-35-" class="atice20">
+                  <td id="SKA1-DE-TOC-35-1"></td>
+                  <td id="SKA1-DE-TOC-35-2"></td>
+                  <td id="SKA1-DE-TOC-35-3" class="toc_l">Weitere Heimfahrt der Argonauten</td>
+                  <td id="SKA1-DE-TOC-35-4" class="toc_r">99&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-36-" class="atice20">
+                  <td id="SKA1-DE-TOC-36-1"></td>
+                  <td id="SKA1-DE-TOC-36-2"></td>
+                  <td id="SKA1-DE-TOC-36-3" class="toc_l">Neue Verfolgung der Kolchier</td>
+                  <td id="SKA1-DE-TOC-36-4" class="toc_r">103&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-37-" class="atice20">
+                  <td id="SKA1-DE-TOC-37-1"></td>
+                  <td id="SKA1-DE-TOC-37-2"></td>
+                  <td id="SKA1-DE-TOC-37-3" class="toc_l">Letzte Abenteuer der Helden</td>
+                  <td id="SKA1-DE-TOC-37-4" class="toc_r">104&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-38-" class="atice20">
+                  <td id="SKA1-DE-TOC-38-1"></td>
+                  <td id="SKA1-DE-TOC-38-2"></td>
+                  <td id="SKA1-DE-TOC-38-3" class="toc_l">Iasons Ende</td>
+                  <td id="SKA1-DE-TOC-38-4" class="toc_r">109&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-39-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-39-1" class="toc_lb">Drittes Buch</td>
+                  <td id="SKA1-DE-TOC-39-4" class="toc_rb">115&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-40-" class="atice20">
+                  <td id="SKA1-DE-TOC-40-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-40-2" class="toc_l">Meleagros und die Eberjagd</td>
+                  <td id="SKA1-DE-TOC-40-4" class="toc_r">116&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-41-" class="atice20">
+                  <td id="SKA1-DE-TOC-41-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-41-2" class="toc_l">Tantalos</td>
+                  <td id="SKA1-DE-TOC-41-4" class="toc_r">120&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-42-" class="atice20">
+                  <td id="SKA1-DE-TOC-42-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-42-2" class="toc_l">Pelops</td>
+                  <td id="SKA1-DE-TOC-42-4" class="toc_r">121&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-43-" class="atice20">
+                  <td id="SKA1-DE-TOC-43-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-43-2" class="toc_l">Niobe</td>
+                  <td id="SKA1-DE-TOC-43-4" class="toc_r">123&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-44-" class="atice20">
+                  <td id="SKA1-DE-TOC-44-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-44-2" class="toc_l">Salmoneus</td>
+                  <td id="SKA1-DE-TOC-44-4" class="toc_r">127&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-45-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-45-1" class="toc_lb">Viertes Buch</td>
+                  <td id="SKA1-DE-TOC-45-4" class="toc_rb">129&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-46-" class="atice20">
+                  <td id="SKA1-DE-TOC-46-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-46-2" class="toc_l">Aus der Heraklessage</td>
+                  <td id="SKA1-DE-TOC-46-4" class="toc_r">130&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-47-" class="atice20">
+                  <td id="SKA1-DE-TOC-47-1"></td>
+                  <td id="SKA1-DE-TOC-47-2"></td>
+                  <td id="SKA1-DE-TOC-47-3" class="toc_l">Herakles der Neugeborene</td>
+                  <td id="SKA1-DE-TOC-47-4" class="toc_r">130&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-48-" class="atice20">
+                  <td id="SKA1-DE-TOC-48-1"></td>
+                  <td id="SKA1-DE-TOC-48-2"></td>
+                  <td id="SKA1-DE-TOC-48-3" class="toc_l">Die Erziehung des Herakles</td>
+                  <td id="SKA1-DE-TOC-48-4" class="toc_r">131&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-49-" class="atice20">
+                  <td id="SKA1-DE-TOC-49-1"></td>
+                  <td id="SKA1-DE-TOC-49-2"></td>
+                  <td id="SKA1-DE-TOC-49-3" class="toc_l">Herakles am Scheidewege</td>
+                  <td id="SKA1-DE-TOC-49-4" class="toc_r">132&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-50-" class="atice20">
+                  <td id="SKA1-DE-TOC-50-1"></td>
+                  <td id="SKA1-DE-TOC-50-2"></td>
+                  <td id="SKA1-DE-TOC-50-3" class="toc_l">Des Herakles erste Taten</td>
+                  <td id="SKA1-DE-TOC-50-4" class="toc_r">134&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-51-" class="atice20">
+                  <td id="SKA1-DE-TOC-51-1"></td>
+                  <td id="SKA1-DE-TOC-51-2"></td>
+                  <td id="SKA1-DE-TOC-51-3" class="toc_l">Herakles im Gigantenkampfe</td>
+                  <td id="SKA1-DE-TOC-51-4" class="toc_r">136&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-52-" class="atice20">
+                  <td id="SKA1-DE-TOC-52-1"></td>
+                  <td id="SKA1-DE-TOC-52-2"></td>
+                  <td id="SKA1-DE-TOC-52-3" class="toc_l">Herakles und Eurystheus</td>
+                  <td id="SKA1-DE-TOC-52-4" class="toc_r">138&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-53-" class="atice20">
+                  <td id="SKA1-DE-TOC-53-1"></td>
+                  <td id="SKA1-DE-TOC-53-2"></td>
+                  <td id="SKA1-DE-TOC-53-3" class="toc_l">Die drei ersten Arbeiten des Herakles</td>
+                  <td id="SKA1-DE-TOC-53-4" class="toc_r">139&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-54-" class="atice20">
+                  <td id="SKA1-DE-TOC-54-1"></td>
+                  <td id="SKA1-DE-TOC-54-2"></td>
+                  <td id="SKA1-DE-TOC-54-3" class="toc_l">Die vierte Arbeit des Herakles bis zur sechsten</td>
+                  <td id="SKA1-DE-TOC-54-4" class="toc_r">143&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-55-" class="atice20">
+                  <td id="SKA1-DE-TOC-55-1"></td>
+                  <td id="SKA1-DE-TOC-55-2"></td>
+                  <td id="SKA1-DE-TOC-55-3" class="toc_l">Die siebente, achte und neunte Arbeit des Herakles</td>
+                  <td id="SKA1-DE-TOC-55-4" class="toc_r">146&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-56-" class="atice20">
+                  <td id="SKA1-DE-TOC-56-1"></td>
+                  <td id="SKA1-DE-TOC-56-2"></td>
+                  <td id="SKA1-DE-TOC-56-3" class="toc_l">Die drei letzten Arbeiten des Herakles</td>
+                  <td id="SKA1-DE-TOC-56-4" class="toc_r">149&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-57-" class="atice20">
+                  <td id="SKA1-DE-TOC-57-1"></td>
+                  <td id="SKA1-DE-TOC-57-2"></td>
+                  <td id="SKA1-DE-TOC-57-3" class="toc_l">Herakles und Eurytos</td>
+                  <td id="SKA1-DE-TOC-57-4" class="toc_r">155&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-58-" class="atice20">
+                  <td id="SKA1-DE-TOC-58-1"></td>
+                  <td id="SKA1-DE-TOC-58-2"></td>
+                  <td id="SKA1-DE-TOC-58-3" class="toc_l">Herakles bei Admetos</td>
+                  <td id="SKA1-DE-TOC-58-4" class="toc_r">156&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-59-" class="atice20">
+                  <td id="SKA1-DE-TOC-59-1"></td>
+                  <td id="SKA1-DE-TOC-59-2"></td>
+                  <td id="SKA1-DE-TOC-59-3" class="toc_l">Herakles im Dienste der Omphale</td>
+                  <td id="SKA1-DE-TOC-59-4" class="toc_r">161&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-60-" class="atice20">
+                  <td id="SKA1-DE-TOC-60-1"></td>
+                  <td id="SKA1-DE-TOC-60-2"></td>
+                  <td id="SKA1-DE-TOC-60-3" class="toc_l">Die späteren Heldentaten des Herakles</td>
+                  <td id="SKA1-DE-TOC-60-4" class="toc_r">164&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-61-" class="atice20">
+                  <td id="SKA1-DE-TOC-61-1"></td>
+                  <td id="SKA1-DE-TOC-61-2"></td>
+                  <td id="SKA1-DE-TOC-61-3" class="toc_l">Herakles und Deianeira</td>
+                  <td id="SKA1-DE-TOC-61-4" class="toc_r">166&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-62-" class="atice20">
+                  <td id="SKA1-DE-TOC-62-1"></td>
+                  <td id="SKA1-DE-TOC-62-2"></td>
+                  <td id="SKA1-DE-TOC-62-3" class="toc_l">Herakles und Nessos</td>
+                  <td id="SKA1-DE-TOC-62-4" class="toc_r">168&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-63-" class="atice20">
+                  <td id="SKA1-DE-TOC-63-1"></td>
+                  <td id="SKA1-DE-TOC-63-2"></td>
+                  <td id="SKA1-DE-TOC-63-3" class="toc_l">Herakles, Iole und Deianeira; Sein Ende</td>
+                  <td id="SKA1-DE-TOC-63-4" class="toc_r">169&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-64-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-64-1" class="toc_lb">Fünftes Buch</td>
+                  <td id="SKA1-DE-TOC-64-4" class="toc_rb">175&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-65-" class="atice20">
+                  <td id="SKA1-DE-TOC-65-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-65-2" class="toc_l">Bellerophontes</td>
+                  <td id="SKA1-DE-TOC-65-4" class="toc_r">176&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-66-" class="atice20">
+                  <td id="SKA1-DE-TOC-66-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-64-2" class="toc_l">Theseus</td>
+                  <td id="SKA1-DE-TOC-66-4" class="toc_r">179&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-67-" class="atice20">
+                  <td id="SKA1-DE-TOC-67-1"></td>
+                  <td id="SKA1-DE-TOC-67-2"></td>
+                  <td id="SKA1-DE-TOC-67-3" class="toc_l">Des Helden Geburt und Jugend</td>
+                  <td id="SKA1-DE-TOC-67-4" class="toc_r">179&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-68-" class="atice20">
+                  <td id="SKA1-DE-TOC-68-1"></td>
+                  <td id="SKA1-DE-TOC-68-2"></td>
+                  <td id="SKA1-DE-TOC-68-3" class="toc_l">Seine Wanderung zum Vater</td>
+                  <td id="SKA1-DE-TOC-68-4" class="toc_r">181&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-69-" class="atice20">
+                  <td id="SKA1-DE-TOC-69-1"></td>
+                  <td id="SKA1-DE-TOC-69-2"></td>
+                  <td id="SKA1-DE-TOC-69-3" class="toc_l">Theseus in Athen</td>
+                  <td id="SKA1-DE-TOC-69-4" class="toc_r">183&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-70-" class="atice20">
+                  <td id="SKA1-DE-TOC-70-1"></td>
+                  <td id="SKA1-DE-TOC-70-2"></td>
+                  <td id="SKA1-DE-TOC-70-3" class="toc_l">Theseus bei Minos</td>
+                  <td id="SKA1-DE-TOC-70-4" class="toc_r">184&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-71-" class="atice20">
+                  <td id="SKA1-DE-TOC-71-1"></td>
+                  <td id="SKA1-DE-TOC-71-2"></td>
+                  <td id="SKA1-DE-TOC-71-3" class="toc_l">Theseus als König</td>
+                  <td id="SKA1-DE-TOC-71-4" class="toc_r">188&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-72-" class="atice20">
+                  <td id="SKA1-DE-TOC-72-1"></td>
+                  <td id="SKA1-DE-TOC-72-2"></td>
+                  <td id="SKA1-DE-TOC-72-3" class="toc_l">Der Amazonenkrieg</td>
+                  <td id="SKA1-DE-TOC-72-4" class="toc_r">189&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-73-" class="atice20">
+                  <td id="SKA1-DE-TOC-73-1"></td>
+                  <td id="SKA1-DE-TOC-73-2"></td>
+                  <td id="SKA1-DE-TOC-73-3" class="toc_l">Theseus und Peirithoos; Lapithen- und Kentaurenkampf</td>
+                  <td id="SKA1-DE-TOC-73-4" class="toc_r">190&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-74-" class="atice20">
+                  <td id="SKA1-DE-TOC-74-1"></td>
+                  <td id="SKA1-DE-TOC-74-2"></td>
+                  <td id="SKA1-DE-TOC-74-3" class="toc_l">Theseus und Phaidra</td>
+                  <td id="SKA1-DE-TOC-74-4" class="toc_r">193&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-75-" class="atice20">
+                  <td id="SKA1-DE-TOC-75-1"></td>
+                  <td id="SKA1-DE-TOC-75-2"></td>
+                  <td id="SKA1-DE-TOC-75-3" class="toc_l">Theseus auf Frauenraub</td>
+                  <td id="SKA1-DE-TOC-75-4" class="toc_r">198&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-76-" class="atice20">
+                  <td id="SKA1-DE-TOC-76-1"></td>
+                  <td id="SKA1-DE-TOC-76-2"></td>
+                  <td id="SKA1-DE-TOC-76-3" class="toc_l">Sein Ende</td>
+                  <td id="SKA1-DE-TOC-76-4" class="toc_r">200&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-77-" class="atice20">
+                  <td id="SKA1-DE-TOC-77-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-77-2" class="toc_l">Die Sage von Oidipus</td>
+                  <td id="SKA1-DE-TOC-77-4" class="toc_r">202&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-78-" class="atice20">
+                  <td id="SKA1-DE-TOC-78-1"></td>
+                  <td id="SKA1-DE-TOC-78-2"></td>
+                  <td id="SKA1-DE-TOC-78-3" class="toc_l">Des Oidipus Geburt, Jugend, Flucht, Vatermord</td>
+                  <td id="SKA1-DE-TOC-78-4" class="toc_r">202&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-79-" class="atice20">
+                  <td id="SKA1-DE-TOC-79-1"></td>
+                  <td id="SKA1-DE-TOC-79-2"></td>
+                  <td id="SKA1-DE-TOC-79-3" class="toc_l">Oidipus in Theben, heiratet seine Mutter</td>
+                  <td id="SKA1-DE-TOC-79-4" class="toc_r">205&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-80-" class="atice20">
+                  <td id="SKA1-DE-TOC-80-1"></td>
+                  <td id="SKA1-DE-TOC-80-2"></td>
+                  <td id="SKA1-DE-TOC-80-3" class="toc_l">Die Entdeckung</td>
+                  <td id="SKA1-DE-TOC-80-4" class="toc_r">206&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-81-" class="atice20">
+                  <td id="SKA1-DE-TOC-81-1"></td>
+                  <td id="SKA1-DE-TOC-81-2"></td>
+                  <td id="SKA1-DE-TOC-81-3" class="toc_l">Iokaste und Oidipus strafen sich</td>
+                  <td id="SKA1-DE-TOC-81-4" class="toc_r">210&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-82-" class="atice20">
+                  <td id="SKA1-DE-TOC-82-1"></td>
+                  <td id="SKA1-DE-TOC-82-2"></td>
+                  <td id="SKA1-DE-TOC-82-3" class="toc_l">Oidipus und Antigone</td>
+                  <td id="SKA1-DE-TOC-82-4" class="toc_r">211&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-83-" class="atice20">
+                  <td id="SKA1-DE-TOC-83-1"></td>
+                  <td id="SKA1-DE-TOC-83-2"></td>
+                  <td id="SKA1-DE-TOC-83-3" class="toc_l">Oidipus auf Kolonos</td>
+                  <td id="SKA1-DE-TOC-83-4" class="toc_r">213&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-84-" class="atice20">
+                  <td id="SKA1-DE-TOC-84-1"></td>
+                  <td id="SKA1-DE-TOC-84-2"></td>
+                  <td id="SKA1-DE-TOC-84-3" class="toc_l">Oidipus und Theseus</td>
+                  <td id="SKA1-DE-TOC-84-4" class="toc_r">216&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-85-" class="atice20">
+                  <td id="SKA1-DE-TOC-85-1"></td>
+                  <td id="SKA1-DE-TOC-85-2"></td>
+                  <td id="SKA1-DE-TOC-85-3" class="toc_l">Oidipus und Kreon</td>
+                  <td id="SKA1-DE-TOC-85-4" class="toc_r">217&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-86-" class="atice20">
+                  <td id="SKA1-DE-TOC-86-1"></td>
+                  <td id="SKA1-DE-TOC-86-2"></td>
+                  <td id="SKA1-DE-TOC-86-3" class="toc_l">Oidipus und Polyneikes</td>
+                  <td id="SKA1-DE-TOC-86-4" class="toc_r">218&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-87-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-87-1" class="toc_lb">Sechstes Buch</td>
+                  <td id="SKA1-DE-TOC-87-4" class="toc_rb">223&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-88-" class="atice20">
+                  <td id="SKA1-DE-TOC-88-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-88-2" class="toc_l">Die Sieben gegen Theben</td>
+                  <td id="SKA1-DE-TOC-88-4" class="toc_r">224&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-89-" class="atice20">
+                  <td id="SKA1-DE-TOC-89-1"></td>
+                  <td id="SKA1-DE-TOC-89-2"></td>
+                  <td id="SKA1-DE-TOC-89-3" class="toc_l">Polyneikes und Tydeus bei Adrastos</td>
+                  <td id="SKA1-DE-TOC-89-4" class="toc_r">224&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-90-" class="atice20">
+                  <td id="SKA1-DE-TOC-90-1"></td>
+                  <td id="SKA1-DE-TOC-90-2"></td>
+                  <td id="SKA1-DE-TOC-90-3" class="toc_l">Auszug der Helden; Hypsipyle und Opheltes</td>
+                  <td id="SKA1-DE-TOC-90-4" class="toc_r">226&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-91-" class="atice20">
+                  <td id="SKA1-DE-TOC-91-1"></td>
+                  <td id="SKA1-DE-TOC-91-2"></td>
+                  <td id="SKA1-DE-TOC-91-3" class="toc_l">Die Helden vor Theben angekommen</td>
+                  <td id="SKA1-DE-TOC-91-4" class="toc_r">229&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-92-" class="atice20">
+                  <td id="SKA1-DE-TOC-92-1"></td>
+                  <td id="SKA1-DE-TOC-92-2"></td>
+                  <td id="SKA1-DE-TOC-92-3" class="toc_l">Menoikeus</td>
+                  <td id="SKA1-DE-TOC-92-4" class="toc_r">231&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-93-" class="atice20">
+                  <td id="SKA1-DE-TOC-93-1"></td>
+                  <td id="SKA1-DE-TOC-93-2"></td>
+                  <td id="SKA1-DE-TOC-93-3" class="toc_l">Der Sturm auf die Stadt</td>
+                  <td id="SKA1-DE-TOC-93-4" class="toc_r">233&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-94-" class="atice20">
+                  <td id="SKA1-DE-TOC-94-1"></td>
+                  <td id="SKA1-DE-TOC-94-2"></td>
+                  <td id="SKA1-DE-TOC-94-3" class="toc_l">Der Brüder Zweikampf</td>
+                  <td id="SKA1-DE-TOC-94-4" class="toc_r">236&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-95-" class="atice20">
+                  <td id="SKA1-DE-TOC-95-1"></td>
+                  <td id="SKA1-DE-TOC-95-2"></td>
+                  <td id="SKA1-DE-TOC-95-3" class="toc_l">Kreons Beschluß</td>
+                  <td id="SKA1-DE-TOC-95-4" class="toc_r">239&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-96-" class="atice20">
+                  <td id="SKA1-DE-TOC-96-1"></td>
+                  <td id="SKA1-DE-TOC-96-2"></td>
+                  <td id="SKA1-DE-TOC-96-3" class="toc_l">Antigone und Kreon</td>
+                  <td id="SKA1-DE-TOC-96-4" class="toc_r">241&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-97-" class="atice20">
+                  <td id="SKA1-DE-TOC-97-1"></td>
+                  <td id="SKA1-DE-TOC-97-2"></td>
+                  <td id="SKA1-DE-TOC-97-3" class="toc_l">Haimon und Antigone</td>
+                  <td id="SKA1-DE-TOC-97-4" class="toc_r">242&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-98-" class="atice20">
+                  <td id="SKA1-DE-TOC-98-1"></td>
+                  <td id="SKA1-DE-TOC-98-2"></td>
+                  <td id="SKA1-DE-TOC-98-3" class="toc_l">Kreons Strafe</td>
+                  <td id="SKA1-DE-TOC-98-4" class="toc_r">243&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-99-" class="atice20">
+                  <td id="SKA1-DE-TOC-99-1"></td>
+                  <td id="SKA1-DE-TOC-99-2"></td>
+                  <td id="SKA1-DE-TOC-99-3" class="toc_l">Bestattung der thebanischen Helden</td>
+                  <td id="SKA1-DE-TOC-99-4" class="toc_r">245&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-100-" class="atice20">
+                  <td id="SKA1-DE-TOC-100-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-100-2" class="toc_l">Die Epigonen</td>
+                  <td id="SKA1-DE-TOC-100-4" class="toc_r">246&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-101-" class="atice20">
+                  <td id="SKA1-DE-TOC-101-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-101-2" class="toc_l">Alkmaion und das Halsband</td>
+                  <td id="SKA1-DE-TOC-101-4" class="toc_r">247&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-102-" class="atice20">
+                  <td id="SKA1-DE-TOC-102-1"></td>
+                  <td colspan="2" id="SKA1-DE-TOC-102-2" class="toc_l">Die Sage von den Herakliden</td>
+                  <td id="SKA1-DE-TOC-102-4" class="toc_r">250&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-103-" class="atice20">
+                  <td id="SKA1-DE-TOC-103-1"></td>
+                  <td id="SKA1-DE-TOC-103-2"></td>
+                  <td id="SKA1-DE-TOC-103-3" class="toc_l">Die Herakliden kommen nach Athen</td>
+                  <td id="SKA1-DE-TOC-103-4" class="toc_r">250&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-104-" class="atice20">
+                  <td id="SKA1-DE-TOC-104-1"></td>
+                  <td id="SKA1-DE-TOC-104-2"></td>
+                  <td id="SKA1-DE-TOC-104-3" class="toc_l">Demophon</td>
+                  <td id="SKA1-DE-TOC-104-4" class="toc_r">252&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-105-" class="atice20">
+                  <td id="SKA1-DE-TOC-105-1"></td>
+                  <td id="SKA1-DE-TOC-105-2"></td>
+                  <td id="SKA1-DE-TOC-105-3" class="toc_l">Makaria</td>
+                  <td id="SKA1-DE-TOC-105-4" class="toc_r">255&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-106-" class="atice20">
+                  <td id="SKA1-DE-TOC-106-1"></td>
+                  <td id="SKA1-DE-TOC-106-2"></td>
+                  <td id="SKA1-DE-TOC-106-3" class="toc_l">Die Rettungsschlacht</td>
+                  <td id="SKA1-DE-TOC-106-4" class="toc_r">256&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-107-" class="atice20">
+                  <td id="SKA1-DE-TOC-107-1"></td>
+                  <td id="SKA1-DE-TOC-107-2"></td>
+                  <td id="SKA1-DE-TOC-107-3" class="toc_l">Eurystheus vor Alkmene</td>
+                  <td id="SKA1-DE-TOC-107-4" class="toc_r">258&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-108-" class="atice20">
+                  <td id="SKA1-DE-TOC-108-1"></td>
+                  <td id="SKA1-DE-TOC-108-2"></td>
+                  <td id="SKA1-DE-TOC-108-3" class="toc_l">Hyllos, sein Orakel und seine Nachkommen</td>
+                  <td id="SKA1-DE-TOC-108-4" class="toc_r">260&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-109-" class="atice20">
+                  <td id="SKA1-DE-TOC-109-1"></td>
+                  <td id="SKA1-DE-TOC-109-2"></td>
+                  <td id="SKA1-DE-TOC-109-3" class="toc_l">Die Herakliden teilen den Peloponnes</td>
+                  <td id="SKA1-DE-TOC-109-4" class="toc_r">264&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-110-" class="atice20">
+                  <td id="SKA1-DE-TOC-110-1"></td>
+                  <td id="SKA1-DE-TOC-110-2"></td>
+                  <td id="SKA1-DE-TOC-110-3" class="toc_l">Merope und Aipytos</td>
+                  <td id="SKA1-DE-TOC-110-4" class="toc_r">265&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-111-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-111-1" class="toc_lb">Anmerkungen</td>
+                  <td id="SKA1-DE-TOC-111-4" class="toc_rb">269&#160;&#160;</td>
+                </tr>
+                <tr id="SKA1-DE-TOC-112-" class="atice20">
+                  <td colspan="3" id="SKA1-DE-TOC-112-1" class="toc_lb">Namenregister</td>
+                  <td id="SKA1-DE-TOC-112-4" class="toc_rb">291&#160;&#160;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+                       
+      </div>
+    
+    </div> <!-- end pagContent div -->
+        
+    <!-- PopImg modal begin -->
+    
+    <div id="popImgModal" class="modal bizline" style="font-size: 28px">
+      <span class="close"><button class="btn active" style="font-size: 18px;">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+      <div class="center" id="modal-Caption" style="margin-top: 20px;"></div>
+    </div>    
+
+    <!-- PopImg modal end -->
+           
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>
