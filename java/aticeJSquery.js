@@ -394,27 +394,3 @@ else {
 }
  
 }
-
-function test1() {
-  var str = 'something';
-  if (sessionStorage.getItem("Redirect") != null) {str = "not null"}
-  else {str = "null"}
-  document.getElementById("demo1").innerHTML = str + ' , ' + sessionStorage.getItem("Redirect");  
-}
-
-/*
-function getStatus() {
-var x = window.scrollX;
-var y = window.scrollY;
-var hh = document.getElementById("pagHeader").offsetHeight;
-var str = x + ' , ' + y + '   ' + hh;	
-document.getElementById("demo").innerHTML = str;	
-}
-*/
-
-function getStatus() {
-var x = history.length;
-var y = read_cookie('ClickCount'); 
-var str = x;	
-document.getElementById("demo").innerHTML = "Act" + ' ' + str + ' , ' + "Ck" + ' ' + y;	
-}
