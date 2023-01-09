@@ -228,9 +228,8 @@ a:hover {
   top: 0;
   background: rgb(128, 128, 128);  
   background-color: rgb(128, 128, 128);
-  background-image: url("../images/banners/atice_banner.png");
-  background-size: cover; 
-  -webkit-background-size: cover; 
+  background-image: url("../images/banners/atice_banner.png"); 
+  background-size: contain; 
   z-index: 1000;
 }
 
@@ -818,7 +817,6 @@ ol.lower-alpha {
   display: block;	
   margin-bottom: 1em;
   height: 100px; 
-  background-size: cover;	
 }
 
 .bannerLogo {	
