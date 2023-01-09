@@ -276,12 +276,16 @@ mediaQueryList.addEventListener('change', event => {
   if (event.matches) {
 	menuYsize = document.getElementById("pagHeader").offsetHeight + "px";
     $(".content").css("margin-top", menuYsize);
-    document.getElementById("NavMenuItems").innerHTML = NavMenu_B;
+    var parentwidth = document.getElementById("pagWrapper").offsetWidth + "px";
+    document.getElementById("pagHeader").offsetWidth = parentwidth;
+    document.getElementById("NavMenuItems").innerHTML = NavMenu_B;    
     if (modalVisible) {CheckModalHeight1(menuYsize)};
   } else {		
     menuYsize = contvertpos;
     $(".content").css("margin-top", menuYsize);
-    document.getElementById("NavMenuItems").innerHTML = NavMenu_A;  
+    var parentwidth = document.getElementById("pagWrapper").offsetWidth + "px";
+    document.getElementById("pagHeader").offsetWidth = parentwidth;    
+    document.getElementById("NavMenuItems").innerHTML = NavMenu_A;     
     if (modalVisible) {CheckModalHeight1(menuYsize)};    	    
   }
 })
@@ -297,6 +301,8 @@ var x = document.getElementById("pagTopNav");
   }
   menuYsize = document.getElementById("pagHeader").offsetHeight + "px";
   $(".content").css("margin-top", menuYsize);
+  var parentwidth = document.getElementById("pagHeader").offsetWidth + "px";
+  $(".pagBanner").width(parentwidth);
 }
 
 function storeScrollPos() {
@@ -331,7 +337,7 @@ var x = document.getElementById("pagTopNav");
     x.className = "topnav";
   }
   menuYsize = document.getElementById("pagHeader").offsetHeight + "px";
-  $(".content").css("margin-top", menuYsize); 
+  $(".content").css("margin-top", menuYsize);
 }
 
 function CheckModalHeight2(NewSize){

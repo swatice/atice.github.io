@@ -224,17 +224,12 @@ a:hover {
 #pagHeader {	
   display: block;
   overflow: hidden; 
-/*  position: fixed;*/
-  top: 0;
+  top: 0; 
+  position: fixed;
   background: rgb(128, 128, 128);  
   background-color: rgb(128, 128, 128);
+  background-image: url("../images/banners/atice_banner.png");
   z-index: 1000;
-}
-
-.pagBanner {
-  margin: 0 0; 
-  background-image: url("../images/banners/atice_banner.png"); 
-  background-size: contain;   
 }
 
 #pagBannerLogo {
