@@ -228,9 +228,13 @@ a:hover {
   top: 0;
   background: rgb(128, 128, 128);  
   background-color: rgb(128, 128, 128);
-  background-image: url("../images/banners/atice_banner.png"); 
-  background-size: contain; 
   z-index: 1000;
+}
+
+.pagBanner {
+  margin: 0 0; 
+  background-image: url("../images/banners/atice_banner.png"); 
+  background-size: contain;   
 }
 
 #pagBannerLogo {
