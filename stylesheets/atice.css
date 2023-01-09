@@ -816,7 +816,8 @@ ol.lower-alpha {
 .aticeBanner {
   display: block;	
   margin-bottom: 1em;
-  height: 100px; 	
+  height: 100px; 
+  background-size: cover;	
 }
 
 .bannerLogo {	
