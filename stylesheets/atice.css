@@ -1122,6 +1122,35 @@ ol.lower-alpha {
   #subheadSubTitle {
     font-size: 24px;
   }
+  #subMenuCntrDiv {
+    flex-basis: 64%;
+  }   
+  #subMenuLeftDiv {
+    flex-basis: 18%;
+  }
+  #subMenuRightDiv {
+    flex-basis: 18%;
+  }       
+ .books2left, .books2right {
+    width: 100%;
+  }   
+  
+}
+
+/* Use a media query to add a break point at 600px: CSS code if viewport is 900px or smaller */	
+@media screen and (max-width: 600px) {
+  .fntclass {    
+    font-size: 22px;
+  }
+  #subheadMenuTxt {
+    font-size: 24px;
+  }       
+  #subheadMainTitle {
+    font-size: 22px;
+  }   
+  #subheadSubTitle {
+    font-size: 20px;
+  }
  .books2left, .books2right {
     width: 100%;
   }   
