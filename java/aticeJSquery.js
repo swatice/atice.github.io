@@ -157,7 +157,7 @@ switch (document.title) {
     NavMenu_B =  ForsaleMenu_B;          
 }    
 
-if (window.innerWidth >768) {
+if (window.innerWidth >1024) {
   document.getElementById("NavMenuItems").innerHTML = NavMenu_A;	
 } else {
   document.getElementById("NavMenuItems").innerHTML = NavMenu_B;		
@@ -297,7 +297,7 @@ var LandingPage = read_cookie('ClickCount');
 function DropDownMenu() {
 var x = document.getElementById("pagTopNav");
   if (x.className === "topnav") {
-    x.className += " responsive";
+    x.className += " responsive";    
   } else {
     x.className = "topnav";
   }
