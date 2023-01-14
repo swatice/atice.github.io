@@ -157,37 +157,6 @@ switch (document.title) {
     NavMenu_B =  ForsaleMenu_B;          
 }    
 
-/*
-if (document.URL.includes("index.html") || doctitle_Home) {
-  NavMenu_A =  HomeMenu_A;
-  NavMenu_B =  HomeMenu_A;   
-}
-if (document.URL.includes("consulting.html") || doctitle_Consulting) {
-  NavMenu_A =  ConsultingMenu_A;
-  NavMenu_B =  ConsultingMenu_B;  
-}
-if (document.URL.includes("books.html")) {
-  NavMenu_A =  BookstoreMenu_A;
-  NavMenu_B =  BookstoreMenu_B;  
-}
-if (document.URL.includes("forsale")) {
-  NavMenu_A =  ForsaleMenu_A;
-  NavMenu_B =  ForsaleMenu_B;  
-}
-if (document.URL.includes("about.html")) {
-  NavMenu_A =  AboutMenu_A;
-  NavMenu_B =  AboutMenu_B;  
-}
-if (document.URL.includes("contact.html")) {
-  NavMenu_A =  ContactMenu_A;
-  NavMenu_B =  ContactMenu_B;  
-}
-if (document.URL.includes("semidata")) {
-  NavMenu_A =  SemiDataMenu_A;
-  NavMenu_B =  SemiDataMenu_B;  
-}
-*/
-
 if (window.innerWidth >768) {
   document.getElementById("NavMenuItems").innerHTML = NavMenu_A;	
 } else {
@@ -276,15 +245,11 @@ mediaQueryList.addEventListener('change', event => {
   if (event.matches) {
 	menuYsize = document.getElementById("pagHeader").offsetHeight + "px";
     $(".content").css("margin-top", menuYsize);
-    var parentwidth = document.getElementById("pagWrapper").offsetWidth + "px";
-    document.getElementById("pagHeader").offsetWidth = parentwidth;
     document.getElementById("NavMenuItems").innerHTML = NavMenu_B;    
     if (modalVisible) {CheckModalHeight1(menuYsize)};
   } else {		
     menuYsize = contvertpos;
-    $(".content").css("margin-top", menuYsize);
-    var parentwidth = document.getElementById("pagWrapper").offsetWidth + "px";
-    document.getElementById("pagHeader").offsetWidth = parentwidth;    
+    $(".content").css("margin-top", menuYsize);   
     document.getElementById("NavMenuItems").innerHTML = NavMenu_A;     
     if (modalVisible) {CheckModalHeight1(menuYsize)};    	    
   }
@@ -301,8 +266,6 @@ var x = document.getElementById("pagTopNav");
   }
   menuYsize = document.getElementById("pagHeader").offsetHeight + "px";
   $(".content").css("margin-top", menuYsize);
-  var parentwidth = document.getElementById("pagHeader").offsetWidth + "px";
-  $(".pagBanner").width(parentwidth);
 }
 
 function storeScrollPos() {
@@ -327,7 +290,9 @@ var LandingPage = read_cookie('ClickCount');
   history.go(-LandingPage);    
 });
 
-}); /* end of $(document).ready function */
+}); 
+
+/* end of $(document).ready function */
 
 function DropDownMenu() {
 var x = document.getElementById("pagTopNav");
