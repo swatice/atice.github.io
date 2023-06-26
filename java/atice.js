@@ -86,7 +86,7 @@ function Semi_Sales_Lnk() {
 	
   var link = document.getElementById("semi_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1c_KEKEaUxGFwnR3zO83Ry8zELgfE5RNh/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1Ie8LLezqSkclzM8ZPo0oCzXH4FYGPi6X/view?usp=sharing";
 }
 
 function Semi_Equipment_Sales_Lnk() {
