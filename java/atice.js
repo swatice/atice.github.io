@@ -631,6 +631,56 @@ function BMW_WKS4_Google_Lnk() {
   link.href = "https://play.google.com/store/books/details/Brigitte_M_Wurm_FLOWERING_ART_The_Paintings_of_Bri?id=EPl7EAAAQBAJ&hl=en_US&gl=US";
 }
 
+/* END: BSW Flowering Art - Part Four */
 
+/* BEGIN: Technical Mechanics */
+
+function TEME_EN_Google_Lnk() {
+  
+  var link = document.getElementById("teme-en-google-lnk");
+  
+  link.href = "https://books.google.com/books?id=dITVEAAAQBAJ&newbks=0&dq=978-1-951894-17-7&source=gbs_navlinks_s";
+}
+
+function TEME_EN_Apple_Lnk() {
+  
+  var link = document.getElementById("teme-en-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/technical-mechanics/id6464541554";
+}
+
+function TEME_EN_Kobo_Lnk() {
+  
+  var link = document.getElementById("teme-en-kobo-lnk");
+  
+  link.href = "https://www.kobo.com/my/en/ebook/technical-mechanics-2";
+}
+
+/* END: Technical Mechanics */
+
+/* BEGIN: Technische Mechanik */
+
+function TEME_DE_Google_Lnk() {
+  
+  var link = document.getElementById("teme-de-google-lnk");
+  
+  link.href = "https://books.google.com/books?id=goTVEAAAQBAJ&newbks=0&dq=978-1-951894-18-4&source=gbs_navlinks_s";
+}
+
+function TEME_DE_Apple_Lnk() {
+  
+  var link = document.getElementById("teme-de-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/technische-mechanik/id6464542543";
+}
+
+function TEME_DE_Kobo_Lnk() {
+  
+  var link = document.getElementById("teme-de-kobo-lnk");
+  
+  link.href = "https://www.kobo.com/my/en/ebook/technische-mechanik-5";
+}
+
+/* END: Technische Mechanik */
 /* -------------------- */
 
