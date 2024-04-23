@@ -1,5 +1,5 @@
 
-document.addEventListener('contextmenu', event => event.preventDefault()); 
+/**document.addEventListener('contextmenu', event => event.preventDefault());**/ 
 
 /** Sticky Page Header Begin */
 
@@ -682,5 +682,58 @@ function TEME_DE_Kobo_Lnk() {
 }
 
 /* END: Technische Mechanik */
+
+
+/* BEGIN: Fundamentals of Physics - Part One */
+
+function PH1L_EN_Google_Lnk() {
+  
+  var link = document.getElementById("ph1l-en-google-lnk");
+  
+  link.href = "https://books.google.com/books?id=d7AAEQAAQBAJ&newbks=0&dq=978-1-951894-21-4&source=gbs_navlinks_s";
+}
+
+function PH1L_EN_Apple_Lnk() {
+  
+  var link = document.getElementById("ph1l-en-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/fundamental-of-physics-part-one/id6483937325";
+}
+
+function PH1L_EN_Kobo_Lnk() {
+  
+  var link = document.getElementById("ph1l-en-kobo-lnk");
+  
+  link.href = "https://www.kobo.com/in/en/ebook/fundamentals-of-physics-part-one";
+}
+
+/* END: Fundamentals of Physics - Part One */
+
+/* BEGIN: Grundlagen der Physik - Erster Teil */
+
+function PH1L_DE_Google_Lnk() {
+  
+  var link = document.getElementById("ph1l-de-google-lnk");
+  
+  link.href = "https://books.google.com/books?id=h7AAEQAAQBAJ&newbks=0&dq=978-1-951894-20-7&source=gbs_navlinks_s";
+}
+
+function PH1L_DE_Apple_Lnk() {
+  
+  var link = document.getElementById("ph1l-de-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/grundlagen-der-physik-erster-teil/id6483937600";
+}
+
+function PH1L_DE_Kobo_Lnk() {
+  
+  var link = document.getElementById("ph1l-de-kobo-lnk");
+  
+  link.href = "https://www.kobo.com/us/en/ebook/grundlagen-der-physik-erster-teil";
+}
+
+/* END: Grundlagen der Physik - Erster Teil */
+
+
 /* -------------------- */
 

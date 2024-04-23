@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png"/>  
+  <title>WS-PH1L-DE-P2</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script> 
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_CHTML"></script>
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    jax: ["input/TeX","input/MathML","output/SVG"],
+    extensions: ["tex2jax.js","mml2jax.js","MathEvents.js"],
+    TeX: {
+  extensions: ["noErrors.js","noUndefined.js","autoload-all.js"]
+    },
+    MathMenu: {
+  showRenderer: false
+    },
+    menuSettings: {
+  zoom: "Click"
+    },
+    messageStyle: "none"
+  }); 
+  </script>    
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1780px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>       
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                      
+
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">GRUNDLAGEN DER PHYSIK</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">Die Mechanik Newtonscher und relativistischer Bewegung</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href="WS-PH1L-DE-P1.html">1</a>
+            <a href=javascript:void(0); class="active">2</a>
+          </div>
+        </div>  
+      </div>
+                                                                   
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+                        
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Table of Contents:</span>
+        </div>
+      </div>
+                    
+      <div class="tocBookPages">
+                           
+        <div class="float">
+          <div class="tabular">        
+            <table id="PH1L_DE-TOC" class="toctable">            
+              <colgroup id="PH1L_DE-TOC-1g" class="atice17">
+                <col id="PH1L_DE-TOC-1" class="atice18_A1"/>
+                <col id="PH1L_DE-TOC-2" class="atice18_A2"/>
+                <col id="PH1L_DE-TOC-3" class="atice18_A3"/>
+                <col id="PH1L_DE-TOC-4" class="atice18_A4"/>
+                <col id="PH1L_DE-TOC-5" class="atice18_A5"/>      
+              </colgroup>
+              <tbody class="atice19">
+                <tr id="PH1L_DE-TOC-V0-" class="atice20">
+                  <td colspan="4" id="PH1L_DE-TOC-V0-1" class="toc_lb">Vorwort</td>
+                  <td id="PH1L_DE-TOC-V0-5" class="toc_rb">i&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-0-" class="atice20">
+                  <td id="PH1L_DE-TOC-0-1" class="toc_lb">1&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-0-2" class="toc_lb">Die Natur der Dinge</td>
+                  <td id="PH1L_DE-TOC-0-5" class="toc_rb">1&#160;&#160;</td>
+                </tr>                              
+                <tr id="PH1L_DE-TOC-1-" class="atice20">
+                  <td id="PH1L_DE-TOC-1-1"></td>
+                  <td id="PH1L_DE-TOC-1-2" class="toc_l">1.1&#160;</td>                 
+                  <td colspan="2" id="PH1L_DE-TOC-1-3" class="toc_l">Kräfte und Energie</td>
+                  <td id="PH1L_DE-TOC-1-5" class="toc_r">1&#160;&#160;</td>
+                </tr> 
+                <tr id="PH1L_DE-TOC-2-" class="atice20">
+                  <td id="PH1L_DE-TOC-2-1"></td>
+                  <td id="PH1L_DE-TOC-2-2" class="toc_l">1.2&#160;</td>                  
+                  <td colspan="2" id="PH1L_DE-TOC-2-3" class="toc_l">Die Konzepte von Raum und Zeit</td>
+                  <td id="PH1L_DE-TOC-2-5" class="toc_r">8&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-3-" class="atice20">
+                  <td id="PH1L_DE-TOC-3-1"></td>
+                  <td id="PH1L_DE-TOC-3-2" class="toc_l">1.3&#160;</td>                  
+                  <td colspan="2" id="PH1L_DE-TOC-3-3" class="toc_l">Die Struktur der Materie</td>
+                  <td id="PH1L_DE-TOC-3-5" class="toc_r">18&#160;&#160;</td>
+                </tr>    
+                <tr id="PH1L_DE-TOC-4-" class="atice20">
+                  <td id="PH1L_DE-TOC-4-1" class="toc_lb">2&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-4-2" class="toc_lb">Die Grundlagen der Bewegung</td>
+                  <td id="PH1L_DE-TOC-4-5" class="toc_rb">23&#160;&#160;</td>
+                </tr>                   
+                <tr id="PH1L_DE-TOC-5-" class="atice20">
+                  <td id="PH1L_DE-TOC-5-1"></td>
+                  <td id="PH1L_DE-TOC-5-2" class="toc_l">2.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-5-3" class="toc_l">Das Konzept des Massenpunkts</td>
+                  <td id="PH1L_DE-TOC-5-4" class="toc_r">24&#160;&#160;</td>
+                </tr>               
+                <tr id="PH1L_DE-TOC-6-" class="atice20">
+                  <td id="PH1L_DE-TOC-6-1"></td>
+                  <td id="PH1L_DE-TOC-6-2" class="toc_l">2.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-6-3" class="toc_l">Kinematik</td>
+                  <td id="PH1L_DE-TOC-6-4" class="toc_r">26&#160;&#160;</td>
+                </tr>                                            
+                <tr id="PH1L_DE-TOC-07-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-07-1"></td>
+                  <td id="PH1L_DE-TOC-07-3" class="toc_l">2.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-07-4" class="toc_l">Die Kinematik der Planetenbewegung</td>
+                  <td id="PH1L_DE-TOC-07-5" class="toc_r">32&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-8-" class="atice20">
+                  <td id="PH1L_DE-TOC-8-1"></td>
+                  <td id="PH1L_DE-TOC-8-2" class="toc_l">2.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-8-3" class="toc_l">Einfache Bewegung</td>
+                  <td id="PH1L_DE-TOC-8-4" class="toc_r">36&#160;&#160;</td>
+                </tr>                                                               
+                <tr id="PH1L_DE-TOC-09-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-09-1"></td>
+                  <td id="PH1L_DE-TOC-09-2" class="toc_l">2.3.1&#160;</td>
+                  <td id="PH1L_DE-TOC-09-3" class="toc_l">Beschleunigte lineare Bewegung</td>
+                  <td id="PH1L_DE-TOC-09-4" class="toc_r">36&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-10-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-10-1"></td>
+                  <td id="PH1L_DE-TOC-10-2" class="toc_l">2.3.2&#160;</td>
+                  <td id="PH1L_DE-TOC-10-3" class="toc_l">Schiefe Ebene und Bewegung im freien Fall</td>
+                  <td id="PH1L_DE-TOC-10-4" class="toc_r">37&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-11-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-11-1"></td>
+                  <td id="PH1L_DE-TOC-11-2" class="toc_l">2.3.2&#160;</td>
+                  <td id="PH1L_DE-TOC-11-3" class="toc_l">Ballistische Bewegung</td>
+                  <td id="PH1L_DE-TOC-11-4" class="toc_r">39&#160;&#160;</td>
+                </tr>                                
+                <tr id="PH1L_DE-TOC-12-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-12-1"></td>
+                  <td id="PH1L_DE-TOC-12-2" class="toc_l">2.3.4&#160;</td>
+                  <td id="PH1L_DE-TOC-12-3" class="toc_l">Gleichförmige Kreisbewegung</td>
+                  <td id="PH1L_DE-TOC-12-4" class="toc_r">41&#160;&#160;</td>
+                </tr>                               
+                <tr id="PH1L_DE-TOC-13-" class="atice20">
+                  <td id="PH1L_DE-TOC-13-1" class="toc_lb">3&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-13-1" class="toc_lb">Newtons Bewegungsgesetze</td>
+                  <td id="PH1L_DE-TOC-13-4" class="toc_rb">45&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-14-" class="atice20">
+                  <td id="PH1L_DE-TOC-14-1"></td>
+                  <td id="PH1L_DE-TOC-14-2" class="toc_l">3.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-14-3" class="toc_l">Kraft, Impuls und Masse</td>
+                  <td id="PH1L_DE-TOC-14-4" class="toc_r">46&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-15-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-15-1"></td>
+                  <td id="PH1L_DE-TOC-15-2" class="toc_l">3.1.1&#160;</td>
+                  <td id="PH1L_DE-TOC-15-3" class="toc_l">Überlagerung von Kräften</td>
+                  <td id="PH1L_DE-TOC-15-4" class="toc_r">52&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-16-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-16-1"></td>
+                  <td id="PH1L_DE-TOC-16-2" class="toc_l">3.1.2&#160;</td>
+                  <td id="PH1L_DE-TOC-16-3" class="toc_l">Newtons Gravitationsgesetz</td>
+                  <td id="PH1L_DE-TOC-16-4" class="toc_r">54&#160;&#160;</td>
+                </tr>                                                    
+                <tr id="PH1L_DE-TOC-17-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-17-1"></td>
+                  <td id="PH1L_DE-TOC-17-2" class="toc_l">3.1.3&#160;</td>
+                  <td id="PH1L_DE-TOC-17-3" class="toc_l">Träge Masse und schwere Masse</td>
+                  <td id="PH1L_DE-TOC-17-4" class="toc_r">56&#160;&#160;</td>
+                </tr>                                
+                <tr id="PH1L_DE-TOC-18-" class="atice20">
+                  <td id="PH1L_DE-TOC-18-1"></td>
+                  <td id="PH1L_DE-TOC-18-2" class="toc_l">3.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-18-3" class="toc_l">Systeme von Massenpunkten</td>
+                  <td id="PH1L_DE-TOC-18-4" class="toc_r">59&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-19-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-19-1"></td>
+                  <td id="PH1L_DE-TOC-19-2" class="toc_l">3.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-19-3" class="toc_l">Die Erhaltung des Impulses</td>
+                  <td id="PH1L_DE-TOC-19-4" class="toc_r">61&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-20-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-20-1"></td>
+                  <td id="PH1L_DE-TOC-20-2" class="toc_l">3.2.2&#160;</td>
+                  <td id="PH1L_DE-TOC-20-3" class="toc_l">Stoßprozesse</td>
+                  <td id="PH1L_DE-TOC-20-4" class="toc_r">63&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-21-" class="atice20">
+                  <td id="PH1L_DE-TOC-21-1" class="toc_lb">4&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-21-1" class="toc_lb">Energie, Potenziale und Felder</td>
+                  <td id="PH1L_DE-TOC-21-4" class="toc_rb">81&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-22-" class="atice20">
+                  <td id="PH1L_DE-TOC-22-1"></td>
+                  <td id="PH1L_DE-TOC-22-2" class="toc_l">4.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-22-3" class="toc_l">Energie, Arbeit und Leistung</td>
+                  <td id="PH1L_DE-TOC-22-4" class="toc_r">81&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-23-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-23-1"></td>
+                  <td id="PH1L_DE-TOC-23-2" class="toc_l">4.1.1&#160;</td>
+                  <td id="PH1L_DE-TOC-23-3" class="toc_l">Potenzielle Energie</td>
+                  <td id="PH1L_DE-TOC-23-4" class="toc_r">82&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-24-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-24-1"></td>
+                  <td id="PH1L_DE-TOC-24-2" class="toc_l">4.1.2&#160;</td>
+                  <td id="PH1L_DE-TOC-24-3" class="toc_l">Arbeit und Leistung</td>
+                  <td id="PH1L_DE-TOC-24-4" class="toc_r">84&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-25-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-25-1"></td>
+                  <td id="PH1L_DE-TOC-25-2" class="toc_l">4.1.3&#160;</td>
+                  <td id="PH1L_DE-TOC-25-3" class="toc_l">Kinetische Energie</td>
+                  <td id="PH1L_DE-TOC-25-4" class="toc_r">88&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-26-" class="atice20">
+                  <td id="PH1L_DE-TOC-26-1"></td>
+                  <td id="PH1L_DE-TOC-26-2" class="toc_l">4.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-26-3" class="toc_l">Potenziale und Felder</td>
+                  <td id="PH1L_DE-TOC-26-4" class="toc_r">90&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-27-" class="atice20">
+                  <td id="PH1L_DE-TOC-27-1"></td>
+                  <td id="PH1L_DE-TOC-27-2" class="toc_l">4.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-27-3" class="toc_l">Beispiele für Felder</td>
+                  <td id="PH1L_DE-TOC-27-4" class="toc_r">97&#160;&#160;</td>
+                </tr>   
+                <tr id="PH1L_DE-TOC-28-" class="atice20">
+                  <td id="PH1L_DE-TOC-28-1" class="toc_lb">5&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-28-2" class="toc_lb">Rotierende Bewegung</td>
+                  <td id="PH1L_DE-TOC-28-5" class="toc_rb">109&#160;&#160;</td>
+                </tr>  
+                <tr id="PH1L_DE-TOC-29-" class="atice20">
+                  <td id="PH1L_DE-TOC-29-1"></td>
+                  <td id="PH1L_DE-TOC-29-2" class="toc_l">5.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-29-3" class="toc_l">Der Drehimpuls</td>
+                  <td id="PH1L_DE-TOC-29-4" class="toc_r">110&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-30-" class="atice20">
+                  <td id="PH1L_DE-TOC-30-1"></td>
+                  <td id="PH1L_DE-TOC-30-2" class="toc_l">5.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-30-3" class="toc_l">Keplerbewegung</td>
+                  <td id="PH1L_DE-TOC-30-4" class="toc_r">114&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-31-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-31-1"></td>
+                  <td id="PH1L_DE-TOC-31-2" class="toc_l">5.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-31-3" class="toc_l">Gebundene und ungebundene Bewegung</td>
+                  <td id="PH1L_DE-TOC-31-4" class="toc_r">118&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-32-" class="atice20">
+                  <td id="PH1L_DE-TOC-32-1"></td>
+                  <td id="PH1L_DE-TOC-32-2" class="toc_l">5.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-32-3" class="toc_l">Streuung an Zentralpotenzialen</td>
+                  <td id="PH1L_DE-TOC-32-4" class="toc_r">123&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-33-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-33-1"></td>
+                  <td id="PH1L_DE-TOC-33-2" class="toc_l">5.3.1&#160;</td>
+                  <td id="PH1L_DE-TOC-33-3" class="toc_l">Der Wirkungsquerschnitt</td>
+                  <td id="PH1L_DE-TOC-33-4" class="toc_r">130&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-34-" class="atice20">
+                  <td id="PH1L_DE-TOC-34-1"></td>
+                  <td id="PH1L_DE-TOC-34-2" class="toc_l">5.4&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-34-3" class="toc_l">Drehimpuls vieler Massenpunkte</td>
+                  <td id="PH1L_DE-TOC-34-4" class="toc_r">132&#160;&#160;</td>
+                </tr>                               
+                <tr id="PH1L_DE-TOC-35-" class="atice20">
+                  <td id="PH1L_DE-TOC-35-1" class="toc_lb">6&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-35-2" class="toc_lb">Rotation starrer Körper</td>
+                  <td id="PH1L_DE-TOC-35-5" class="toc_rb">137&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-36-" class="atice20">
+                  <td id="PH1L_DE-TOC-36-1"></td>
+                  <td id="PH1L_DE-TOC-36-2" class="toc_l">6.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-36-3" class="toc_l">Der Trägheitstensor</td>
+                  <td id="PH1L_DE-TOC-36-4" class="toc_r">137&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-37-" class="atice20">
+                  <td id="PH1L_DE-TOC-37-1"></td>
+                  <td id="PH1L_DE-TOC-37-2" class="toc_l">6.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-37-3" class="toc_l">Euler-Gleichungen</td>
+                  <td id="PH1L_DE-TOC-37-4" class="toc_r">142&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-38-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-38-1"></td>
+                  <td id="PH1L_DE-TOC-38-2" class="toc_l">6.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-38-3" class="toc_l">Eulersche Winkel</td>
+                  <td id="PH1L_DE-TOC-38-4" class="toc_r">146&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-39-" class="atice20">
+                  <td id="PH1L_DE-TOC-39-1"></td>
+                  <td id="PH1L_DE-TOC-39-2" class="toc_l">6.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-39-3" class="toc_l">Kreisel, Nutation, Präzession</td>
+                  <td id="PH1L_DE-TOC-39-4" class="toc_r">150&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-40-" class="atice20">
+                  <td id="PH1L_DE-TOC-40-1"></td>
+                  <td id="PH1L_DE-TOC-40-2" class="toc_l">6.4&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-40-3" class="toc_l">Bewegte Bezugssysteme</td>
+                  <td id="PH1L_DE-TOC-40-4" class="toc_r">161&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-41-" class="atice20">
+                  <td id="PH1L_DE-TOC-41-1" class="toc_lb">7&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-41-2" class="toc_lb">Abgeleitete Kräfte</td>
+                  <td id="PH1L_DE-TOC-41-5" class="toc_rb">167&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-42-" class="atice20">
+                  <td id="PH1L_DE-TOC-42-1"></td>
+                  <td id="PH1L_DE-TOC-42-2" class="toc_l">7.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-42-3" class="toc_l">Reibungskräfte</td>
+                  <td id="PH1L_DE-TOC-42-4" class="toc_r">167&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-43-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-43-1"></td>
+                  <td id="PH1L_DE-TOC-43-2" class="toc_l">7.1.1&#160;</td>
+                  <td id="PH1L_DE-TOC-43-3" class="toc_l">Haftreibung und Gleitreibung</td>
+                  <td id="PH1L_DE-TOC-43-4" class="toc_r">168&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-44-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-44-1"></td>
+                  <td id="PH1L_DE-TOC-44-2" class="toc_l">7.1.2&#160;</td>
+                  <td id="PH1L_DE-TOC-44-3" class="toc_l">Seilreibung</td>
+                  <td id="PH1L_DE-TOC-44-4" class="toc_r">170&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-45-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-45-1"></td>
+                  <td id="PH1L_DE-TOC-45-2" class="toc_l">7.1.3&#160;</td>
+                  <td id="PH1L_DE-TOC-45-3" class="toc_l">Fluidreibung</td>
+                  <td id="PH1L_DE-TOC-45-4" class="toc_r">172&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-46-" class="atice20">
+                  <td id="PH1L_DE-TOC-46-1"></td>
+                  <td id="PH1L_DE-TOC-46-2" class="toc_l">7.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-46-3" class="toc_l">Kräfte in der Elastostatik</td>
+                  <td id="PH1L_DE-TOC-46-4" class="toc_r">174&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-47-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-47-1"></td>
+                  <td id="PH1L_DE-TOC-47-2" class="toc_l">7.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-47-3" class="toc_l">Der Spannungstensor</td>
+                  <td id="PH1L_DE-TOC-47-4" class="toc_r">175&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-48-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-48-1"></td>
+                  <td id="PH1L_DE-TOC-48-2" class="toc_l">7.2.2&#160;</td>
+                  <td id="PH1L_DE-TOC-48-3" class="toc_l">Dehnungen</td>
+                  <td id="PH1L_DE-TOC-48-4" class="toc_r">177&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-49-" class="atice20">
+                  <td id="PH1L_DE-TOC-49-1"></td>
+                  <td id="PH1L_DE-TOC-49-2" class="toc_l">7.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-49-3" class="toc_l">Das Hookesche Gesetz</td>
+                  <td id="PH1L_DE-TOC-49-4" class="toc_r">181&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-50-" class="atice20">
+                  <td id="PH1L_DE-TOC-50-1"></td>
+                  <td id="PH1L_DE-TOC-50-2" class="toc_l">7.4&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-50-3" class="toc_l">Kräfte in der Elastodynamik</td>
+                  <td id="PH1L_DE-TOC-50-4" class="toc_r">186&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-51-" class="atice20">
+                  <td id="PH1L_DE-TOC-51-1" class="toc_lb">8&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-51-2" class="toc_lb">Die Bewegung von Fluiden</td>
+                  <td id="PH1L_DE-TOC-51-5" class="toc_rb">189&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-52-" class="atice20">
+                  <td id="PH1L_DE-TOC-52-1"></td>
+                  <td id="PH1L_DE-TOC-52-2" class="toc_l">8.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-52-3" class="toc_l">Die hydrostatische Druckgleichung</td>
+                  <td id="PH1L_DE-TOC-52-4" class="toc_r">190&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-53-" class="atice20">
+                  <td id="PH1L_DE-TOC-53-1"></td>
+                  <td id="PH1L_DE-TOC-53-2" class="toc_l">8.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-53-3" class="toc_l">Die Kontinuitätsgleichung</td>
+                  <td id="PH1L_DE-TOC-53-4" class="toc_r">192&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-54-" class="atice20">
+                  <td id="PH1L_DE-TOC-54-1"></td>
+                  <td id="PH1L_DE-TOC-54-2" class="toc_l">8.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-54-3" class="toc_l">Stromlinien und Stromfunktion</td>
+                  <td id="PH1L_DE-TOC-54-4" class="toc_r">194&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-55-" class="atice20">
+                  <td id="PH1L_DE-TOC-55-1"></td>
+                  <td id="PH1L_DE-TOC-55-2" class="toc_l">8.4&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-55-3" class="toc_l">Die Bernoulli-Gleichung</td>
+                  <td id="PH1L_DE-TOC-55-4" class="toc_r">197&#160;&#160;</td>
+                </tr>                                
+                <tr id="PH1L_DE-TOC-56-" class="atice20">
+                  <td id="PH1L_DE-TOC-56-1"></td>
+                  <td id="PH1L_DE-TOC-56-2" class="toc_l">8.5&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-56-3" class="toc_l">Impulsgleichgewicht</td>
+                  <td id="PH1L_DE-TOC-56-4" class="toc_r">197&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-57-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-57-1"></td>
+                  <td id="PH1L_DE-TOC-57-2" class="toc_l">8.5.1&#160;</td>
+                  <td id="PH1L_DE-TOC-57-3" class="toc_l">Mikroskopische Untersuchung des Fluiddrucks</td>
+                  <td id="PH1L_DE-TOC-57-4" class="toc_r">203&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-58-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-58-1"></td>
+                  <td id="PH1L_DE-TOC-58-2" class="toc_l">8.5.2&#160;</td>
+                  <td id="PH1L_DE-TOC-58-3" class="toc_l">Kraftwirkung auf Rohre</td>
+                  <td id="PH1L_DE-TOC-58-4" class="toc_r">204&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-59-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-59-1"></td>
+                  <td id="PH1L_DE-TOC-59-2" class="toc_l">8.5.3&#160;</td>
+                  <td id="PH1L_DE-TOC-59-3" class="toc_l">Die Euler-Gleichung der Hydrodynamik</td>
+                  <td id="PH1L_DE-TOC-59-4" class="toc_r">205&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-60-" class="atice20">
+                  <td id="PH1L_DE-TOC-60-1"></td>
+                  <td id="PH1L_DE-TOC-60-2" class="toc_l">8.6&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-60-3" class="toc_l">Viskose Flüssigkeiten</td>
+                  <td id="PH1L_DE-TOC-60-4" class="toc_r">205&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-61-" class="atice20">
+                  <td id="PH1L_DE-TOC-61-1" class="toc_lb">9&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-61-2" class="toc_lb">Thermische Bewegung</td>
+                  <td id="PH1L_DE-TOC-61-5" class="toc_rb">209&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-62-" class="atice20">
+                  <td id="PH1L_DE-TOC-62-1"></td>
+                  <td id="PH1L_DE-TOC-62-2" class="toc_l">9.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-62-3" class="toc_l">Mikroskopische Untersuchung des Gasdrucks</td>
+                  <td id="PH1L_DE-TOC-62-4" class="toc_r">210&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-63-" class="atice20">
+                  <td id="PH1L_DE-TOC-63-1"></td>
+                  <td id="PH1L_DE-TOC-63-2" class="toc_l">9.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-63-3" class="toc_l">Gastemperatur und Wärme</td>
+                  <td id="PH1L_DE-TOC-63-4" class="toc_r">214&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-64-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-64-1"></td>
+                  <td id="PH1L_DE-TOC-64-2" class="toc_l">9.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-64-3" class="toc_l">Atomare und molekulare Freiheitsgrade</td>
+                  <td id="PH1L_DE-TOC-64-4" class="toc_r">215&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-65-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-65-1"></td>
+                  <td id="PH1L_DE-TOC-65-2" class="toc_l">9.2.2&#160;</td>
+                  <td id="PH1L_DE-TOC-65-3" class="toc_l">Wärmekapazität eines Gases</td>
+                  <td id="PH1L_DE-TOC-65-4" class="toc_r">217&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-66-" class="atice20">
+                  <td id="PH1L_DE-TOC-66-1"></td>
+                  <td id="PH1L_DE-TOC-66-2" class="toc_l">9.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-66-3" class="toc_l">Adiabatische und isotherme Prozesse</td>
+                  <td id="PH1L_DE-TOC-66-4" class="toc_r">220&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-67-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-67-1"></td>
+                  <td id="PH1L_DE-TOC-67-2" class="toc_l">9.3.1&#160;</td>
+                  <td id="PH1L_DE-TOC-67-3" class="toc_l">Gaskompressibilität</td>
+                  <td id="PH1L_DE-TOC-67-4" class="toc_r">224&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-68-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-68-1"></td>
+                  <td id="PH1L_DE-TOC-68-2" class="toc_l">9.3.2&#160;</td>
+                  <td id="PH1L_DE-TOC-68-3" class="toc_l">Die barometrische Höhenformel</td>
+                  <td id="PH1L_DE-TOC-68-4" class="toc_r">226&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-69-" class="atice20">
+                  <td id="PH1L_DE-TOC-69-1"></td>
+                  <td id="PH1L_DE-TOC-69-2" class="toc_l">9.4&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-69-3" class="toc_l">Thermische Verteilungen</td>
+                  <td id="PH1L_DE-TOC-69-4" class="toc_r">228&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-70-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-70-1"></td>
+                  <td id="PH1L_DE-TOC-70-2" class="toc_l">9.4.1&#160;</td>
+                  <td id="PH1L_DE-TOC-70-3" class="toc_l">Die Boltzmann-Verteilung</td>
+                  <td id="PH1L_DE-TOC-70-4" class="toc_r">228&#160;&#160;</td>
+                </tr>                                                                
+                <tr id="PH1L_DE-TOC-71-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-71-1"></td>
+                  <td id="PH1L_DE-TOC-71-2" class="toc_l">9.4.2&#160;</td>
+                  <td id="PH1L_DE-TOC-71-3" class="toc_l">Die Maxwell-Boltzmann-Verteilung</td>
+                  <td id="PH1L_DE-TOC-71-4" class="toc_r">233&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-72-" class="atice20">
+                  <td id="PH1L_DE-TOC-72-1"></td>
+                  <td id="PH1L_DE-TOC-72-2" class="toc_l">9.5&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-72-3" class="toc_l">Die mittlere freie Weglänge</td>
+                  <td id="PH1L_DE-TOC-72-4" class="toc_r">237&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-73-" class="atice20">
+                  <td id="PH1L_DE-TOC-73-1"></td>
+                  <td id="PH1L_DE-TOC-73-2" class="toc_l">9.6&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-73-3" class="toc_l">Brownsche Bewegung</td>
+                  <td id="PH1L_DE-TOC-73-4" class="toc_r">240&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-74-" class="atice20">
+                  <td id="PH1L_DE-TOC-74-1" class="toc_lb">10&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-74-2" class="toc_lb">Schwingungsbewegung</td>
+                  <td id="PH1L_DE-TOC-74-5" class="toc_rb">245&#160;&#160;</td>
+                </tr>                                                                
+                <tr id="PH1L_DE-TOC-75-" class="atice20">
+                  <td id="PH1L_DE-TOC-75-1"></td>
+                  <td id="PH1L_DE-TOC-75-2" class="toc_l">10.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-75-3" class="toc_l">Harmonische Schwingung</td>
+                  <td id="PH1L_DE-TOC-75-4" class="toc_r">245&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-76-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-76-1"></td>
+                  <td id="PH1L_DE-TOC-76-2" class="toc_l">10.1.1&#160;</td>
+                  <td id="PH1L_DE-TOC-76-3" class="toc_l">Einfache harmonische Schwingung</td>
+                  <td id="PH1L_DE-TOC-76-4" class="toc_r">246&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-77-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-77-1"></td>
+                  <td id="PH1L_DE-TOC-77-2" class="toc_l">10.1.2&#160;</td>
+                  <td id="PH1L_DE-TOC-77-3" class="toc_l">Gedämpfte harmonische Schwingung</td>
+                  <td id="PH1L_DE-TOC-77-4" class="toc_r">248&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-78-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-78-1"></td>
+                  <td id="PH1L_DE-TOC-78-2" class="toc_l">10.1.3&#160;</td>
+                  <td id="PH1L_DE-TOC-78-3" class="toc_l">Erzwungene harmonische Schwingung</td>
+                  <td id="PH1L_DE-TOC-78-4" class="toc_r">251&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-79-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-79-1"></td>
+                  <td id="PH1L_DE-TOC-79-2" class="toc_l">10.1.4&#160;</td>
+                  <td id="PH1L_DE-TOC-79-3" class="toc_l">Gedämpfte erzwungene harmonische Schwingung</td>
+                  <td id="PH1L_DE-TOC-79-4" class="toc_r">254&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-80-" class="atice20">
+                  <td id="PH1L_DE-TOC-80-1"></td>
+                  <td id="PH1L_DE-TOC-80-2" class="toc_l">10.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-80-3" class="toc_l">Gekoppelte Schwingungen</td>
+                  <td id="PH1L_DE-TOC-80-4" class="toc_r">262&#160;&#160;</td>
+                </tr>                                                                            
+                <tr id="PH1L_DE-TOC-81-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-81-1"></td>
+                  <td id="PH1L_DE-TOC-81-2" class="toc_l">10.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-81-3" class="toc_l">Zwei federgekoppelte Pendel</td>
+                  <td id="PH1L_DE-TOC-81-4" class="toc_r">263&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-82-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-82-1"></td>
+                  <td id="PH1L_DE-TOC-82-2" class="toc_l">10.2.2&#160;</td>
+                  <td	 id="PH1L_DE-TOC-82-3" class="toc_l">Streckschwingung eines Moleküls</td>
+                  <td id="PH1L_DE-TOC-82-4" class="toc_r">269&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-83-" class="atice20">
+                  <td id="PH1L_DE-TOC-83-1" class="toc_lb">11&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-83-2" class="toc_lb">Wellenbewegung</td>
+                  <td id="PH1L_DE-TOC-83-5" class="toc_rb">277&#160;&#160;</td>
+                </tr>                        
+                <tr id="PH1L_DE-TOC-84-" class="atice20">
+                  <td id="PH1L_DE-TOC-84-1"></td>
+                  <td id="PH1L_DE-TOC-84-2" class="toc_l">11.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-84-3" class="toc_l">Einfache mechanische Wellen</td>
+                  <td id="PH1L_DE-TOC-84-4" class="toc_r">278&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-85-" class="atice20">
+                  <td id="PH1L_DE-TOC-85-1"></td>
+                  <td id="PH1L_DE-TOC-85-2" class="toc_l">11.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-85-3" class="toc_l">Elastische Wellen</td>
+                  <td id="PH1L_DE-TOC-85-4" class="toc_r">285&#160;&#160;</td>
+                </tr>                                               
+                <tr id="PH1L_DE-TOC-86-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-86-1"></td>
+                  <td id="PH1L_DE-TOC-86-2" class="toc_l">11.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-86-3" class="toc_l">Schallwellen</td>
+                  <td id="PH1L_DE-TOC-86-4" class="toc_r">288&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-87-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-87-1"></td>
+                  <td id="PH1L_DE-TOC-87-2" class="toc_l">11.2.2&#160;</td>
+                  <td id="PH1L_DE-TOC-87-3" class="toc_l">Der Doppler-Effekt</td>
+                  <td id="PH1L_DE-TOC-87-4" class="toc_r">291&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-88-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-88-1"></td>
+                  <td id="PH1L_DE-TOC-88-2" class="toc_l">11.2.3&#160;</td>
+                  <td id="PH1L_DE-TOC-88-3" class="toc_l">Gedämpfte Schallwellen</td>
+                  <td id="PH1L_DE-TOC-88-4" class="toc_r">293&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-89-" class="atice20">
+                  <td id="PH1L_DE-TOC-89-1"></td>
+                  <td id="PH1L_DE-TOC-89-2" class="toc_l">11.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-89-3" class="toc_l">Komplexe Wellen und Wellenpakete</td>
+                  <td id="PH1L_DE-TOC-89-4" class="toc_r">295&#160;&#160;</td>
+                </tr>                                                               
+                <tr id="PH1L_DE-TOC-90-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-90-1"></td>
+                  <td id="PH1L_DE-TOC-90-2" class="toc_l">11.3.1&#160;</td>
+                  <td id="PH1L_DE-TOC-90-3" class="toc_l">Fourier-Reihen</td>
+                  <td id="PH1L_DE-TOC-90-4" class="toc_r">295&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-91-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-91-1"></td>
+                  <td id="PH1L_DE-TOC-91-2" class="toc_l">11.3.2&#160;</td>
+                  <td id="PH1L_DE-TOC-91-3" class="toc_l">Wellenenergie</td>
+                  <td id="PH1L_DE-TOC-91-4" class="toc_r">297&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-92-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-92-1"></td>
+                  <td id="PH1L_DE-TOC-92-2" class="toc_l">11.3.3&#160;</td>
+                  <td id="PH1L_DE-TOC-92-3" class="toc_l">Wellenpakete</td>
+                  <td id="PH1L_DE-TOC-92-4" class="toc_r">301&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-93-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-93-1"></td>
+                  <td id="PH1L_DE-TOC-93-2" class="toc_l">11.3.4&#160;</td>
+                  <td id="PH1L_DE-TOC-93-3" class="toc_l">Wellen in drei Dimensionen</td>
+                  <td id="PH1L_DE-TOC-93-4" class="toc_r">305&#160;&#160;</td>
+                </tr>   
+                <tr id="PH1L_DE-TOC-94-" class="atice20">
+                  <td id="PH1L_DE-TOC-94-1"></td>
+                  <td id="PH1L_DE-TOC-94-2" class="toc_l">11.4&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-94-3" class="toc_l">Das Huygens-Prinzip</td>
+                  <td id="PH1L_DE-TOC-94-4" class="toc_r">306&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-95-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-95-1"></td>
+                  <td id="PH1L_DE-TOC-95-2" class="toc_l">11.4.1&#160;</td>
+                  <td id="PH1L_DE-TOC-95-3" class="toc_l">Reflexion und Brechung</td>
+                  <td id="PH1L_DE-TOC-95-4" class="toc_r">307&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-96-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-96-1"></td>
+                  <td id="PH1L_DE-TOC-96-2" class="toc_l">11.4.2&#160;</td>
+                  <td id="PH1L_DE-TOC-96-3" class="toc_l">Beugung und Interferenz</td>
+                  <td id="PH1L_DE-TOC-96-4" class="toc_r">311&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-97-" class="atice20">
+                  <td id="PH1L_DE-TOC-97-1" class="toc_lb">12&#160;</td>
+                  <td colspan="3" id="PH1L_DE-TOC-97-2" class="toc_lb">Die spezielle Relativitätstheorie</td>
+                  <td id="PH1L_DE-TOC-97-5" class="toc_rb">317&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-98-" class="atice20">
+                  <td id="PH1L_DE-TOC-98-1"></td>
+                  <td id="PH1L_DE-TOC-98-2" class="toc_l">12.1&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-98-3" class="toc_l">Das Relativitätsprinzip</td>
+                  <td id="PH1L_DE-TOC-98-4" class="toc_r">317&#160;&#160;</td>
+                </tr>                                                                                                
+                <tr id="PH1L_DE-TOC-99-" class="atice20">
+                  <td id="PH1L_DE-TOC-99-1"></td>
+                  <td id="PH1L_DE-TOC-99-2" class="toc_l">12.2&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-99-3" class="toc_l">Relativistische Kinematik</td>
+                  <td id="PH1L_DE-TOC-99-4" class="toc_r">328&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-100-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-100-1"></td>
+                  <td id="PH1L_DE-TOC-100-2" class="toc_l">12.2.1&#160;</td>
+                  <td id="PH1L_DE-TOC-100-3" class="toc_l">Die Lorentz-Transformation</td>
+                  <td id="PH1L_DE-TOC-100-4" class="toc_r">328&#160;&#160;</td>
+                </tr>                                
+                <tr id="PH1L_DE-TOC-101-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-101-1"></td>
+                  <td id="PH1L_DE-TOC-101-2" class="toc_l">12.2.2&#160;</td>
+                  <td id="PH1L_DE-TOC-101-3" class="toc_l">Herleitung der Lorentz-Transformation</td>
+                  <td id="PH1L_DE-TOC-101-4" class="toc_r">330&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-102-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-102-1"></td>
+                  <td id="PH1L_DE-TOC-102-2" class="toc_l">12.2.3&#160;</td>
+                  <td id="PH1L_DE-TOC-102-3" class="toc_l">Die Definition der Gleichzeitigkeit</td>
+                  <td id="PH1L_DE-TOC-102-4" class="toc_r">333&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-103-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-103-1"></td>
+                  <td id="PH1L_DE-TOC-103-2" class="toc_l">12.2.4&#160;</td>
+                  <td id="PH1L_DE-TOC-103-3" class="toc_l">Das Konzept der Raumzeit</td>
+                  <td id="PH1L_DE-TOC-103-4" class="toc_r">337&#160;&#160;</td>
+                </tr>                
+                <tr id="PH1L_DE-TOC-104-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-104-1"></td>
+                  <td id="PH1L_DE-TOC-104-2" class="toc_l">12.2.5&#160;</td>
+                  <td id="PH1L_DE-TOC-104-3" class="toc_l">Der relativistische Doppler-Effekt</td>
+                  <td id="PH1L_DE-TOC-104-4" class="toc_r">341&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-105-" class="atice20">
+                  <td id="PH1L_DE-TOC-105-1"></td>
+                  <td id="PH1L_DE-TOC-105-2" class="toc_l">12.3&#160;</td>
+                  <td colspan="2" id="PH1L_DE-TOC-105-3" class="toc_l">Relativistische Dynamik</td>
+                  <td id="PH1L_DE-TOC-105-4" class="toc_r">347&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-106-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-106-1"></td>
+                  <td id="PH1L_DE-TOC-106-2" class="toc_l">12.3.1&#160;</td>
+                  <td id="PH1L_DE-TOC-106-3" class="toc_l">Relativistische Addition von Geschwindigkeiten</td>
+                  <td id="PH1L_DE-TOC-106-4" class="toc_r">351&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-107-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-107-1"></td>
+                  <td id="PH1L_DE-TOC-107-2" class="toc_l">12.3.2&#160;</td>
+                  <td id="PH1L_DE-TOC-107-3" class="toc_l">Relativistischer Impuls</td>
+                  <td id="PH1L_DE-TOC-107-4" class="toc_r">355&#160;&#160;</td>
+                </tr>                                                                
+                <tr id="PH1L_DE-TOC-108-" class="atice20">
+                  <td colspan="2" id="PH1L_DE-TOC-108-1"></td>
+                  <td id="PH1L_DE-TOC-108-2" class="toc_l">12.3.3&#160;</td>
+                  <td id="PH1L_DE-TOC-108-3" class="toc_l">Relativistische Energie</td>
+                  <td id="PH1L_DE-TOC-108-4" class="toc_r">361&#160;&#160;</td>
+                </tr>
+                <tr id="PH1L_DE-TOC-109-" class="atice20">
+                  <td colspan="4" id="PH1L_DE-TOC-109-1" class="toc_lb">Anhang</td>
+                  <td id="PH1L_DE-TOC-109-5" class="toc_rb">369&#160;&#160;</td>
+                </tr>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+              </tbody>
+            </table>
+          </div>
+        </div>
+                       
+      </div>        
+           
+    </div> <!-- end pagContent div -->
+        
+    <!-- PopImg modal begin -->
+    
+    <div id="popImgModal" class="modal bizline" style="font-size: 28px">
+      <span class="close"><button class="btn active" style="font-size: 18px;">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+      <div class="center" id="modal-Caption" style="margin-top: 20px;"></div>
+    </div>    
+
+    <!-- PopImg modal end -->
+           
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>
