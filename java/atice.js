@@ -734,6 +734,37 @@ function PH1L_DE_Kobo_Lnk() {
 
 /* END: Grundlagen der Physik - Erster Teil */
 
+/* BEGIN: Der schnelle Brueter */
+
+function DSB_Google_Lnk() {
+  
+  var link = document.getElementById("dsb-google-lnk");
+  
+  link.href = "https://play.google.com/store/books/details/Katja_Gold_Der_schnelle_Br%C3%BCter_Aus_dem_Leben_eines?id=qKoKEQAAQBAJ&hl=en_US&gl=US";
+}
+
+function DSB_Apple_Lnk() {
+  
+  var link = document.getElementById("dsb-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/der-schnelle-br%C3%BCter/id6503322573?ls=1";
+}
+
+function DSB_Amazon_Lnk() {
+  
+  var link = document.getElementById("dsb-amazon-lnk");
+  
+  link.href = "https://www.amazon.com/schnelle-Br%C3%BCter-Leben-Werbefossils-German-ebook/dp/B0D5FHTKKQ/ref=sr_1_1?crid=VO8V75E6XZV&dib=eyJ2IjoiMSJ9.EKREOOLFhud8jT0myhjEZsXVcvzEIPgQeeG4EYmgghg861zj2_UNdgRJGMk39z7WHocE5WzZENZkqnNPG75IpS8u4fxJOehiSrxlHUIugKDhEofnv99OT9xvcO87W1tNd_SN6REJs13dpz7IHWALTcvXb-9Rw_RQNA4Od5mT6R9iuf1ABtvUSfe5X1HTwaeXVjSGC2tVZo7crgmDnNa-n7bXX3ddPyDGxMrlhgoY_xo.K9EB9zh7sxxdD0wYE72ueMk5Bdt3lexCIREKdNCWcfk&dib_tag=se&keywords=der+schnelle+br%C3%BCter&qid=1716990441&sprefix=der+schnelle+br%C3%BCter%2Caps%2C207&sr=8-1";
+}
+
+function DSB_Kobo_Lnk() {
+  
+  var link = document.getElementById("dsb-kobo-lnk");
+  
+  link.href = "https://www.kobo.com/us/en/ebook/der-schnelle-bruter";
+}
+
+/* END: Der schnelle Brueter */
 
 /* -------------------- */
 

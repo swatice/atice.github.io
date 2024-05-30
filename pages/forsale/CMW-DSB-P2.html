@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png"/>  
+  <title>WS-CR-P2</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/>  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>   
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1780px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                        
+
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">Der schnelle Brüter</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">Aus dem Leben eines Werbefossils</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href="CMW-DSB-P1.html">1</a>
+            <a href=javascript:void(0); class="active">2</a>
+          </div>
+        </div>  
+      </div>
+                                                                   
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+                        
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Table of Contents:</span>
+        </div>
+      </div>
+                    
+      <div class="tocBookPages">
+      
+        <div class="float">                                                                                                                                                                            
+          <div class="tabular">
+            <table id="CR-TOC" class="toctable">
+              <colgroup id="CR-TOC-1g" class="atice17">
+                <col id="CR-TOC-1" class="atice18" width="5%"/>
+                <col id="CR-TOC-2" class="atice18" width="5%"/>
+                <col id="CR-TOC-3" class="atice18"/>
+                <col id="CR-TOC-4" class="atice18" width="10%"/>
+              </colgroup>
+              <tbody class="atice19">                               
+                <tr id="CR-TOC-1-" class="atice20">
+                  <td colspan="3" id="CR-TOC-1-1" class="toc_lb">Gestatten, Kowalski</td>
+                  <td id="CR-TOC-1-4" class="toc_rb">1&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-2-" class="atice20">
+                  <td colspan="3" id="CR-TOC-2-1" class="toc_lb">Magic Joe</td>
+                  <td id="CR-TOC-2-4" class="toc_rb">15&#160;&#160;</td>
+                </tr>
+                 <tr id="CR-TOC-3-" class="atice20">
+                  <td colspan="3" id="CR-TOC-3-1" class="toc_lb">Der schnelle Brüter kehrt zurück</td>
+                  <td id="CR-TOC-3-4" class="toc_rb">23&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-4-" class="atice20">
+                  <td colspan="3" id="CR-TOC-4-1" class="toc_lb">Duell in der Sonne</td>
+                  <td id="CR-TOC-4-4" class="toc_rb">33&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-5-" class="atice20">
+                  <td colspan="3" id="CR-TOC-5-1" class="toc_lb">Zettels Traum</td>
+                  <td id="CR-TOC-5-4" class="toc_rb">44&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-6-" class="atice20">
+                  <td colspan="3" id="CR-TOC-6-1" class="toc_lb">Halali im Eldorado</td>
+                  <td id="CR-TOC-6-4" class="toc_rb">53&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-7-" class="atice20">
+                  <td colspan="3" id="CR-TOC-7-1" class="toc_lb">Wieder an Bord</td>
+                  <td id="CR-TOC-7-4" class="toc_rb">62&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-8-" class="atice20">
+                  <td colspan="3" id="CR-TOC-8-1" class="toc_lb">Der Auftrag</td>
+                  <td id="CR-TOC-8-4" class="toc_rb">71&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-9-" class="atice20">
+                  <td colspan="3" id="CR-TOC-9-1" class="toc_lb">Dr. Horn greift ein</td>
+                  <td id="CR-TOC-9-4" class="toc_rb">80&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-10-" class="atice20">
+                  <td colspan="3" id="CR-TOC-10-1" class="toc_lb">Ganz unten</td>
+                  <td id="CR-TOC-10-4" class="toc_rb">91&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-11-" class="atice20">
+                  <td colspan="3" id="CR-TOC-11-1" class="toc_lb">Hello Chairman, good-bye Joe</td>
+                  <td id="CR-TOC-11-4" class="toc_rb">102&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-12-" class="atice20">
+                  <td colspan="3" id="CR-TOC-12-1" class="toc_lb">Die hohe Kunst der Werbung</td>
+                  <td id="CR-TOC-12-4" class="toc_rb">110&#160;&#160;</td>
+                </tr>
+                <tr id="CR-TOC-13-" class="atice20">
+                  <td colspan="3" id="CR-TOC-13-1" class="toc_lb">Kowalskis ABC der Werbung</td>
+                  <td id="CR-TOC-13-4" class="toc_rb">119&#160;&#160;</td>
+                </tr>                                            
+              </tbody>
+            </table>
+          </div>
+        </div>                        
+                       
+      </div>
+    
+    </div> <!-- end pagContent div -->
+        
+    <!-- PopImg modal begin -->
+    
+    <div id="popImgModal" class="modal bizline" style="font-size: 28px">
+      <span class="close"><button class="btn active" style="font-size: 18px;">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+      <div class="center" id="modal-Caption" style="margin-top: 20px;"></div>
+    </div>    
+
+    <!-- PopImg modal end -->
+           
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>
