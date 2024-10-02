@@ -766,5 +766,37 @@ function DSB_Kobo_Lnk() {
 
 /* END: Der schnelle Brueter */
 
+/* BEGIN: Von dieser Welt */
+
+function VDW_Google_Lnk() {
+  
+  var link = document.getElementById("vdw-google-lnk");
+  
+  link.href = "https://play.google.com/store/books/details/Christine_Maria_Wurm_Von_dieser_Welt?id=bPYkEQAAQBAJ&hl=en_US";
+}
+
+function VDW_Apple_Lnk() {
+  
+  var link = document.getElementById("vdw-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/von-dieser-welt/id6723902400?ls=1";
+}
+
+function VDW_Amazon_Lnk() {
+  
+  var link = document.getElementById("vdw-amazon-lnk");
+  
+  link.href = "https://www.amazon.com/Von-dieser-Welt-Gedichte-German-ebook/dp/B0DJ3KPHK1/ref=sr_1_1?crid=1GD7HBCX0PR8Z&dib=eyJ2IjoiMSJ9.e9q0nhbTVRtrZjhXbG0Hdw.ood_XZCa_-GC5SpQhzMqHTDESj4adqycIV-L2wxPEm0&dib_tag=se&keywords=Christine+Maria+Wurm&qid=1727534586&sprefix=christine+maria+wurm%2Caps%2C101&sr=8-1";
+}
+
+function VDW_Kobo_Lnk() {
+  
+  var link = document.getElementById("vdw-kobo-lnk");
+  
+  link.href = "https://www.kobo.com/us/en/ebook/von-dieser-welt-2";
+}
+
+/* END: Von dieser Welt */
+
 /* -------------------- */
 

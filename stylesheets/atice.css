@@ -660,6 +660,15 @@ img.inlineimage{
   line-height: 125%;
   text-align: left;
 }
+.toc_ls {
+  font-family:DejaVu Serif;
+  font-size: 155%;
+  font-style: italic;		
+  font-weight: normal;
+  color: rgb(0, 31, 77);	
+  line-height: 125%;
+  text-align: left;
+}
 .toc_lb {
   font-size: 155%;	
   font-weight: normal;
