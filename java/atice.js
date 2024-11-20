@@ -798,5 +798,37 @@ function VDW_Kobo_Lnk() {
 
 /* END: Von dieser Welt */
 
+/* BEGIN: Descendants - Species Cousins */
+
+function DES_SC_Google_Lnk() {
+  
+  var link = document.getElementById("des-sc-google-lnk");
+  
+  link.href = "https://play.google.com/store/books/details/Aver_Omadis_DESCENDANTS?id=1-MxEQAAQBAJ";
+}
+
+function DES_SC_Apple_Lnk() {
+  
+  var link = document.getElementById("des-sc-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/descendants/id6738307451?ls=1";
+}
+
+function DES_SC_Amazon_Lnk() {
+  
+  var link = document.getElementById("des-sc-amazon-lnk");
+  
+  link.href = "";
+}
+
+function DES_SC_Kobo_Lnk() {
+  
+  var link = document.getElementById("des-sc-kobo-lnk");
+  
+  link.href = "https://www.kobo.com/us/en/ebook/descendants-12";
+}
+
+/* END: Descendants Species Cousins */
+
 /* -------------------- */
 
