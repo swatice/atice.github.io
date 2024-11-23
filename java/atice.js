@@ -818,7 +818,7 @@ function DES_SC_Amazon_Lnk() {
   
   var link = document.getElementById("des-sc-amazon-lnk");
   
-  link.href = "";
+  link.href = "https://www.amazon.com/dp/B0DNV3ZX72/ref=sr_1_1?crid=3H5ALEPRTGY0J&dib=eyJ2IjoiMSJ9.ntEtaLqAQDe1GkhIPI190A.iY9mbiIjFPyN4qaCjal5C3PStSSa3_IYSOsHTiiwYoU&dib_tag=se&keywords=book+aver+omadis+descendants&qid=1732374971&sprefix=book+aver+omadis+descendants%2Caps%2C73&sr=8-1";
 }
 
 function DES_SC_Kobo_Lnk() {
