@@ -12,10 +12,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
   <script src="https://code.jquery.com/jquery-git.js"></script>   
   <script type="text/javascript" src="../../java/atice.js"></script>
-  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>     
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>
+  <script type="text/javascript" src="../../java/aticePDF.js"></script>     
 </head>
 
-<body onload="SubMenuSet()" onresize="SubMenuResize()">
+<body onload="SubMenuSet(), PdfViewerOpen = false" onresize="SubMenuResize()">
 
 <div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1130px;">
 
@@ -90,9 +91,9 @@
       <div class="bookDesItem tocBookDes" style="margin-top: 0px; margin-bottom: 0px;">                 
         <p class="noindent parfont">
           <span class="coverImg" style="width: 30%;">
-            <a style="z-index: 101;">
-              <img class="popImg BookCover inlineimage" style="width: 95%;" src="../../images/books/CMW_DSB.jpg" alt="Der schnelle Brüter">              
-            </a>
+            <a style="z-index: 101;">         
+              <img class="popImg BookCover inlineimage" style="width: 95%;" src="../../images/books/CMW_DSB.jpg" alt="Der schnelle Brüter">			  
+			      </a>			
           </span>
           <span style="margin-bottom: 5px;">                    
           Die schillernde Welt der Werbung, schillert sie auch für einen, der keine Aufträge mehr kriegt?<br/>
@@ -222,4 +223,5 @@
 </div> <!-- end pagCanvas div -->
 
 </body>
+
 </html>

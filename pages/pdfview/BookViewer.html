@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png"/> 
+  <title>ATICE Book Viewer</title>
+  <link rel="stylesheet" type="text/css" href="../../stylesheets/atice-pdf.css">
+  <script type="text/javascript" src="../../java/aticePDF.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.3.200/pdf.min.js"></script>  
+  <script type="text/javascript" src="../../java/PDFwindow.js"></script>    
+ </head>
+<body>
+  
+<body style="background:rgb(64, 64, 64);">
+
+<header>
+  <div class="container">
+    <section class="top-bar">
+      <button class="zoom-button" style="font-size: 28px;" onclick="plusZoom(-1)">&#8722;</button>
+      <button id="go_previous_fast" class="sshw-button" style="font-size: 28px;" onclick="flipPage(-10)">&#8810;</button>
+      <button id="go_previous" class="sshw-button" style="font-size: 28px;" onclick="flipPage(-1)">&#60;</button>
+      <span style="text-align: center;">Pages&nbsp;<input id="current_page" type="number" value="1" size = "4" style="text-align: center;"><span >&nbsp;and&nbsp;</span><span id="even_page">&nbsp;</span><span>&nbsp;of&nbsp;</span><span id="total_pages">&nbsp;</span><span>&nbsp;pages</span></span>
+      <button id="go_next" class="sshw-button" style="font-size: 28px;"onclick="flipPage(1)">&#62;</button>
+      <button id="go_next_fast" class="sshw-button" style="font-size: 28px;"onclick="flipPage(10)">&#8811;</button>
+      <button class="zoom-button" style="font-size: 28px;" onclick="plusZoom(1)">+</button>
+    </section>                
+  </div>
+</header>
+
+<div id="my_pdf_viewer">
+  <div id="canvas_container">              
+    <canvas id="pdf_renderer_1" style="display:inline-block;"></canvas>
+    <canvas id="pdf_renderer_2" style="display:inline-block;"></canvas>                        
+  </div>
+</div> 
+
+</body>
+
+<script>
+
+//pdfjsLib.getDocument(window.pdfPath).then(pdf => {
+//  myState.pdf = pdf
+//  document.getElementById("even_page").innerHTML = myState.evenPage;
+//  document.getElementById("total_pages").innerHTML = myState.pdf._pdfInfo.numPages;
+//  render()
+//})
+
+var loadingTask = pdfjsLib.getDocument(window.pdfPath);
+loadingTask.promise.then(pdf => {
+  myState.pdf = pdf
+  document.getElementById("even_page").innerHTML = myState.evenPage;
+  document.getElementById("total_pages").innerHTML = myState.pdf._pdfInfo.numPages;
+  render()
+});
+
+document.getElementById("current_page")
+.addEventListener('keypress', (e) => {
+  if(myState.pdf == null) return;           
+  // get the keycode
+  var code = (e.keycode ? e.keyCode : e.which)
+  if(code == 13){
+    var desiredPage = document.getElementById("current_page").valueAsNumber
+    if(desiredPage >= 1 && desiredPage < myState.pdf._pdfInfo.numPages - 1){
+      if(desiredPage % 2 == 0){ 
+        desiredPage = desiredPage - 1;
+      }
+      myState.currentPage = desiredPage;
+      myState.evenPage = myState.currentPage + 1;
+      document.getElementById("current_page").value = myState.currentPage;
+      document.getElementById("even_page").innerHTML = myState.evenPage;
+      render()
+    } else {
+      document.getElementById("current_page").value = myState.currentPage;
+      render()
+    }
+  }                                   
+})
+
+document.addEventListener('keydown', (e) => {
+  if(myState.pdf == null) return;           
+  // get the keycode
+  var code = (e.keycode ? e.keyCode : e.which)  
+  if(code == 33) flipPage(-1);
+  if(code == 34) flipPage(1);
+});
+
+document.getElementById("zoom_in")
+.addEventListener('click', (e) => {
+  if(myState.pdf == null) return; 
+  myState.zoom = myState.zoom + 0.1;
+  myState.rotation = 0;
+  render()
+})
+
+document.getElementById("zoom_out")
+.addEventListener('click', (e) => {
+  if(myState.pdf == null) return; 
+  myState.zoom = myState.zoom - 0.1;
+  myState.rotation = 0;
+  render()
+})
+
+bc1.onmessage = function (ev) { 
+  console.log(ev);
+  myState.pdf.destroy();
+  window.close();
+}
+
+</script>
+                      
+</html>

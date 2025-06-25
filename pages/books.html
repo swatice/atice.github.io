@@ -12,7 +12,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
   <script src="https://code.jquery.com/jquery-git.js"></script>   
   <script type="text/javascript" src="../java/atice.js"></script>
-  <script type="text/javascript" src="../java/aticeJSquery.js"></script>            
+  <script type="text/javascript" src="../java/aticeJSquery.js"></script>
+  <script type="text/javascript" src="../../java/aticePDF.js"></script>            
 </head>
 
 <body>
@@ -57,7 +58,7 @@
         <div class="books2left" style="display: block; padding-left: 1px;">                   
           <div class="books2panel_left" style="display: block; height: auto;">         
             <div id="" class="" style="margin-top: 10px; z-index: 100;">
-              <div onclick="SubHeaderOn()" style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
+              <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
                 <a style="z-index: 101;" href="../pages/forsale/WS-THC-P1.html">          
                   <img class="EBookCover" src="../images/books/THC_EN.jpg" alt="The Human Condition"/>
                 </a>            
@@ -65,7 +66,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('THC_B1_Reduced.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="THC_Amazon_Lnk()">
                     <a id="thc-amazon-lnk" href=javascript:void(0); class="" target="_blank">Amazon</a>
                   </span><span class="star1">|</span>
@@ -85,7 +91,7 @@
 
           <div class="books2panel_right" style="display: block; height: auto;">
             <div id="" class="" style="margin-top: 10px; z-index: 100;">
-              <div onclick="SubHeaderOn()" style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
+              <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
                 <a style="z-index: 101;" href="../pages/forsale/WS-CR-P1.html">          
                   <img class="EBookCover" src="../images/books/CR_EN.jpg" alt="Consensus Realities"/>
                 </a>            
@@ -93,7 +99,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('CR_V3_Reduced.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="CR_Amazon_Lnk()">
                     <a id="cr-amazon-lnk" href=javascript:void(0); class="" target="_blank">Amazon</a>
                   </span><span class="star1">|</span>                
@@ -115,15 +126,20 @@
         <div class="books2left" style="display: block; padding-left: 1px;">
           <div class="books2panel_left" style="display: block; height: auto;">                         
             <div id="" class="" style="margin-top: 10px; z-index: 100;">
-              <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <a style="z-index: 101;" href="../pages/forsale/CMW-DSB-P1.html">          
+              <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">					
+				<a style="z-index: 101;" href="../pages/forsale/CMW-DSB-P1.html">          
                   <img class="EBookCover" src="../images/books/CMW_DSB.jpg" alt="Der schnelle Brüter" />
                 </a>            
               </div>  
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('DSB_CMW_01.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="DSB_Amazon_Lnk()">
                     <a id="dsb-amazon-lnk" href=javascript:void(0); class="" target="_blank">Amazon</a>
                   </span><span class="star1">|</span>                
@@ -151,7 +167,12 @@
 			</div>
 			<div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
 			  <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-			    <p style="width:100%; padding-left:5px; padding-right: 5px;">
+			    <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+            <span class="booklnk" onclick="goToPdf('VdW_CMW_v1.pdf')">
+	            <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	          </span>
+          </p>
+          <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
 			      <span class="booklnk" onclick="VDW_Amazon_Lnk()">
 			        <a id="vdw-amazon-lnk" href=javascript:void(0); class="" target="_blank">Amazon</a>
 			      </span><span class="star1">|</span>                
@@ -185,15 +206,20 @@
 	    <div class="books2left" style="display: block; padding-left: 1px;">                   
 	      <div class="books2panel_left" style="display: block; height: auto;">         
 	        <div id="" class="" style="margin-top: 10px; z-index: 100;">
-	          <div onclick="SubHeaderOn()" style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
+	          <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
 	            <a style="z-index: 101;" href="../pages/forsale/AO-DES-SC-P1.html">          
 	              <img class="EBookCover" src="../images/books/AO_DES_SC.jpg" alt="Descendants - Species Cousins"/>
-	            </a>            
+	            </a>
 	          </div>  
 	        </div>
 	        <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
 	          <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-	            <p style="width:100%; padding-left:5px; padding-right: 5px;">
+	            <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                <span class="booklnk" onclick="goToPdf('DSE-SC_V0.pdf')">
+	                <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	              </span>
+              </p>
+              <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
 	              <span class="booklnk" onclick="DES_SC_Amazon_Lnk()">
 	                <a id="des-sc-amazon-lnk" href=javascript:void(0); class="" target="_blank">Amazon</a>
 	              </span><span class="star1">|</span>
@@ -214,7 +240,7 @@
 	      <div class="books2panel_right" style="display: block; height: auto;">
 			<!--
 	        <div id="" class="" style="margin-top: 10px; z-index: 100;">
-	          <div onclick="SubHeaderOn()" style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
+	          <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
 	            <a style="z-index: 101;" href="../pages/forsale/WS-CR-P1.html">          
 	              <img class="EBookCover" src="../images/books/CR_EN.jpg" alt="Consensus Realities"/>
 	            </a>            
@@ -323,7 +349,7 @@
         
           <div class="books2panel_left" style="display: block; height: auto;">    
             <div id="" class="" style="margin-top: 10px; z-index: 100;">
-              <div onclick="SubHeaderOn()" style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
+              <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
                 <a style="z-index: 101;" href="../pages/forsale/WS-TEME-EN-P1.html">          
                   <img class="EBookCover" src="../images/books/TEME_EN.jpg" alt="Technical Mechanics - An Introduction" />
                 </a>            
@@ -331,7 +357,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('TEME_EN_V2_Reduced.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="TEME_EN_Apple_Lnk()">
                     <a id="teme-en-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -356,7 +387,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('TEME_DE_V2_Reduced.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="TEME_DE_Apple_Lnk()">
                     <a id="teme-de-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -385,7 +421,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('PH1L_EN_V2_Reduced.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="PH1L_EN_Apple_Lnk()">
                     <a id="ph1l-en-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -410,7 +451,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('PH1L_DE_V2_Reduced.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="PH1L_DE_Apple_Lnk()">
                     <a id="ph1l-de-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -439,7 +485,7 @@
         
           <div class="books2panel_left" style="display: block; height: auto;">    
             <div id="" class="" style="margin-top: 10px; z-index: 100;">
-              <div onclick="SubHeaderOn()" style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
+              <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
                 <a style="z-index: 101;" href="../pages/forsale/WS-HM1L-EN-P1.html">          
                   <img class="EBookCover" src="../images/books/HML1_EN.jpg" alt="Higher Mathematics - Lectures Part One" />
                 </a>            
@@ -447,7 +493,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('HM1L_EN_V1.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px">
                   <span class="booklnk" onclick="HM1L_EN_Apple_Lnk()">
                     <a id="hm1l-en-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -472,7 +523,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('HM2L_EN_V1.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="HM2L_EN_Apple_Lnk()">
                     <a id="hm2l-en-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -501,7 +557,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('HM3L_EN_V1.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="HM3L_EN_Apple_Lnk()">
                     <a id="hm3l-en-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -526,7 +587,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('HM4L_EN_V1.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="HM4L_EN_Apple_Lnk()">
                     <a id="hm4l-en-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -555,7 +621,7 @@
         
           <div class="books2panel_left" style="display: block; height: auto;">    
             <div id="" class="" style="margin-top: 10px; z-index: 100;">
-              <div onclick="SubHeaderOn()" style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
+              <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
                 <a style="z-index: 101;" href="../pages/forsale/WS-HM1L-DE-P1.html">          
                   <img class="EBookCover" src="../images/books/HML1_DE.jpg" alt="Höhere Mathematik - Vorlesungen Erster Teil"/>
                 </a>            
@@ -563,7 +629,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('HM1L_DE_V2.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="HM1L_DE_Apple_Lnk()">
                     <a id="hm1l-de-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -588,7 +659,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('HM2L_DE_V2.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="HM2L_DE_Apple_Lnk()">
                     <a id="hm2l-de-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -617,7 +693,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('HM3L_DE_V2.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="HM3L_DE_Apple_Lnk()">
                     <a id="hm3l-de-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -642,7 +723,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('HM4L_DE_V2.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="HM4L_DE_Apple_Lnk()">
                     <a id="hm4l-de-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span>
@@ -683,7 +769,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('SdkA_GS_1.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="GS_SKA1_DE_Amazon_Lnk()">
                     <a id="gs-ska1-de-amazon-lnk" href=javascript:void(0); class="" target="_blank">Amazon</a>
                   </span><span class="star1">|</span>
@@ -711,7 +802,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('SdkA_GS_2.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="GS_SKA2_DE_Amazon_Lnk()">
                     <a id="gs-ska2-de-amazon-lnk" href=javascript:void(0); class="" target="_blank">Amazon</a>
                   </span><span class="star1">|</span>
@@ -743,7 +839,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="booklnk" onclick="goToPdf('SdkA_GS_3.pdf')">
+	                  <a id="PdfView" href=javascript:void(0);>Preview PDF</a>
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="GS_SKA3_DE_Amazon_Lnk()">
                     <a id="gs-ska3-de-amazon-lnk" href=javascript:void(0); class="" target="_blank">Amazon</a>
                   </span><span class="star1">|</span>
@@ -781,7 +882,7 @@
         
           <div class="books2panel_left" style="display: block; height: auto;">    
             <div id="" class="" style="margin-top: 10px; z-index: 100;">
-              <div onclick="SubHeaderOn()" style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
+              <div style="background-color: transparent; border-color: rgb(51, 51, 51); opacity: 1; border-style: none; background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
                 <a style="z-index: 101;" href="../pages/forsale/BMW-WKS1-P1.html">          
                   <img class="EBookCover" src="../images/books/BMW_WKS1.jpg" alt="Brigitte M. Wurm: Collected Works - Part One"/>
                 </a>            
@@ -789,7 +890,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="inactivlnk">
+	                  Preview not available
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="BMW_WKS1_Apple_Lnk()">
                     <a id="bmw-wks1-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span> 
@@ -811,7 +917,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="inactivlnk">
+	                  Preview not available
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="BMW_WKS2_Apple_Lnk()">
                     <a id="bmw-wks2-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span> 
@@ -837,7 +948,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="inactivlnk">
+	                  Preview not available
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="BMW_WKS3_Apple_Lnk()">
                     <a id="bmw-wks3-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span> 
@@ -859,7 +975,12 @@
             </div>
             <div id="" class="bizline" style="margin-top: 10px; z-index: 102;">
               <div id="" style="background-color: transparent; position: relative; opacity: 1; border-style: none; border-color: rgb(255, 255, 255); background-image: none; box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.5);">
-                <p style="width:100%; padding-left:5px; padding-right: 5px;">
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px; margin-bottom: 0px;">
+                  <span class="inactivlnk">
+	                  Preview not available
+	                </span>
+                </p>
+                <p style="width:100%; padding-left:5px; padding-right: 5px; margin-top: 0px;">
                   <span class="booklnk" onclick="BMW_WKS4_Apple_Lnk()">
                     <a id="bmw-wks4-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
                   </span><span class="star1">|</span> 
