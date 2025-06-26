@@ -27,9 +27,9 @@ function render(){
     var viewport_1 = page.getViewport(myState.zoom,myState.rotation)
     var outputScale = window.devicePixelRatio || 1;
     var transform_1 = outputScale !== 1
-      ? [outputScale, 0, 0, outputScale, 0, 0]
+      ? [1, 0, 0, 1, 0, 0]
       : null;
-
+    //alert(window.devicePixelRatio);
     canvas_1.width = viewport_1.width;
     canvas_1.height = viewport_1.height;
 
@@ -50,9 +50,9 @@ function render(){
     var viewport_2 = page.getViewport(myState.zoom,myState.rotation)
     var outputScale = window.devicePixelRatio || 1;
     var transform_2 = outputScale !== 1
-      ? [outputScale, 0, 0, outputScale, 0, 0]
+      ? [1, 0, 0, 1, 0, 0]
       : null;
-
+    //alert(transform_2);
     canvas_2.width = viewport_2.width;
     canvas_2.height = viewport_2.height;
 
