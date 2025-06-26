@@ -86,112 +86,112 @@ function Semi_Sales_Lnk() {
 	
   var link = document.getElementById("semi_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1Ie8LLezqSkclzM8ZPo0oCzXH4FYGPi6X/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1qGf80zUqeZviAjwu44qFJRnMtedLhveP/view?usp=sharing";
 }
 
 function Semi_Equipment_Sales_Lnk() {
 	
   var link = document.getElementById("semi_equipment_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1jojLfZg5KmVWYqgCAHmCx0v2pZiuEd4u/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/115zPyZVjORJ6D9d9MASxXSpCWVKBJUU8/view?usp=sharing";
 }
 
 function Semi_Material_Sales_Lnk() {
 	
   var link = document.getElementById("semi_material_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1cJGJiiNu31MLbCK9O2OtKT3GqrxXgTLU/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1mysCwnBTwpklUuznl34dPF4rLgnjasHM/view?usp=sharing";
 }
 
 function Photomask_Sales_Lnk() {
 	
   var link = document.getElementById("photomask_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1eVJ9bPsad9iPlGlUhQAedk2VF67EEf_t/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1_9pnHHtZhKMqDWeKCjnL6n62zC9UtHYB/view?usp=sharing";
 }
 
 function Semi_Sales_CAGR_Lnk() {
 	
   var link = document.getElementById("semi_sales_cagr_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1YzfUI-qpGzQKh9asaSOGCJNsLIDNi6CM/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1-gP8wVnrRQt6tBfKkKidbDivekbayDAv/view?usp=sharing";
 }
 
 function Semi_Equipment_Sales_CAGR_Lnk() {
 	
   var link = document.getElementById("semi_equipment_sales_cagr_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1AWfJjTC3cTHMOj87jN3IW8UYjV44Rp3H/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1sB0XXIHUpwcYP4_1ep1SlfEc52pqVymq/view?usp=sharing";
 }
 
 function Semi_Material_Sales_CAGR_Lnk() {
 	
   var link = document.getElementById("semi_material_sales_cagr_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1l1smAh_dpmC8ibcYO7ljrYtRZ8DWFxte/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1x1HggxxbEDIUvy7uhB2qVfFW2czOuXR-/view?usp=sharing";
 }
 
 function Photomask_Sales_CAGR_Lnk() {
 	
   var link = document.getElementById("photomask_sales_cagr_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1ziT4cpl_JQ2tNI8S8YlDB_hXPZnrMO49/view?usp=share_link";
+  link.href ="https://drive.google.com/file/d/1wqoqF2GyOKoMKFt3n3T7JO4pS9_OGD1T/view?usp=sharing";
 }
 
 function Deflated_Semi_Sales_Lnk() {
 	
   var link = document.getElementById("deflated_semi_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1RbB0MhoM1AOwMGqeAswJxViqYVxmYEXh/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1PfX183j-SLBNWQoAAr8LR8cdzeSIAT9V/view?usp=sharing";
 }
 
 function Deflated_Semi_Equipment_Sales_Lnk() {
 	
   var link = document.getElementById("deflated_semi_equipment_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1mGDKkawd2__BR7jPHzLvBYa6Ii18fqQp/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1idD1aBhmwHqHsJI3MqchUa-wwdb8E_ll/view?usp=sharing";
 }
 
 function Deflated_Semi_Material_Sales_Lnk() {
 	
   var link = document.getElementById("deflated_semi_material_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/13EZihMa_kju3S17CNg2pElh2iNAQFFjG/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1IRdPNu7d7fm1hkmM9SxTCDxffBCallTH/view?usp=sharing";
 }
 
 function Deflated_Photomask_Sales_Lnk() {
 	
   var link = document.getElementById("deflated_photomask_sales_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1U6e5dWYha8-J_ps6v_FmbCBi6ih-XECt/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1YsglZrQ4D5i89pWmNCBiKP8xiKEIJL8Y/view?usp=sharing";
 }
 
 function Deflated_Semi_Sales_CAGR_Lnk() {
 	
   var link = document.getElementById("deflated_semi_sales_cagr_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1TYKzRtSI1pWyf4VoAiD5i1GbHCViAjiR/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1qb6uTltjBM7pcS17u1d4B0kakUsrmzvs/view?usp=sharing";
 }
 
 function Deflated_Semi_Equipment_Sales_CAGR_Lnk() {
 	
   var link = document.getElementById("deflated_semi_equipment_sales_cagr_lnk");		
     
-  link.href ="https://drive.google.com/file/d/18W04It3b-qya22vp3dz094FX05piln0y/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1HXUU-OvC3JJnbbdYTwEcqw9aWDHjyp75/view?usp=sharing";
 }
 
 function Deflated_Semi_Material_Sales_CAGR_Lnk() {
 	
   var link = document.getElementById("deflated_semi_material_sales_cagr_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1RABL_yVIXoqVLr0mNge4uWUROM3WOcsJ/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/1Nh1EyBInfxyaO2DmknVapsPHRv8iaWpR/view?usp=sharing";
 }
 
 function Deflated_Photomask_Sales_CAGR_Lnk() {
 	
   var link = document.getElementById("deflated_photomask_sales_cagr_lnk");		
     
-  link.href ="https://drive.google.com/file/d/1u5F8yT0e5h1RosJLBD-vlp4fy-t7Q1l7/view?usp=sharing";
+  link.href ="https://drive.google.com/file/d/12_Ogh7QemupGkd7fDMZCi7K8FrbWeJVd/view?usp=sharing";
 }
 
 /*---------------------- LINKS TO GOOOGLE DRIVE DOCS END ----------------------*/
