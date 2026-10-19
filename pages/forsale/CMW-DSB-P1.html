@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
   <link rel="icon" type="image/png" href="../../images/logos/favicon.png"/>  
-  <title>WS-CR-P1</title> 
+  <title>CMW-DSB-P1</title> 
   <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
   <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/> 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>    
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
   <script src="https://code.jquery.com/jquery-git.js"></script>   
   <script type="text/javascript" src="../../java/atice.js"></script>
-  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>     
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>
+  <script type="text/javascript" src="../../java/aticePDF.js"></script>     
 </head>
 
-<body onload="SubMenuSet()" onresize="SubMenuResize()">
+<body onload="SubMenuSet(), PdfViewerOpen = false" onresize="SubMenuResize()">
 
 <div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1130px;">
 
@@ -90,9 +91,9 @@
       <div class="bookDesItem tocBookDes" style="margin-top: 0px; margin-bottom: 0px;">                 
         <p class="noindent parfont">
           <span class="coverImg" style="width: 30%;">
-            <a style="z-index: 101;">
-              <img class="popImg BookCover inlineimage" style="width: 95%;" src="../../images/books/CMW_DSB.jpg" alt="Der schnelle Brüter">              
-            </a>
+            <a style="z-index: 101;">         
+              <img class="popImg BookCover inlineimage" style="width: 95%;" src="../../images/books/CMW_DSB.jpg" alt="Der schnelle Brüter">			  
+			      </a>			
           </span>
           <span style="margin-bottom: 5px;">                    
           Die schillernde Welt der Werbung, schillert sie auch für einen, der keine Aufträge mehr kriegt?<br/>
@@ -213,7 +214,7 @@
     <div class="center" id="pagFooter" style="position: relative; width: 100%;">
                 
       <div class="ftrdivline"></div>        
-      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2022</p>
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2026</p>
            
     </div><!-- end pagFooter div -->
       
@@ -222,4 +223,5 @@
 </div> <!-- end pagCanvas div -->
 
 </body>
+
 </html>

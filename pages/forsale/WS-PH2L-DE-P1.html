@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png"/>  
+  <title>WS-PH1L-DE-P1</title> 
+  <link href="../../stylesheets/atice.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/atice-modal.css" rel="stylesheet" type="text/css"/> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/atice.js"></script>
+  <script type="text/javascript" src="../../java/aticeJSquery.js"></script>
+  <script type="text/javascript" src="../../java/aticePDF.js"></script>     
+</head>
+
+<body onload="SubMenuSet()" onresize="SubMenuResize()">
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1130px;">
+
+  <div id="pagWrapper" style="width: 100%;">
+    
+    <div class="center" id="pagHeader" style="margin: 0px auto; padding-bottom: 0;">
+                        
+      <div class="aticeBanner">
+        <div class="bannerLeft">                      
+          <div class="center" id="pagBannerLogo">
+            <img class="bannerLogo" src="../../images/logos/ATICE_logo.png" alt="PIC" />
+          </div>
+        </div>
+        <div class="bannerRight">                      
+          <div class="noindent bannerText">
+            <div class="bannerTextInner" >
+              <span>Consulting</span><br/><span>&amp; Publishing</span>
+            </div>
+          </div>          
+        </div>
+      </div>       
+              
+      <div class="topnav" id="pagTopNav">
+         <div id="NavMenuItems"></div>       
+      </div>                  
+    
+      <div id="subpagHeader" style="display: flex; align-items: center;">             
+        <div id="subMenuLeftDiv">
+          <a href="../books.html">
+            <span class="subheadClose"><button class="btn active" id="ButtonStyle1">Back</button></span>
+          </a>
+        </div>
+        <div id="subMenuCntrDiv">
+          <span id="subheadMenuTxt">Book Description</span><br/>
+          <span class="fntclass" id="subheadMainTitle">GRUNDLAGEN DER PHYSIK, Zweiter Teil</span>
+          <span id="subheadSubTitle" style="margin-left: 0.5em; margin-right: 0.5em;">&#x2014;</span>
+          <span id="subheadSubTitle">Elektromagnetismus</span>                     
+        </div>
+        <div class="pagebtn" id="subMenuRightDiv">
+          <span class="bizline" id="subMenuTxt" >Page</span>
+          <div class="subnav">
+            <a href=javascript:void(0); class="active">1</a>
+            <a href="WS-PH2L-DE-P2.html">2</a>
+          </div>
+        </div>  
+      </div>
+                                             
+    </div> <!--  end div pagHeader -->
+ 
+    <div class="center content" id="pagContent"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+      
+      <div class="bookDesItem" style="margin-top: 15px; margin-bottom: 15px; padding-top: 20px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Author:</span>
+          <span class="DesItemStyle2">Stefan Wurm</span>
+        </div>
+      </div>
+      
+      <div class="bookDesItem" style="margin-top: 0px; margin-bottom: 0px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">About this book:</span>
+        </div>
+      </div>
+                 
+      <div class="bookDesItem tocBookDes" style="margin-top: 0px; margin-bottom: 0px;">                 
+        <p class="noindent parfont">
+          <span class="coverImg" style="width: 30%;">
+            <a style="z-index: 101;">
+              <img class="popImg BookCover inlineimage" style="width: 95%;" src="../../images/books/PH2L_DE.jpg" alt="Grundlagen der Physik - Erster Teil">              
+            </a>
+          </span>
+          <span>                    
+          GRUND&shy;LA&shy;GEN DER PHY&shy;SIK, Zwei&shy;ter Teil, be&shy;in&shy;hal&shy;tet den Stoff des zwei&shy;ten Se&shy;mes&shy;ters ei&shy;nes 
+          vier&shy;se&shy;mes&shy;tri&shy;gen Phy&shy;sik-Kur&shy;ses für Stu&shy;dier&shy;en&shy;de der Phy&shy;sik und an&shy;de&shy;rer Na&shy;tur- 
+          und In&shy;ge&shy;nieur&shy;wis&shy;sen&shy;schaf&shy;ten, die so&shy;li&shy;de Grund&shy;kennt&shy;nis&shy;se der Phy&shy;sik 
+          vor&shy;aus&shy;set&shy;zen. Die&shy;ser zwei&shy;te Band bie&shy;tet Stu&shy;die&shy;ren&shy;den ei&shy;ne ver&shy;tief&shy;te Ein&shy;füh&shy;rung
+          in den Elek&shy;tro&shy;ma&shy;gne&shy;tis&shy;mus. Nach ei&shy;ner kur&shy;zen Ein&shy;füh&shy;rung zum The&shy;ma und in das 
+          ma&shy;the&shy;ma&shy;ti&shy;sche Handwerkszeug des Elek&shy;tro&shy;ma&shy;gne&shy;tis&shy;mus befassen sich die folgenden zwölf Kapitel mit: 
+          Den Grund&shy;la&shy;gen der Elek&shy;tro&shy;sta&shy;tik und elek&shy;tro&shy;sta&shy;ti&shy;scher Fel&shy;der, dem Ver&shy;hal&shy;ten von 
+          Kör&shy;pern in elek&shy;tri&shy;schen Fel&shy;dern und von elek&shy;tri&shy;schen Fel&shy;dern in Kör&shy;pern, den Ei&shy;gen&shy;schaf&shy;ten
+          di&shy;elek&shy;tri&shy;scher Ma&shy;te&shy;rie, den Grund&shy;la&shy;gen der Ma&shy;gne&shy;to&shy;sta&shy;tik und
+          von Ma&shy;gnet&shy;fel&shy;dern, dem ma&shy;gne&shy;ti&shy;schen Mo&shy;ment und der elek&shy;tro&shy;ma&shy;gne&shy;ti&shy;schen 
+          In&shy;duk&shy;ti&shy;on, den Ei&shy;gen&shy;schaf&shy;ten ma&shy;gne&shy;ti&shy;scher Ma&shy;te&shy;rie, Gleich&shy;strom und Wech&shy;sel&shy;strom,
+          zeit&shy;ab&shy;hän&shy;gi&shy;gen elek&shy;tri&shy;schen Fel&shy;dern und Ma&shy;gnet&shy;fel&shy;dern, so&shy;wie 
+          elek&shy;tro&shy;ma&shy;gne&shy;ti&shy;schen Wel&shy;len.
+          </span>
+        </p>                      
+      </div>
+
+      <div class="bookDesItem" style="margin-top: 25px; margin-bottom: 0px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">For whom could this book be of interest?</span>
+          <span class="DesItemStyle2"></span>
+        </div>
+      </div>  
+      
+      <div class="bookDesItem" style="margin-top: 0px; margin-bottom: 15px;">                 
+        <p class="noindent parfont">
+          <span>
+          Die&shy;ses Buch ist haupt&shy;säch&shy;lich als Be&shy;gleit&shy;ma&shy;te&shy;rial zur Ein&shy;füh&shy;rung in die Grund&shy;la&shy;gen der
+          Phy&shy;sik für Stu&shy;den&shy;ten der Na&shy;tur- oder In&shy;ge&shy;nieurs&shy;wis&shy;sen&shy;schaf&shy;ten ge&shy;dacht. Es kann aber auch von
+          Schü&shy;ler&shy;in&shy;nen und Schü&shy;lern in Ober&shy;stufen&shy;gym&shy;na&shy;si&shy;en mit ei&shy;nem den Lehr&shy;plan 
+          über&shy;stei&shy;gen&shy;dem In&shy;ter&shy;es&shy;se an Phy&shy;sik oder In&shy;ge&shy;nieurs&shy;wis&shy;sen&shy;schaf&shy;ten mit Ge&shy;winn 
+          durch&shy;ge&shy;ar&shy;bei&shy;tet wer&shy;den. Ein ein&shy;füh&shy;ren&shy;der Text wie das vor&shy;lie&shy;gen&shy;de Buch kann zu&shy;dem für 
+          ei&shy;ne brei&shy;tere wis&shy;sen&shy;schaft&shy;lich in&shy;ter&shy;es&shy;sier&shy;te Le&shy;ser&shy;schaft von In&shy;ter&shy;es&shy;se sein.                           
+          </span>
+        </p>                      
+      </div>
+      
+      <div class="bookDesItem" style="margin-top: 0px; margin-bottom: 0px;">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Format:</span>
+          <span class="DesItemStyle2">EPUB 3.0 &amp; PDF</span>
+          <span class="DesItemStyle3">(PDF format only available at Google Play Books)</span>
+        </div>
+      </div>   
+
+      <div class="bookDesItem">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Pages:</span>
+          <span class="DesItemStyle2">462</span>
+          <span class="DesItemStyle3">(PDF format page number)</span>
+        </div>
+      </div>   
+                  
+      <div class="bookDesItem">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">ISBN:</span>
+          <span class="DesItemStyle2">978-1-951894-24-5</span>
+        </div>
+      </div>      
+
+      <div class="bookDesItem">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Language:</span>
+          <span class="DesItemStyle2">German</span>
+        </div>
+      </div>
+            
+      <div class="bookDesItem">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">Published:</span>
+          <span class="DesItemStyle2">2026 by ATICE LLC</span>
+        </div>
+      </div>
+      
+      <div class="bookDesItem">
+        <div class="DesItemStyle0">     
+          <span class="DesItemStyle1">This book is available at:</span>
+          <span class="DesItemStyle2">
+            <span class="booklnk" onclick="PH2L_DE_Apple_Lnk()">
+              <a id="ph2l-de-apple-lnk" href=javascript:void(0); class="" target="_blank">Apple</a>
+            </span><span class="star1">|</span>                      
+            <span class="booklnk" onclick="PH2L_DE_Google_Lnk()">                        
+              <a id="ph2l-de-google-lnk" href=javascript:void(0); class="" target="_blank">Google</a>
+            </span><span class="star1">|</span>
+            <span class="booklnk" onclick="PH2L_DE_Kobo_Lnk()">
+              <a id="ph2l-de-kobo-lnk" href=javascript:void(0); class="" target="_blank">Kobo</a>
+            </span>                
+          </span>
+        </div>
+      </div>
+                      
+    </div> <!-- end pagContent div -->
+          
+    <!-- PopImg modal begin -->
+     
+    <div id="popImgModal" class="modal bizline">
+      <span class="close"><button class="btn active">Close</button></span>
+      <img class="modal-content" id="modal-Image">
+    </div>       
+
+
+    <!-- PopImg modal end -->
+                
+    <div class="center" id="pagFooter" style="position: relative; width: 100%;">
+                
+      <div class="ftrdivline"></div>        
+      <p class="center bizline" id="ftrCopyright">&copy;&nbsp;&nbsp;ATICE LLC&nbsp;&nbsp;2026</p>
+           
+    </div><!-- end pagFooter div -->
+      
+  </div> <!-- end pagWrapper div -->
+    
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>

@@ -16,7 +16,7 @@
   position: absolute; /* Stay in place */
   margin: 0px auto;
   z-index: 500; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 60px; /* Location of the box */
   left: 0;
   right:0;  
   top: 0; 
@@ -34,7 +34,7 @@
   position: absolute; /* Stay in place */
   margin: 0px auto;
   z-index: 500; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 60px; /* Location of the box */
   left: 0;
   right:0;  
   top: 0; 
@@ -99,6 +99,24 @@
 
 .close:hover,
 .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* The Download Button */
+.dwnld {
+  position: absolute;
+  top: 10px;
+  right: 130px;
+  color: #f1f1f1;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.dwnld:hover,
+.dwnld:focus {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;

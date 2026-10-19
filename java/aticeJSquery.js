@@ -213,9 +213,17 @@ $(".close").click(function(){
   modal.style.display = "none";	
   document.getElementById("popImgModal").style.display = "none";
   modalVisible = false;
-  $(".content").height(contentheight);
+  $(".content").height(contentheight + headerheight);
   $(".content").css("visibility","visible");
   window.scrollTo(scrXpos, scrYpos);
+});
+
+$(".dwnld").click(function(){
+  const imgElement = document.getElementById("modal-Image");
+  const imageSource = imgElement.src;
+  const pathname = new URL(imageSource).pathname;
+  const filename = pathname.substring(pathname.lastIndexOf('/') + 1);
+  downloadImage(imageSource, filename); 
 });
 
 function CheckModalHeight1(NewSize){
@@ -365,3 +373,39 @@ else {
 }
  
 }
+
+/* Code to downlaod images when download button is clicked */  
+
+async function downloadImage(imageSrc, filename = 'downloaded-image.jpg') {
+  try {
+    // 1. Fetch the image data
+    const response = await fetch(imageSrc);
+    if (!response.ok) throw new Error('Network response was not ok');
+    
+    // 2. Convert the response data to a Blob (Binary Large Object)
+    const blob = await response.blob();
+    
+    // 3. Create a temporary local URL for the Blob object
+    const blobURL = URL.createObjectURL(blob);
+    
+    // 4. Create a hidden <a> element programmatically
+    const link = document.createElement('a');
+    link.href = blobURL;
+    link.download = filename; // Sets the preferred file name
+    
+    // 5. Append to body, trigger click, and cleanup
+    document.body.appendChild(link);
+    link.click();
+    
+    // Short cleanup delay to ensure Firefox and other browsers process the click
+    setTimeout(() => {
+      document.body.removeChild(link);
+      URL.revokeObjectURL(blobURL); // Free up browser memory
+    }, 100);
+    
+  } catch (error) {
+    console.error('Image download failed:', error);
+  }
+}
+
+
